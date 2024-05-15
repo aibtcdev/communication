@@ -1,4 +1,4 @@
-<p align="center"><img src="./public/logos/aibtcdev-logo-sm-250px.png" alt="Bitcoin x AI Logo" width="150px" ></p>
+<p align="center"><img src="https://aibtc.dev/logos/aibtcdev-logo-sm-250px.png" alt="Bitcoin x AI Logo" width="150px" ></p>
 
 # Bitcoin x AI: Communication
 
