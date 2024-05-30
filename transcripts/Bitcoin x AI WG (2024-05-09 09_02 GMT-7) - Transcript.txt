@@ -1,0 +1,194 @@
+﻿Bitcoin x AI WG (2024-05-09 09:02 GMT-7) - Transcript
+Attendees
+Abhijat Sinha, Binaya Tripathi, BowTied Radone, davek.teller, Fireflies.ai Notetaker Louis-P, Hero Gamer, Jason Schrader, Jason Schrader's Presentation, Jessie Hoang, Jonathan Sadlowe, Kevin Leffew, Louis-Philippe Bellier, Luigi Ottoboni, Mark Shah, Nikos Baxevanis, Patrick Stanley
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Jason Schrader: All right. It's like we've started recording so welcome everybody. This is the Bitcoin in AI working group call. Today is Thursday night and appreciate everyone getting together. First things first. I think we should start calling it AI BTC Dev. I just like taking the website name and shortening it and I think it's one less syllable if we say it that way so a little bit easier. first just to jump into our standard. Kind of working group updates and everything we got going on. Let me get my screen shared here.
+Jason Schrader: All There we go. So first things first, we have the latest meeting minutes. We're just posted right for the start of this meeting. So here's everything we discussed last week including a copy of that presentation that I gave in San Francisco last week with the Korea AI team outside the chance to be out there and kind of meet some of the people that were building the crew and tell them a little bit about what we're doing is the working group and hopefully, we'll see some new faces here from all those efforts.
+Jason Schrader: Cool, so notes are links to everything talked about because I know we cover a lot especially in that news section. So just trying to get in the habit of every time I'm clicking on a link or somebody else that dumping links in they're coming back out. They're being put here so we should see that more often and still just doing the summaries with Claude for now. I'm just to have something but this is pretty cool this week. I actually fed it both the default transcript that comes with this as well as the notes. I took and I got a little more detail and more information there. So we'll keep up with that and then a copy of the actual presentation is right here too so you can get to the PDF. On the access it that way.
+Jason Schrader: All One other really fun thing. as far as the group goes is this brand we've had this presence and now we officially have a Twitter account. So this will be the main place that it lives and I see agencies what we're gonna be pushing to have posts here and keep it alive. So I see some fun potential in it, but now at least we have a central place to go. So if you haven't seen it yet naming as everything else twitter.com AI BTC Dev definitely give that a follow and we'll start to post more information there as we move on and lost my window here one second.
+Jason Schrader: There we go. I'm cool. So I'll just kind of pause there if anybody has any quick updates or big wins over the last week or anything new to share before we dive into some of the latest AI news.
+Jason Schrader: All thanks again Luigi for helping me put some of this together and starting out. I think one of the things I wanted to. Talk about was the llm language tool that we had talked about before. And actually I'm gonna do it this way. Let's do
+Jason Schrader: I haven't looked at 10 different times. I think that's hilarious. Ellen Linda is a tool from Microsoft that allows you to compress your prompt and it was supposed to make things easier, but now Luigi had some experience where The Prompt compression was pretty horrible. Actually it didn't the tokens the things that were reduced were names and important facts. I don't know if you want to add some more on that Luigi.
+Luigi Ottoboni: Yeah, I did some tests I share with you the test and what I did I tried to compress prompt that it was just a test in the news with the llm lingua and the result was horrible because it lost the name Tesla it lost the price of the car there the article was talking about the Cyber track it lost to the price of the car. And then what they did that I tried to compress I mean summarize the same prompt with B2 because I did it months ago and ramachu in a child gbt free and then I asked to chat to be team to evaluate the party of this summarization and the result was that lamarine was compressing.
+00:05:00
+Luigi Ottoboni: Two of them and the other more or less seven of ten eight of ten or something like that. But the radio that charge gbt for Gather to ramalinga was horrible. I try also to step into the decode the python code but we are the meaning it was destroying the talking and…
+Jason Schrader: right on the website right here. I didn't see a link to it or I guess okay.
+Luigi Ottoboni: build the talking in some way and we are the way that they didn't understand that but I don't know if you seen Jason and Mark's already is a rambling that it is another one I seen the news.
+Luigi Ottoboni: Yeah. Yeah, I seen Justin news, but I said they opened that is better because it was by the way they did for the compassion.
+Jason Schrader: Right, …
+Luigi Ottoboni: You can just take one one.
+Jason Schrader: why have a tool for it when we're seeing a GPT 3.5 level model performed just as well and…
+Luigi Ottoboni: Random llm and…
+Jason Schrader: and handle more variance.
+Luigi Ottoboni: ask for the summarization of a prompt and…
+Jason Schrader: And totally and…
+Luigi Ottoboni: the result it is way better than money was so there is no need of having a library at least or…
+Jason Schrader: that brings up another one that you were telling me about to as we're seeing just as much as we saw some companies are starting to run out of money one or…
+Luigi Ottoboni: the one idea and passed the two.
+Jason Schrader: pattern that we're gonna see is everybody needs an AI component. So every billboard you look at every advertisements. I mean, I don't know if it's the new car thing where I'm seeing it more just because I'm thinking about it and we're working with it constantly, but it is coming up everywhere and not every implementation is gonna be amazing. we're gonna see burnout we're gonna see quick rolled features and maybe something like this falls into that category, and sometimes things will rock and work really well for one use case, but you try to apply it to something else and it falls flat.
+Jason Schrader: And so I think that'll be something we can kind of think about as we're going along.
+Jason Schrader: another thing we've been learning along the way, we've talked about this before but still seeing more research is saying that the big prompts beat out fine-tuning and in some cases, you don't even need rag the type of things. So this part is really interesting to me because we were just talking last week about a one mil context On one of the models there. And so I mean I think it was a lot of 3D that had a 1 million context link. So if you could really fit in not only a whole bunch of different examples of what you're doing, but we're going into what they're calling in context. how can I format this prompt to fully inform the AI and give it everything that it needs to know to be able to pull it out and then what's the accuracy in some of those trap tasks and retrieval as well?
+Jason Schrader: One of the cool things that kind of goes hand in hand with this too is a new model. That was just released. Or not exactly a new model, but they're taking the llama3 8B and pushing it even further. So they're claiming a four million token context window now. And if so, that would be absolutely huge for the same reasons as long as we're having good retrieval and it's making sense to pass all this information that gives you the ability to bring in even more than to work with.
+Luigi Ottoboni: Yeah, he got past something that is interesting to think big context if it is better to use a big context or fine tuning and that's what it is not easy. It depends upon the use case because I mean thank you mean it is complex. It is a black magic. You don't know the results but definitely kind of Greater cheaper more than because you have it to send in exchange. If you to tokens with the model on the other side the context give us the ability to change behind the scene. There are lamb and keep the same prompt at least that theoretically and they give all the information that we can give all the example that we can give to thank you meaning we can give
+00:10:00
+Luigi Ottoboni: Day, we can put it inside the context. So it is a race that I mean, I don't know which one it would be the solution but I think that with highly depend on the use case…
+Jason Schrader: Yeah, and I think another aspect that goes under appreciated for prompting in general is the actual tokens that are used like your end token the way the formatted and…
+Luigi Ottoboni: which one is better because from the other side, there are new models every day. So switching the models having spent into evaluate very quickly models probably it would be the key for the or…
+Jason Schrader: passed to the llm make a huge difference and there was something like the guy Eric Hartford that I follow and…
+Luigi Ottoboni: the future.
+Jason Schrader: watch a lot of his stuff. they were testing a few versions of their dolphin fine-tune and actually through them out because they were just getting garbage responses. Turned out it was the underlying software running the llm that was not parsing things correctly and it was putting them into a beer place. So unfortunately it was the text generation web UI from Uber budget to so pretty popular one.
+Jason Schrader: Right and then one other topic we can jump into too is a LinkedIn put out a really cool report on this.
+Luigi Ottoboni: please
+Jason Schrader: I lost my window again.
+Jason Schrader: There we go. just kind of what it's like to build a generator AI product and kind of thinking things from beginning to end some of the challenges that they ran into some of the things that were difficult and how they fixed it. really good kind of Deep dive on some of the different things. There was also a really good summary that was posted by ship here. I don't know why this thing wants to fight me on which window to open. There we go, and I'll have a link to this as well. But the basic things that we can cover real quick. One of the interesting things we talked about too is the yaml over Jason. Which is interesting to me because I do find it a lot more readable. It seems like it would be a lot simpler to pass back and forth and parse with llms because we're usually looking at line by line or kind of the structure of responses and Jason can be a little
+Jason Schrader: Rigid from time to time but I found out also recently. There's some issue with using yaml in the international sense. I think Chinese and possibly Other languages that don't follow the same conventions or what happens right to left. I'm kind of curious now after just getting some wind of this would not be useful for Just curious anybody had any experience with that because I was kind of a fan again until I started seeing some of this back and forth.
+Jason Schrader: presentation
+Luigi Ottoboni: honestly, I paid the gamer but it is just me…
+Jason Schrader: Yeah, I think they're using dent one of the programs to help with that.
+Luigi Ottoboni: because it is very easy to lost the tab or…
+Jason Schrader: And so you could actually have extra and…
+Luigi Ottoboni: if you like python,…
+Jason Schrader: still have it passed correctly.
+Luigi Ottoboni: but it is something about me But they don't love python for this reason that it is very easy to lost the indentation.
+Jason Schrader: Louis
+Luigi Ottoboni: to lose interest
+Luigi Ottoboni: 
+Luigi Ottoboni: yeah another excuse me, and I got that another thing that is interesting this article because I shared but we both find this article it is the EBA embedding base of a tree real that is mentioning in the top of the article probably the summarization of the article if you search for EB are okay that one it seems that something that is freaking interesting and to take a look.
+00:15:00
+Luigi Ottoboni: That is a way to practically provide inside the prompt at least Google I didn't fully understand but what I understood is that it is a way to provide the dynamically example in the prompt and this could be interesting because it could be an advantage against the thank you because different tuning it up is in the past. I mean, yeah, it is their name when you have the user request that you can get example and…
+Jason Schrader: Yeah, I know one of the parts that stuck out to me is that originally? They just started with anybody could annotate anything and…
+Luigi Ottoboni: you can inject things and putting the prompt for the mother.
+Jason Schrader: they ended up bringing in linguists to set certain language for the annotations and…
+Luigi Ottoboni: I found this interesting even reading the Twitter and…
+Jason Schrader: basically coming back to that idea of we need consistency both in the data and…
+Luigi Ottoboni: nobody else was talking about these and they're interesting point for me.
+Jason Schrader: in the evaluations and…
+Luigi Ottoboni: It is the evaluation…
+Jason Schrader: reviews. But yeah,…
+Luigi Ottoboni: because that they have a radio.
+Jason Schrader: huge huge kind of example of the things you wouldn't think of when you're going from A to B to C to an actual product that there's a lot of good stuff in this article.
+Luigi Ottoboni: I like it before but the evaluation in two player was one before was talking about evaluating an alarm but this article it is talking about evaluating the results that I didn't think about this article that is so tricky and difficult to eve. In fact this articles is that to me the automatic evaluation it is the only way because it isn't not easy to do so. This part there is interesting to me.
+Luigi Ottoboni: Yeah, one thing that I didn't share with you Jason that they forgot that is interesting for this topic. Let me paste in the charter one sec. We can find a job. Where is it?
+Luigi Ottoboni: It is another alarm. Excuse me. I cannot find it just are okay.
+Luigi Ottoboni: this one
+Luigi Ottoboni: And sharing the chapter. It is an llm trained to evaluate other languages.
+Jason Schrader: Yeah, so that's a pretty interesting advancement like an LM that's created.
+Luigi Ottoboni: Other alarms that it could be pretty interesting…
+Jason Schrader: Literally just to evaluate llms.
+Luigi Ottoboni: because what…
+Jason Schrader: I think there's some power there.
+Luigi Ottoboni: what I found for instance for strategy bt4 and…
+Jason Schrader: I had it on. My list is something to kind of show with the new models like a whole ton of come out…
+Luigi Ottoboni: charge gbt free. I don't know if I already share with you guys, but they duplicate the models very quickly.
+Jason Schrader: since last week. We talked as usual, but this one yeah,…
+Luigi Ottoboni: So if you…
+Jason Schrader: I'm very curious to see…
+Luigi Ottoboni: if you leverage your valuation on charge GT free or…
+Jason Schrader: what that creates and it brings up the issue of Providence. that we talked about before …
+Luigi Ottoboni: four it would last in a few months.
+Jason Schrader: how do I know? My answer is coming from a certain model?
+Luigi Ottoboni: I mean there is a new church BT they say that is matter,…
+Jason Schrader: that thing that I don't think we need it right now,…
+Luigi Ottoboni: but obviously you could have a different results.
+Jason Schrader: but it's gonna very quickly become a focus…
+Luigi Ottoboni: So if we have it to be in a tool to evaluate other and…
+Jason Schrader: because then yeah gpt4 which version And how can we get to deterministic outputs that are sensible,…
+Luigi Ottoboni: then I'm so decent must be static. I mean, they cannot change during the time we cannot be duplicated in demands and…
+Jason Schrader: and in certain ways as well as both of those are kind of interesting topics to me that I think will happen more and more.
+Luigi Ottoboni: we lose all the work that we did. So it is interesting to think that there's somebody really started to release valuation of other animals.
+Binaya Tripathi: Yeah super interesting discussion. I see a couple common themes like okay, there's some variables we get new models, they'll have different kinds of response to the same prompt. So, it's a challenge how do we build the system? That kind of is a little bit longer lasting than just a couple months. So that this just thinking about that I think maybe we should build our systems that are resilient…
+Luigi Ottoboni: 
+Binaya Tripathi: composable to these variables. So for example, we're talking about agent system that can interact with the blockchains have balance and so on so in that system, what are the deterministic? things that don't need to change and what are the variables so if we need
+00:20:00
+Luigi Ottoboni: the sit on my side if you're waiting me and I don't have anything to add.
+Luigi Ottoboni: Yeah, I would add that to restart. I don't know Jason if you want to answer but they will add that they might or might want to view. what you said It is also important to have a system as I said to evaluate the data lamps because I mean everything is moving very fast.
+Jason Schrader: Yeah, it's kind of like that divide between unit and…
+Luigi Ottoboni: So we cannot say okay.
+Jason Schrader: integration tests. right and…
+Luigi Ottoboni: This is the right and…
+Jason Schrader: in my mind, I'm thinking one…
+Luigi Ottoboni: we will stay forever on this other land maybe for some piece of the software for some peace of the pipeline,…
+Jason Schrader: what you want some static. this happens every single time when I switch models and then take a step further.
+Luigi Ottoboni: but we need something to say.
+Jason Schrader: How do I know one model does better than another or…
+Luigi Ottoboni: Okay, there is a new alarm that is faster blah blah,…
+Jason Schrader: when we want to have that quantitative analysis of some sort,…
+Luigi Ottoboni: but it can be a Lamborghinis.
+Jason Schrader: something like this could be super powerful and I think one of the things to keep to all these different news items and…
+Luigi Ottoboni: The one that we have and we have to find that very quick answer and…
+Jason Schrader: and jumping into a lot of these topics which are starting to see a Cadence is just to make sure that as we're implementing ideas as we're building things with their group and…
+Luigi Ottoboni: very precise answer and it is not easy. This is my point of view. That it is not easy. and…
+Jason Schrader: everything else like we can follow and…
+Luigi Ottoboni: this evaluation from the opposite side them must be some way static…
+Jason Schrader: hopefully shape some of those best standards, especially when it comes to our niche in this world of ever evolving stuff.
+Luigi Ottoboni: because obviously we cannot rely on something that is dynamic because otherwise also however evaluation could be wrong. So from one side, we need something that is static. But from the other side everything is moving. So it is tricky.
+Luigi Ottoboni: But Jason it was not talking about only You're right alphys unit test, but it was also talked a pinky about the user prospective because we will need something to capture the result of the pipeline. And for the user the quality that we provided today to the user. That is what the article was saying that it is very very tricky. I mean find the early great with something that is automatic that they capture or lease because you can do all the test in the unit tests that you want.
+Jason Schrader: at the quality of the final product, especially across different runs and…
+Luigi Ottoboni: You can see this is the right and…
+Jason Schrader: then when you're directly interacting that gets a lot more interesting,…
+Luigi Ottoboni: I'm the right I agent but at the end of the day the user may be not happy…
+00:25:00
+Jason Schrader: I can't imagine the Task of trying to look through all the data of a chat GPT blogs for a whole bunch of different people.
+Luigi Ottoboni: because something is not definitely going in the way that we want. So we have to capture these two words they…
+Jason Schrader: I mean, I was so much different variance in there that can go in and…
+Luigi Ottoboni: what the Asked about also a kind of feedback from the user.
+Jason Schrader: out. So 100% I agree.
+Jason Schrader: Book and one more I wanted to share here that I thought was really neat as well. Is a different kind of UI but the right tab here. There we go. so chatting with llms doesn't have to be linear and I've been wondering, it's been talk about how to have something that isn't just your standard chat box UI and this to me is a lot like Miro meets. AI models those in a little more just to show so this is running in obsidian by the way, which is a very cool note taking to look you haven't seen it but it's using a local model to power these graphs.
+Jason Schrader: And then you can pick each part. You can kind of go back in time. You can make a new Branch. I think this is a really cool way to work and have conversations with an llm and just curious anybody's seen this or any thing else. That's not a chat UI for dealing with
+Jason Schrader: Yeah, and I'll have it up in the meeting minutes as well. But I'll go ahead and drop that in right there. And yeah, I just see to me there's a ton of potential to Branch out and really do some thinking around ideas because a lot of times where I get stuck, even when I think of switching from Claude to gpt4 or something else. I'm gonna rewrite the whole context or sometimes they're gonna change things up a little bit. I'm gonna take one little part of it and the whole process. It's like I could just start back at that block and try again. Sometimes even getting a new answer can just be helpful, if things are deterministic enough, so
+Jason Schrader: last thing we'll just do a quick model run down and again links to all these will be shared in the meeting notes afterward. But let me see if I can get these two at least open in the right window.
+Jason Schrader: Yeah.
+Jason Schrader: So one is a new release of dolphin that I thought was kind of interesting. They took the fight three, which is a really small 3D model and expanded it so that they expanded into 4.5 B with a merged version and then there's an adapter that uses less Ram. So kind of interesting approaches to this iteration in small models and how to run them. So I thought that was kind of interesting. We had a release of granite code from IBM. So they've dropped a paper in the models there's a whole family. So it was from 3D to 34 B for these.
+Jason Schrader: And then on the bigger model side, there was a deep seed V2 released. So this was a coating thing that was a trained on the big code or data set and a few others. It's supposedly doing really context 236 million parameters. They're just getting bigger and bigger on that side and we talked about that too. it's gonna be small versus big not really a lot in the medium.
+Jason Schrader: And another here is this llama 320b. So this is something interesting. I've seen when it comes to training models and this whole merge kit that's being used. So you could take two different models need kind of merge their knowledge together with parameters and…
+Luigi Ottoboni: We'll let you out of something that is interesting that probably not everybody in office that everybody in the AI is using a Mac…
+00:30:00
+Jason Schrader: other things you can set and what we're finding is if you take the same 70b and…
+Luigi Ottoboni: because it is the only way to run a Big Lots more than the one that you have a I don't know…
+Jason Schrader: merge it with itself you even get A smarter model and I don't know if the process is fully understood.
+Luigi Ottoboni: if you know why but the reason is that the memory between the GPU and…
+Jason Schrader: I love the graphic. I think it illustrates it well, but these are out here as well and…
+Luigi Ottoboni: the superior piece share this and…
+Jason Schrader: there's kind of good evaluation and…
+Luigi Ottoboni: you can use up to 70% of the memory only for the GPU.
+Jason Schrader: thoughts and things that were written up on it. So that was a hundred and…
+Luigi Ottoboni: So for this reason you handle that,…
+Jason Schrader: twenty B parameter.
+Luigi Ottoboni: so if you want to play with a big huge RM you need to make a lot of money to buy many Nvidia card.
+Jason Schrader: And we had Prometheus to which we talked about and the gradient AI the Llama 3B with the Forum context length. So all those links will be Back in our meeting notes and Yeah,…
+Luigi Ottoboni: That are not easy to find on the market.
+Jason Schrader: yeah kind of covers all the news items. I'll pause there if anybody has anything else to add. before the craze. We set up to 40 90s here. So we got 48 gigs to be around but even that down some of those larger models you got to have a quantized version which you risk some loss there, it's really fascinating what Mac has been able to do with that platform and I see that as being in interesting jump, too. I saw there's some new chip production coming out as well. So For all the MacBook Pro users you can actually get a lot done but you'd be surprised too. There are a lot of these smaller three to eighteen. There's the possibility you can run it on something as simple as a laptop in the machine, which is pretty powerful too.
+Luigi Ottoboni: I read it that everybody is also developing some server outside the city corner for the AI again, I don't know where but everybody's working to replace Nvidia. He seems for sure Google Microsoft and Amazon and they are doing
+Jason Schrader: Yeah, and even I think there's been a few people pushing for AMD epic and some of the larger server processors and things that are available on that route. So I think we'll see that democratizes. It normally does. We'll see the market kind of settle, and Nvidia definitely jumped in at the perfect time and took off, they just had this needed. Yeah. But I've seen a lot of breakdowns on that too.
+Luigi Ottoboni: presentation for cool. I think yeah.
+Jason Schrader: And I might one day fully understand. what's going on there. But for now, I think it is an easy way to go but you're right that the Apple mlx stuff is I think that's pretty huge. it's definitely a big unlock and hopefully we'll continue to see more I think one of the next big steps is mobile when we're looking at around these things on iPhone or Android which does exist today.
+Luigi Ottoboni: one big challenge would be to ask the models because at the moment it is not easy to find a good service to US models, obviously AWS as well Google can Australian but they are very expensive. It is not competitive against I mean just using AI API, but for what we said before it is interesting to have a cast on llm or off. There's more than you want more and there are many reasons why you wanted to ever your horse deployment and he's not easy. I searched that I found That is very interesting. So I still do not know how to solve this problem with you if you know how to do it, but for me it is
+Jason Schrader: I'm just one little step at a time. Yeah hosting we can visit that offline too. There may be some options like you're saying hosting for inference or just for a file download. Okay, yeah.
+Jason Schrader: it'll come up soon. I think yeah, there's definitely some options but we can jam on that and see what we can find this week.
+Jason Schrader: No problem. Good to have you. Thank you so much for helping out and next up. I think we'll just jump into a little bit of the development updates. So last week we were talking about separating everything into issues.
+Jason Schrader: And I was trying to think of a way we could view all of these issues together, have a better way of looking at it. So there's a few options for projects and layouts that I saw you get backlog status board, the different things you can build and templates that were there but out of all of them that we're available. I actually really liked the simplest one and we'll just kind of start there. So this is the one that's public on our board. I'm gonna share a link here and then I'll have a link shared back in those meeting minutes. But this is where you can see all the issues across all the different repos together and then each repo gives us the specific thing we can talk about. So if there's one you want to filter down to or see that makes sense and I've also added a few new issues since last time we talked so, there's some in the tools smart contracts through
+00:35:00
+Jason Schrader: And the API and even the landing page so some real basic stuff anybody who wants to weigh in or help or build toward or do anything with these we're gonna start categorizing them and we can do assignments and we can do everything else through GitHub. So that part's pretty easy. And otherwise this will just be another resource we can use meeting the meeting to be able to discuss progress and kind of develop a little more of a tie-in to some of our sinks that we do every two weeks.
+Jason Schrader: Cook and the other thing I'll add to that too is I was thinking a lot about the documentations that we had of around resource contracts and the agent tooling and we have some really good pieces now so, we've been thinking about what could come next and breaking into issues was part of that. I think the biggest next step for the group to think about is, what resources do we want to make available to agents that was kind of the main ideas like do we want to expose apis to the agents that they can pay for in sptc, is there information that I have or that I can produce that I want to make available to agents for the same reason it fits well with anybody already offering something. So if you have a product or if you have something that it makes sense within that context, let's definitely chat about how to enable that with some of the API Primitives that we put in.
+Jason Schrader: And also for deploying resource contracts because that's the main thing that we want to see come online now is we want to see different things that are available we want agents to be able to consume them and then eventually we want agents to be able to provide them or even a crew of Agents being available as a resource. So I think those two steps are kind of how we'll build this initial economy and then using this in the tasks and GitHub we can just keep working together between the meetings and weekly making progress like we have and this will be the next stage of what we're building. All that's all I had on the agenda today. I'm happy to leave it open for a few minutes if anyone has any thoughts or any other items that they would like to cover. Otherwise, I'm happy to give everybody a little bit of time back as well. Let me pause there.
+Patrick Stanley: and Jason, I don't know if you covered this and I know I talk to you about doing a bounty for creating a game Where agents are basically a game that requires the use of Agents paying each other. It's the spdc or apdc. and I'm willing to put up a couple thousand dollar Bounty for best game developed. that's like a demoed and in use and opening accessible for anyone to play. So just throwing that out there. I don't know…
+Jason Schrader: Yeah, no,…
+Patrick Stanley: because of that.
+Jason Schrader: I totally forgot about it. And I apologize, something we talked about and I love the idea, so we were brainstorming different ways and what would it be really cool to see given the tools we have given the things that we can build with cruise. What would be a fun way to get that kind of process kickstarted and a game that C kind of gets us in that mindset of thinking about what we're going to be doing with spdc before the launch also gives us a chance to Think Through the actual usage of some agents as we're building towards the goals of having the different resources both available to them and having them service. So yeah, that's a huge one, so we have this
+Jason Schrader: bounty that's coming up. I think the best thing we can do for everyone is go ahead and Define it and GitHub with some of these other issues. We can attach the rules and kind of main objective there submission requirements all the fun stuff. And yeah, I think by that this will be the quote unquote unofficial announcement of it and I'm sure something will go out on the new Twitter page as well. So definitely something to watch for as we keep building towards what we want to see
+00:40:00
+Patrick Stanley: cool
+Patrick Stanley: Thanks hero.
+Jason Schrader: And then before I close out. Yeah I just said in the chat if we Define a hit list then maybe degrant can contribute something to it as So definitely appreciate that. let once we got the documentation up see if there's a good fit there and also why we're breaking everything into issues and trying to think through those passes processes so we can give people easier places to interact and talk about specific topics so we can figure out what the most important ones are and probably start putting some funding behind it. So if you grants is a good fit or some of those ideas as we're building that direction cool, I know, Patrick's starting with the game and some other ideas we might have some ways that would be as well. So yeah, let's just keep it up. And before I close out here, I see a hand up good.
+Binaya Tripathi: Yeah, I was looking at the minute meeting notes from couple weeks and I saw there was a I think Patrick Benson that maybe would like to have some IRL Events maybe in San Francisco LA and some areas. So I saw that notes and I just wanted to say I just did an event a couple days ago in San Francisco is Nakamoto meet up and it was quite good. So people were interested in were curious you could have similar events that are like crypto Ai and things like that. So I think something like what we're doing here and makes perfect sense to do events and so on so I'm happy to take these conversation forward and see if that makes sense to move forward and to events and we have a cool place here that we're able to utilize so I think we can definitely go back there and Leverage that. Thank you.
+Patrick Stanley: Yeah, so some pictures. That's great. And thanks for being open to that and I think San Francisco seems like the mecca for AI Developers and I'm sure there's a wide overlap of those developers who have used or developed with crypto or Bitcoin. So I bet we'd have a pretty good turnout actually.
+Binaya Tripathi: Yeah, some of the comments that I heard from folks that attended was they were quite happy. This was one of the crypto focused events that were doing and everything has been all aias. And that kind of thing and crypto has kind of moved out of the Bay Area on the high level. It's not as visible that it used to be. So people were happy that we had that crypto Focus event. So I think yeah, we can definitely tap into that crypto native Builder. That's also now an immersion AI thing so just bring the two together.
+Patrick Stanley: There's kind of mute. Yeah, absolutely.
+Jason Schrader: Maybe yeah, I was in just amazing, sounds great to me and it sounds like we got a few action items we can work towards there and I see hero replying in the chat as well. So Let's all link up, and we'll get all the different parts shared and information together and probably have a lot more presentation next week.
+Jason Schrader: It's if you don't have anything else, I appreciate everyone showing up. It was great to have you and we look forward to having you at the same time next week.
+Patrick Stanley: Thanks. Yeah.
+Binaya Tripathi: Thank you, Jason.
+Nikos Baxevanis: you
+Patrick Stanley: Meaning. Thanks guys.
+Meeting ended after 02:22:19 👋

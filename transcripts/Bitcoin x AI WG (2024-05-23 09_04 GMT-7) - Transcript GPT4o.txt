@@ -1,0 +1,86 @@
+AIBTCdev Working Group Meeting (2024-05-23 09:04 GMT-7)
+
+Attendees: Binaya Alisha, Binaya Tripathi, Biswash Dhungana, Dan Trevino, Dipak Sharma, Fireflies.ai Notetaker Louis-P, Gaurav Ghimire, Hero Gamer, Jason Schrader, Jason Schrader's Presentation, Kailash Gurung, Louis-Philippe Bellier, Mijoco, Patrick Stanley, Prajal Gurung, Prajwal Sharma, Rapha RSierra, Samir Gurung, Subash, Subash Paudel Himself, Sujan, Suyan Thapa
+
+Transcript:
+
+Jason Schrader: Exactly, they get removed automatically there, but I think they'll be able to jump back in anyway. Working group updates: just kind of the general overview. We have the main website at AIBTC.dev and the main GitHub org with the same name. That’s where all the different repositories and everything else live. The latest meeting notes are posted for last week. They can be found in the original issue that we have around our working group just like before. We have those and they’re also posted in our Communications repo. This location allows us to feed agents more information and to have a running copy, making it easier to pull all the individual minutes instead of dealing with the issue online. So, all of that is kind of a running tally of where we are.
+
+One thing to note about last week is we did not get a meeting transcription. I thought the setting was enabled, but it wasn’t this time. And we'll see how it goes. It’s a good chance to look at how to use Crew in place of the manual process too. This was a cool find; it will actually take a video up to 15 minutes in length, send it off to GPT-0, and create a viral shorter clip from it. I thought that would be something fun to experiment with, plus it’ll give us part of the workflow towards taking the audio and creating an actual transcript instead of relying on another service to do it. So, I thought that was a cool way to round out the meeting notes and everything else.
+
+Another main working group update: we had a meeting with Joe and Rob over on the Crew AI team. We’re still working towards access to Crew AI Plus. There was great reception, definitely interested in what we’re doing, and I think we can leverage our knowledge and abilities to become the crypto arm for AI. They’re looking at different things that can integrate everything else. Basically, the message there is that we will get you updated as soon as we have more information on that. Cool, and I'll pause there. Next, I’m going to jump into the latest AI news, but first, if anybody new wants to introduce themselves, say how they found the group, or what they’re looking for out of it, or if you're working on anything at the AI-Bitcoin intersection, I’ll just pause there.
+
+Patrick Stanley: Did anyone new find this from Twitter? If you’re new to this chat, I would love to know how you found it because we’ll do more of that.
+
+Jason Schrader: Yep, we’ll just kind of jump in. Go ahead, the next.
+
+Patrick Stanley: Okay. Welcome.
+
+Jason Schrader: Yeah, it’s amazing. Next up, we’ll jump into the AI news and talk about some of the more recent stuff going on. Starting out with a really big post here coming from Arthur Hayes. Definitely take a huge look at everything going on here. It’s a lot to digest but to give you the quick points: organization is key to how a society can succeed. We’ve seen LLCs create the rise of individual companies, small ideas, capitalism as it is—that’s what the engine was that created it. When we’re looking at the AI side of things, a lot like the theories we presented, we could imagine AIs using DAOs on blockchains instead of traditional companies. For the same reasons we’re looking to a wallet as an account identifier, both for identity and for the ability to move and transfer and hold assets, also using the blockchain structure to define company operations.
+
+Patrick Stanley: Yeah. Yeah, basically.
+
+Jason Schrader: If agents are like employees, we can define how things work. It’s a good fit for a machine-led world. We’re talking about agents having their own personalities, and we already envision this with offering resources. If you’re doing something with agents, you’re essentially creating a company. It’s cool to see that alignment and some really good points made in here too. DAOs would boost Ethereum transactions, DEX operations become critical.
+
+Patrick Stanley: That just helps create more wealth and more options. You can borrow against that value, etc. I like the way Arthur kind...
+
+Jason Schrader: If you scroll up a little bit, Jason...
+
+Patrick Stanley: Go to the poet... where the poet structure is. Yeah. Keep going. There it is. So here he has a finite number of poet tokens created. Let’s say a million poet tokens are created. 80% of the tokens are retained by Poet AI and the DAO like the DAO or the creators of the DAO. Twenty percent are available for sale. He’s suggesting doing a sale to raise capital to continue working on the DAO itself, fine-tuning and making the service better and better. Each token equals one governance vote and profits are paid out directly to token holders. 75% of the profits from performing the service go to the holders of the governance token, and 25% get reinvested to improve the service. If you want to change any of these provisions above, it requires 95% agreement votes. That’s an important thing, securing all those rules to be persistent.
+
+The whole reason he structures it this way is to avoid needing laws that enforce real-world contracts. It’s all on-chain and enforceable on-chain with a high degree of certainty. Since you’re not issuing stock where there can be an obvious exit, like an IPO or getting bought by a private equity firm, by creating the sort of dividend where 75% of the profits go directly to governance tokenholders, you’re getting revenue in real-time. This lets people evaluate whether it’s worth holding this token now, not anticipating some liquidation event 10 years down the road. Jason and I like this idea of creating AI DAOs with their own token for governance and ownership that yields a dividend.
+
+Patrick Stanley: As a function of the services it provides and gets paid to do so. You can pay these DAOs to perform a service, and the holders of the token receive some portion of those profits. The basic gist is this: if you had no ability to fundraise for these things, it would make it so much more difficult to get services spun up and keep people's focus on the services. But if you create a company capital structure, you can do fundraising, issue dividends, and spend more time and focus building this out, giving your agents and the ecosystem a higher chance of succeeding. I’ll stop there, but those are the points we like about this model: all smart contract enforceable, no reliance on the outside world, and higher likelihood of success than just being a lemonade stand and hoping people show up.
+
+Jason Schrader: Let's see... Am I good?
+
+Mijoco: Yeah, several interesting things going on here. I saw you posted something about executing there as well. Didn't quite catch that, but...
+
+Jason Schrader: Yeah, and when I look at the structure we identified for revenue sharing and other things, it’s an excellent fit because you have room to do extensions. It’s a great fit for the revenue model and where funds get held. Proposals could handle the token sales. Creating a modular bolt-on version of these ideas would be my end goal. Please go ahead, I know you have a ton of experience as well.
+
+Mijoco: I did. Yeah, it ties in with what I’ve been doing with SDX CCO, trying to find a use case for that project and not really succeeding. Yes, it’s been good for voting, but it would be nice to use it for something more. The ecosystem DAO framework is deployed on-chain but has minimal usage at the moment. Another thing: Jason, responding to your question earlier about the course and where I’ve been trying to get to, testing the resource contract and framework, what I realized is the limitation is really my Mac and how I can run models locally. I started running it on GPT-4 over the API, but the cost was ramping up. It’s not viable long-term.
+
+I researched GPUs and found they’re a big deal for running services. I’m looking at this thing, Llama. There’s a course on how to train models. The goal now is to set up a rig at home with my partner Mark, a hardware expert, and figure out how we can train a small Llama 3 7B model on Stacks data and start running it locally, controlling the costs. That’s been the journey. I found with the course, I can see the difference in model performance. The limiting factor is how I’m running them locally.
+
+Jason Schrader: That’s huge. About a month or two ago, we talked about this being one of the group’s goals: getting more into training and curating good data for training. The fact that you’re doing that is great. Would love to jam more on where you’re at, if we can help with resources, collaboration, and the training data end goal. It would be great to have something we could publish—a big package for adding Stacks and Bitcoin. Ideas for what to add to it are welcome. Would love to hear more about your progress. Smaller models aren’t as capable, but there are still many levers to pull between the problem, task splitting, and assignment. Let’s touch base again.
+
+Mijoco: The other thing I did was drop it into GitHub. I created a repo with examples brought onto the latest version of Crew AI.
+
+Jason Schrader: Great. I’ll grab that and make sure it’s in the notes. More examples mean faster starts for experimenting with agents and tasks. Huge one, appreciate that. That’s another needed piece. Thanks.
+
+Jason Schrader: That was a lot from that post. So much information to digest. We’ll move on, but if there are big points, feel free to bring them back to the meeting or in the notes or follow up on GitHub.
+
+Next news item: Near Protocol is looking to own the user-owned AI segment. They announced grants and ideas to invest in AI infrastructure. They’re hitting key points seen in other networks: compute and inferences, data curation and rewards, crowdsourcing or synthetic data marketplaces, and identity infrastructure. We’re looking at the same on the Bitcoin side. It’s good to see early projects and where we compare.
+
+Another big one is Co-Pilot PCS. When GPT-4 came out, it was funny they partnered with Microsoft and the first app was a Mac app. But they’re using GPT-4 on the desktop for Microsoft products through Co-Piloting. It’s the same idea: a running app sharing context with AI to perform tasks. It’s what we wanted from assistants like Siri and Bixby. I see that coming soon.
+
+Microsoft had a big outage with Bing. It took down Duck Go, Co-Pilot Chat, DPS web search, and more. It’s a reminder to decentralize services. With Crew, we can run against different APIs, configurations, and models, even locally. It’s a win point and reminder.
+
+Another interesting thing is GitHub Co-Pilot censored code someone tried to input. It’s a fundamental issue with training and responses. Someone filling out normal code had it censored for being inappropriate.
+
+I found a visual showing base model scores over 12 months. It’s interesting to see how scores tie together over time. The link will be in the meeting notes.
+
+Cloudflare released AI Gateway in general availability. You can use it by changing one setting in Crew, updating the base URL. It works with local models or Cloudflare AI Gateway. It’s cheap for the compute you get, worth playing with if you use Cloudflare products.
+
+Mistral 70 has a new version tag, 0.3, with updates on tokenizers. It’s a big discussion, especially in multi-modal state.
+
+Yesterday was Bitcoin Pizza Day. Google AI suggested someone add glue to keep cheese on pizza. It was trained on an 11-year-old Reddit post. A reminder that training data makes all the difference.
+
+If anyone has anything else, we’ll move on to the next bit.
+
+Next, development updates. We have a project board collecting all issues. I’ll update it this week. It’s for identifying and discussing individual things until they’re complete. Assignments and other admin stuff are there. We’ll use it for meeting updates.
+
+Lastly, demo time. We’ll show off what’s been done over the last week. Future references: if you have something to show, we’d love to see it. Louis, if you want to demo how you use AI for the meeting, that’s welcome.
+
+First, the meeting prep Crew. It takes a list of links, simplifies them, and produces summaries for the agenda. It’s not 100% there but closer. Simplified agents and commands, updated scraping tools, better performance. We fixed the issue of writing the final output to a file. It updates with a little structure. The goal is to keep running it and improving. It still has some template text and other fixes needed. Good output, good process. We’re getting closer to automating the news list.
+
+Second, the Bitcoin Crew handling wallet tasks. Last week, there was an issue with Streamlit and callbacks. We worked out the problem. The agent name isn’t passed, but we opened an issue in Crew AI’s repo. There’s some repetition in task output, but it’s minor. We’re now writing the final output to a file, timestamped, for evaluation.
+
+Here's the Streamlit deployment, adding a task to the list in the code. It displays automatically. When a task is selected, it engages the Crew, talks to the API, and shows the output. Hard-coded speaker for now. It correctly answers and formats responses, like wallet addresses and balance. Next week, I’d love to see it send to an address, a simple addition. We can track transactions and more info.
+
+Pause there. Did anyone else want to demo or show something today?
+
+Any high-level thoughts on what we covered?
+
+Thank you all for coming. Appreciate it. Looking forward to collaborating. Let’s keep building together.
+

@@ -1,0 +1,66 @@
+00:04:09.367,00:04:12.367
+Patrick Stanley: Jonathan this is one of a few pieces that inspired us to start this working group https://cryptohayes.substack.com/p/massa
+
+00:04:54.808,00:04:57.808
+Jonathan Sadlowe: Ty
+
+00:06:10.869,00:06:13.869
+j2 p2: cmd - R+ https://docs.cohere.com/docs/command-r-plus
+
+00:14:47.631,00:14:50.631
+Jason Schrader: https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard
+
+00:14:51.705,00:14:54.705
+Jason Schrader: https://chat.lmsys.org/
+
+00:24:50.172,00:24:53.172
+Jonathan Sadlowe: app.signal21.io
+
+00:25:09.602,00:25:12.602
+Louis-Philippe Bellier: thanks Jonathan
+
+00:25:11.085,00:25:14.085
+j2 p2: try out https://chat.openai.com/g/g-Qp3aZPfP7-stacksgpt which is GPTs connected to hiro api , something I did as a quick PoC
+
+00:34:57.722,00:35:00.722
+Luigi Ottoboni: excuse me, I have to jump on another meeting. See you next. meeting
+
+00:35:00.610,00:35:03.610
+j2 p2: deploying resource contract to convert any api to accept micropayments is good start I believe
+
+00:43:36.709,00:43:39.709
+Louis-Philippe Bellier: love the charts btw
+
+00:45:37.534,00:45:40.534
+Jason Schrader: https://aibtc.dev
+
+00:49:18.795,00:49:21.795
+Patrick Stanley: J2p2 that interesting
+
+00:49:30.586,00:49:33.586
+Louis-Philippe Bellier: they all  don't want to
+
+00:51:20.815,00:51:23.815
+Louis-Philippe Bellier: so arbitrage over that to make sure it's profitable?
+
+00:52:14.307,00:52:17.307
+Louis-Philippe Bellier: works though
+
+00:52:46.202,00:52:49.202
+Louis-Philippe Bellier: it worked well though for my morning coffees in latin marica
+
+00:54:04.104,00:54:07.104
+Jason Schrader: Not that it doesn't - just that we can do better ;)
+
+00:54:21.231,00:54:24.231
+Louis-Philippe Bellier: Jason, link to connect/DM?
+
+00:54:23.635,00:54:26.635
+Hero Gamer: any defintion what resource contract is, or a link I can look it up
+
+00:54:50.358,00:54:53.358
+Jason Schrader: https://docs.aibtc.dev/resource-contracts
+
+00:57:33.363,00:57:36.363
+Jason Schrader: whoabuddy.btc
+

@@ -1,0 +1,181 @@
+00:01:07.799,00:01:10.799
+mijoco: fyi broadband issues for me today !
+
+00:07:32.259,00:07:35.259
+Louis-Philippe Bellier: Everybody's first LOL
+
+00:09:13.292,00:09:16.292
+Louis-Philippe Bellier: daily here!
+
+00:11:46.948,00:11:49.948
+Louis-Philippe Bellier: yes they are
+
+00:12:11.257,00:12:14.257
+Louis-Philippe Bellier: there8
+
+00:12:27.027,00:12:30.027
+Louis-Philippe Bellier: Not so much news but still massive:
+FetchAI massive SuperIntelligence merger
+( $FET, $AGIX, and $OCEAN into $ASI )
+
+00:12:30.729,00:12:33.729
+P: links to them ? I would totally also attend their
+
+00:15:31.243,00:15:34.243
+Jason Schrader: https://x.com/CathieDWood/status/1795602597522616559
+
+00:16:25.489,00:16:28.489
+Mr. Wagmi btc: With the recent buzz of David Bailey (BTC Magazine/Conference) and apparently Musk as well, advising the Trump Administration per their crypto strategy. I wonder if the convergence of AI/BTC is a topic in those conversations. I imagine not. They're probably looking at Bitcoin and then AI separately and haven't conceived the thought yet.
+
+00:17:11.194,00:17:14.194
+Louis-Philippe Bellier: P: what's your X?
+
+00:17:41.947,00:17:44.947
+Louis-Philippe Bellier: Trump's wallet is full of shitcoins
+
+00:18:59.154,00:19:02.154
+Louis-Philippe Bellier: Py ftw!
+
+00:21:56.058,00:21:59.058
+Nikos Baxevanis: Apologies, but I need to jump out. Thanks, everyone!
+
+00:25:04.210,00:25:07.210
+Louis-Philippe Bellier: Until we train the AI on their research
+
+00:26:11.289,00:26:14.289
+Louis-Philippe Bellier: wait link
+
+00:26:15.654,00:26:18.654
+Louis-Philippe Bellier: car video link
+
+00:28:06.053,00:28:09.053
+Luigi Ottoboni: https://build.microsoft.com/en-US/sessions/fe8f0c03-6f31-400a-8954-4e37c935e6e9?source=sessions
+
+00:28:07.508,00:28:10.508
+Mr. Wagmi btc: Dun dun dunnnnnn whos the AI here? ;)
+
+00:28:14.364,00:28:17.364
+Louis-Philippe Bellier: me?
+
+00:28:20.864,00:28:23.864
+Mr. Wagmi btc: haha
+
+00:28:27.582,00:28:30.582
+Jason Schrader: Missed the hand raise notif, my bad
+
+00:28:58.588,00:29:01.588
+Louis-Philippe Bellier: no worries, joke will lack time sensitiveness
+
+00:29:04.399,00:29:07.399
+Louis-Philippe Bellier: such a AI thing to say.
+
+00:32:11.479,00:32:14.479
+Ali Raza: Hey guys, I had some questions regarding clarity AI guide critical bounty:
+https://stacks.org/critical-bounties#!/tab/732418310-1
+
+00:33:23.605,00:33:26.605
+mijoco: https://www.youtube.com/playlist?list=PLOU2XLYxmsILr3HQpqjLAUkIPa5EaZiui
+
+00:33:40.115,00:33:43.115
+mijoco: google course on web based models.
+
+00:34:26.962,00:34:29.962
+Luigi Ottoboni: https://build.microsoft.com/en-US/sessions/984ca69a-ffca-4729-bf72-72ea0cd8a5db?source=/speakers/83259e54-32ad-44d1-bfc1-6247e6961473
+
+00:35:22.151,00:35:25.151
+Patrick Stanley: With the recent buzz of David Bailey (BTC Magazine/Conference) and apparently Musk as well, advising the Trump Administration per their crypto strategy. I wonder if the convergence of AI/BTC is a topic in those conversations. I imagine not. They're probably looking at Bitcoin and then AI separately and haven't conceived the thought yet.
+
+I think its premature. I think the US should first buy $200B BTC with its money printer to neutralize the threat it poses to dollar hegemony.
+
+00:36:16.499,00:36:19.499
+Luigi Ottoboni: I have to jump out. See you next
+
+00:36:21.616,00:36:24.616
+Louis-Philippe Bellier: ciao
+
+00:38:12.912,00:38:15.912
+Jason Schrader: https://github.com/aibtcdev/ai-agent-crew/issues/new/choose
+
+00:38:40.452,00:38:43.452
+j2 p2: one idea is to generate clarity code from ai , have it compile using claritnet to auto fix issues
+
+00:38:40.696,00:38:43.696
+Ali Raza: =M
+
+00:38:51.181,00:38:54.181
+Jason Schrader: yes, iterate until good, also TDD
+
+00:39:12.723,00:39:15.723
+j2 p2: would be a good project to integrate clarinet as tool with crewai
+
+00:39:20.558,00:39:23.558
+Jason Schrader: https://x.com/AISafetyMemes/status/1795309403824165184
+
+00:40:50.369,00:40:53.369
+Ali Raza: Can you please share that stacks gpt link?
+
+00:41:07.929,00:41:10.929
+Jason Schrader: https://chatgpt.com/g/g-5vF3trzs7-ai-auditor
+
+00:41:13.494,00:41:16.494
+Jason Schrader: There was another one too
+
+00:41:14.127,00:41:17.127
+Ali Raza: thanks
+
+00:41:49.731,00:41:52.731
+j2 p2: chat.stacksgpt.xyz
+
+00:42:05.966,00:42:08.966
+Louis-Philippe Bellier: AI Car thing link?
+
+00:42:47.363,00:42:50.363
+Jason Schrader: The AISafetyMemes one should be it?
+
+00:44:27.468,00:44:30.468
+Louis-Philippe Bellier: that's the train car? Haha I mean the cars on the road thing
+
+00:46:16.389,00:46:19.389
+Louis-Philippe Bellier: I love this!
+
+00:48:23.478,00:48:26.478
+Louis-Philippe Bellier: like DAO maker but by a crew ai repo?
+
+00:48:37.991,00:48:40.991
+Jason Schrader: similar yes!
+
+00:48:55.770,00:48:58.770
+Jason Schrader: a crew that does sets up everything for you, we can offer it as our first service
+
+00:49:04.575,00:49:07.575
+Louis-Philippe Bellier: nice
+
+00:50:53.388,00:50:56.388
+Louis-Philippe Bellier: 1. Intent · 2. Ownership · 3. Funding · 4. Governance · 5. Tooling · 6. Iteration ·
+
+00:54:32.849,00:54:35.849
+Louis-Philippe Bellier: I,m a little bit more crosschain than you J but we might want to check other chains and their flows, like on strictly DAO makers like:
+daomaker .com
+makerdao .com
+midao .org
+aragon .org
+xdao.app
+
+00:54:52.614,00:54:55.614
+Louis-Philippe Bellier: just UX
+
+00:54:55.516,00:54:58.516
+Louis-Philippe Bellier: yesa
+
+00:55:27.065,00:55:30.065
+Louis-Philippe Bellier: Wyoming and Estonia too!
+
+00:55:30.560,00:55:33.560
+Louis-Philippe Bellier: gotta jump, please leave my AI bot in. Laters!
+
+00:55:41.577,00:55:44.577
+Jason Schrader: Thank you!
+
+00:57:08.593,00:57:11.593
+Louis-Philippe Bellier: laters
+

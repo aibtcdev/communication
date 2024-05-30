@@ -1,0 +1,36 @@
+00:08:57.196,00:09:00.196
+mijoco: good video on crewai https://www.youtube.com/watch?v=iJjSjmZnNlI
+
+00:09:56.066,00:09:59.066
+Louis-Philippe Bellier: role prompting, model shots
+
+00:10:18.066,00:10:21.066
+Louis-Philippe Bellier: sorry, few shots*
+
+00:12:54.760,00:12:57.760
+Dan Trevino: the mixtral model?
+
+00:13:23.739,00:13:26.739
+Luigi Ottoboni: are we approaching to the end of the quantization? if the model is more 'dense' it seems that the quantization breaks the model. https://www.reddit.com/r/LocalLLaMA/comments/1cci5w6/quantizing_llama_3_8b_seems_more_harmful_compared/
+
+00:15:49.260,00:15:52.260
+Luigi Ottoboni: https://twitter.com/AiBreakfast/status/1785315978655494287?s=19
+
+00:16:05.911,00:16:08.911
+Louis-Philippe Bellier: Hi everyone, this is an automated message to let you know my Tactiq extension (https://tactiq.io/r/transcribing) is transcribing this meeting for me so I can give my full attention to you.
+
+00:29:58.147,00:30:01.147
+j2 p2: return qr code to point to wallet connect/wallet for payment
+
+00:34:14.500,00:34:17.500
+NoCode Clarity: Hive mind
+
+00:47:40.238,00:47:43.238
+Binaya Tripathi: so,Dan, Do we need resource aggregator?
+
+00:48:15.092,00:48:18.092
+Binaya Tripathi: is that a new trait? definition?
+
+00:53:50.409,00:53:53.409
+Mark Shah: Thank you
+

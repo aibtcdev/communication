@@ -1,0 +1,18 @@
+00:12:53.235,00:12:56.235
+Jason Schrader: https://github.com/hashhavoc/teller
+
+00:16:20.332,00:16:23.332
+Jason Schrader: https://github.com/aibtcdev/agent-tools-ts/issues/2
+
+00:31:57.758,00:32:00.758
+Patrick Stanley: Dope
+
+00:41:06.103,00:41:09.103
+Louis-Philippe Bellier: Thru signal21 or retool
+
+00:46:24.347,00:46:27.347
+Patrick Stanley: This guy attends our weekly working group https://x.com/ai/status/1783515207672701301?s=46
+
+00:49:44.888,00:49:47.888
+Jordan Ong: pandaring2you
+

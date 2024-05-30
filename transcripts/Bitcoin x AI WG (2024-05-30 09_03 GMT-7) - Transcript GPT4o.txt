@@ -1,0 +1,410 @@
+Bitcoin x AI WG Meeting (2024-05-30 09:03 GMT-7)
+Attendees:
+
+Ali Raza
+Binaya Tripathi
+BowTied Radone
+Dipak Sharma
+Fireflies.ai Notetaker Louis-P
+Gaurav Ghimire
+j2 p2
+Jason Schrader
+Kurt Grela
+Louis-Philippe Bellier
+Luigi Ottoboni
+mijoco
+Mr. Wagmi btc
+Nikos Baxevanis
+P
+Patrick Stanley
+Prajal Gurung
+Rapha RSierra
+Samir Gurung
+Suyan Thapa
+Transcript:
+
+Jason Schrader: Looks like it had to kick somebody but I think they'll be able to join back. Probably a setting somewhere, but looks like we should be recording now. Least I don't have an indicator though. Let me make sure. All right. Welcome everybody. This is the AI BTC Dev working group call. Today is Thursday, May 30th, representing about four months of work and I think that's impressive how much time has passed and how far things have come. Just to cover some of the basics here in the beginning. We'll just go over some of the working group updates. So one thing you'll notice is the meeting notes have been posted much faster. Now, we'll start getting these out after every meeting. They live in the original GitHub discussion as well as in the new communication repo.
+
+Jason Schrader: So we have those and we'll start building those up as you can see here on the left.
+
+Jason Schrader: That's an easy one.
+
+Jason Schrader: All right, next up. We have a new repository for training data. So Mike, I had you in mind when I created this, but we talked about wanting to train models and give more information on Stacks and Bitcoin and things more specific to what we're doing at this intersection. So the first thing we need to do is start gathering data, and I thought this would be a good place to kind of do it all together. Plus, I've got a little technique I'm using here that I think will be useful. So for one, I realized audit reports are great sources of information on what to do and what not to do. So I started grabbing some of those from Coin Fabric. I'm hoping to grab some older ones but the links weren't available yet. So if anybody has anything that they want to add here or if you have other audits, I know there's Least Authority and some others that have been focused on Stacks. I think this would be a super cool category of information to collect.
+
+Jason Schrader: And I've also started pulling in some of the different documentation that we have in the ecosystem. So Hero Systems runs a big doc site and we can pull in that code since it's open source, and we can pull it in a way that we can sync it if there's changes that would get sub-modules which is why you see the blue text here and the commit hash. And those will be accessible. So we have one repository that we can feed the data into the LMS or collect it all in one place, but it's not just a static copy that will get outdated. We can continue to make changes as the actual documentation itself changes and…
+
+mijoco: Yeah, no not off the top of my head. It looks really cool.
+
+Jason Schrader: Same for the SIPs or the Stacks Improvement Proposals. We have those linked in here as well because that describes the blockchain in very good detail.
+
+BowTied Radone: Maybe some Clarity smart contracts would be great to be added.
+
+Jason Schrader: So that's the beginning of our training data. And just curious, can you think of anything else that we might want to add there, Mike?
+
+Jason Schrader: Now we know it's there. So I'd love to work together with you on that one. Bowtied, go ahead.
+
+Nikos Baxevanis: About 250 gigabytes.
+
+Jason Schrader: There was the repo from… That we could add, so let's go ahead and…
+
+Nikos Baxevanis: If needed, we have a corpus that we're using for fuzzing that's effective and…
+
+Jason Schrader: Do that.
+
+Jason Schrader: Here training data.
+
+Nikos Baxevanis: Smaller. We can somehow…
+
+Nikos Baxevanis: Do a PR and add it there in the repo.
+
+Jason Schrader: Wow.
+
+Jason Schrader: Okay, we'll just add it as kind of a task here so we don't forget about it. I think I got you excited correctly there. Yeah.
+
+Jason Schrader: Yeah, that would be amazing because obviously we don't want to make it too big but I think really the more information we have the better. I mean we're gonna have to take it. We have to refine it into something more useful, but it's gonna start just by gathering everything. So this is a central place we can do that for the version that you're using with the fuzzing if it lives on GitHub, we can just sync it in kind of same way through a sub-module if that makes sense.
+
+Jason Schrader: I got it.
+
+Jason Schrader: Let's think about it and jam on it. I got you back there. So no problem. Awesome.
+
+Jason Schrader: And I think the more ideas we have as we gather more stuff. It'll be just a good place to dump things. Yeah, I can see APIs and documentation and probably a lot more as we just have that as another thing to kind of think about. Last thing on the working group updates. We have an issue template now for Crews. So what that means is in the right spot here.
+
+Jason Schrader: So in our repository for creating Crews is the main place that we create these individual issues. So these kind of say this is a Crew that we want to create. This is what it should look like and gives a general picture so we can start somebody could pick up and develop that group also so we can just throw around some ideas for what the Crews can do and what they would actually look like. So we have a few in there already and kind of following that same format when you go to create a new issue. You'll see this new Crew proposal template. It gets started and there you go. Crew with your Crew name. You kind of list out just some information that's really helpful in creating it. So you've got the purpose and goal, kind of the agents and what some of their roles, goals, and backstories will be.
+
+Jason Schrader: What the tasks would be to get the job done and what the execution loop sort of looks like, are we expecting this to run all the time? Is it a one-off thing? What happens from start to finish as the Crew runs just a lot of those high-level details that help with modeling it out before you go to build it. So we have that exists now in our repo and I think we'll eventually get the old ones converted over to that format. And cool, so that was it on just the general updates and the little stuff. I'll pause there if anybody has anything before we jump into the latest news.
+
+Jason Schrader: All I think I say this every week but I'm always impressed at how much can happen in a week. So since we last talked I grabbed a lot of different information that I'd love to share today. But first one is this survey which looks good. Pop up in the right window.
+
+Jason Schrader: It's funny in crypto. There's always this idea of being early and I think with what's going on in AI and ML, kind of the same thing, it's really novel stuff not everybody's using yet and this particular survey showed that only 47% of Americans have not heard of ChatGPT and you can see kind of the breakdown between some of the other countries here as well. So while we're deep into the stuff, a lot of us are using this all the time not a lot of people use it on a daily basis.
+
+Patrick Stanley: Yes, exactly. Would Kathy Wood have one of the two people her and…
+
+Jason Schrader: You can see those numbers on the blue side there, 10% or less and…
+
+Patrick Stanley: Arthur Hayes kind of inspired us to and…
+
+Jason Schrader: A lot of cases. So it's really really early still on that side of things and…
+
+Patrick Stanley: Kind of have this AI BTC thesis and…
+
+Jason Schrader: Of course our intersection that circles even smaller,…
+
+Patrick Stanley: And she calls that convergence and…
+
+Jason Schrader: But there has been a lot of information coming up. I even saw that the president of El Salvador is looking into these ideas on…
+
+Patrick Stanley: She's been shopping the thesis around with her analysts for about a year now, and she's bringing it to the president of El Salvador.
+
+Jason Schrader: What was that Patrick? Do you remember what that post was? I think it was from Kathy Wood.
+
+Patrick Stanley: Very interesting but quick thing do we know how many? You look at those charts were helpful. Just quick discussion point just to keep the conversation interesting how frequently use ChatGPT this show I've never heard of. So never heard of in the US is for 47% Okay, how many people in the US have never heard of Bitcoin? That's probably even less, right?
+
+Jason Schrader: Yeah.
+
+Patrick Stanley: Yeah, and the holders of Bitcoin and Bitcoin has a pretty heterogeneous group of holders, too. I believe a lot of different backgrounds from what I understand so kind of interesting…
+
+Jason Schrader: Yes.
+
+Patrick Stanley: But Bitcoin has more saturation in people…
+
+Jason Schrader: I'd imagine less but that would be an interesting statistic comparative.
+
+Patrick Stanley: Who know it and hold it, then ChatGPT in America, I think.
+
+Patrick Stanley: And basically the reason I'm kind of bringing this up is and again. This may be like this maybe a total. Yes, but
+
+Patrick Stanley: I feel like this really takes up this is and nothing not to be like a Sam Altman character here, but it really takes off this shouldn't mean a lot of abundance for Humanity. Basically, everyone has their own agent. That's performing and transactions on their behalf. You have a much more fluid market just making life better for the individual. Because your agents can do things on your behalf, and your wealth is not being eroded and so…
+
+Patrick Stanley: I know from just I'm printing my investor hat on and I'm like, okay this seems like this intersections convergence can be pretty positive some for Humanity and for the people who invested in early on…
+
+Jason Schrader: Yeah, totally. I agree. I see Binaya raise your hand. Go ahead.
+
+Binaya Tripathi: He has just making note on the post that Kathy and others have made about Bitcoin AI and potential moving forward and its relationship how they were kind of tying it in terms of how El Salvador can maybe 10x from 40 billion to 500 billion over the next five to 10 years. I was curious.
+
+Binaya Tripathi: In terms of the nation state side adopting Bitcoin AI strategy. Just adopting or what's the play there? How does a country go like 10x in five years with Bitcoin AI?
+
+Patrick Stanley: I'm guessing I think she's talking about bringing hackers and developers. In capital markets to El Salvador.
+
+Patrick Stanley: And I mean, I'll stop there. It's not a rich country, and their GDP per capita. I need to double-check this out. I would guess it's like 10. Pardon.
+
+Binaya Tripathi: 350 or less than $400 per capita dollar period no per year.
+
+Patrick Stanley: Per month.
+
+Patrick Stanley: Get it. Let's ChatGPT this but it's got to be really small.
+
+Patrick Stanley: Yeah, first and foremost. I think she's talking about bringing companies there and getting capital formation. They're still developing. their markets there and it's almost like there's elements of third worldness and elements of first worldness in El Salvador. So there's almost a modernization of capital markets that needs to occur. But I think she does have the same vision as us as AI agents using Bitcoin and structuring El Salvador in a way where maybe that's happening with minimal. I mean…
+
+Patrick Stanley: Regular Salvadoran agents are having minimal capital gains. You like high velocity of transaction throughput and sort of grow the AI economy within El Salvador my guess.
+
+Binaya Tripathi: Yeah, yeah, that was per month. By the way. It's close to 6,000 per year. My bad. Yeah.
+
+Patrick Stanley: Yeah, that's what I thought. Yeah. Yes, I mean I could see her being right. I mean look at it if the value Bitcoin 2x is in the next five years four x's in that 10 years. And then you just add a little bit of AI juice on top of that. And it's probably not wrong, but…
+
+Patrick Stanley: I think her thesis are useful guideposts. I don't take her numerical predictions seriously just because her history has been…
+
+Jason Schrader: And I just dropped a link to that tweet in there too. But I see little things like this that I pick up. Wow, even though we're working at this really small intersection. It has potential to make some big impact and I think that's kind of the direction we're thinking too when we're looking at Crews as companies and what would that structure look like? And then also looking at what rules can smart contracts in the blockchain enforce that make the whole system simpler, at the end of the day the smart contracts are really powerful because you have coded logic that's easy to follow everything else.
+
+Jason Schrader: Cool, that made me think too. It's the way I think in a lot of ways is gonna transform how businesses work especially if we think of Crews as companies. I mean essentially you can be the owner of multiple small companies like we've talked about before instead of having one big billion dollar company. You have a bunch of little million dollar companies or little opportunities and little segments. And with that I think just agents themselves are going to change the way a lot of things work because another topic we talked about too is this computer interface over having an API. And there was a nice write-up on that kind of summarizing some of the points from SWV agent the paper they wrote. And it shows that agents work a lot better if there's some sort of LLM native interface.
+
+Jason Schrader: So, right now we're trying to teach them to use any human-based computer interface, especially when we're having them look at programs and vision click buttons do GUIs but they cost problems, it'll spend a lot of time trying to refine or fix little things that are not necessary so we can imagine that agent computer interface coming to life and there was a pretty cool write-up on an idea for this both here and in one of the other tools that's going to share and eventually the thing I like at the end here was that what if agents were to design their own interfaces. So at that point they can kind of have their own setup and he mentions design testing security governance.
+
+Jason Schrader: This is all that stuff that I think smart contracts bring so much power to so, it's kind of validation towards some of these ideas. We're working toward I think getting them to interface and use the wallet with all the capabilities that it has is going to create some really cool opportunities as well. Let me grab that other one. Yeah, and then the other one here. So this was the code act framework. So, a lot of times when we're working with models. We ask them to return JSON or we talked about using YAML, a few other options and trying to get them to communicate in a clean way and it's a little tough, you don't always get back what you want things aren't always valid. You have to go through extra steps. So this idea is basically you prompt the LLM with a request or a task or anything else and instead of it. Just answering.
+
+Jason Schrader: It would create Python code as an action to fix or to answer the question then run the Python code and execute it and they saw that there was actually much better performance and that some of the older smaller models were more successful with this approach. So, these kind of little patterns. I think we'll keep coming up and it confirms that idea too that it's like little pieces will get refined in those different categories and areas and levers we can pull.
+
+Jason Schrader: Another one to share. There's a huge write-up here on O'Reilly that's all about building with LLMs. So, while a lot of the stuff is new and a lot of us are early. There are some interesting observations and learnings that have come out over the last year and it confirms some of the things we've talked about it's hard to develop products beyond demos you get a lot of good demos, but actually putting something into production is difficult and I think we've got a neat way that we can streamline that it also gives some advice on prompting techniques like structured inputs. It talks about how RAG is preferable to fine-tuning which is something we've talked about before multi-step workflows perform better, which is where we're leveraging Crew and evaluation is critical, the LLM as judge step can help assess. I love that idea and I also love the idea of having a Crew that's specifically for choosing the best answer or for doing some sort of judgment like that. We looked at that pattern before I forgot.
+
+Jason Schrader: Name of it. But the idea is that you have the LLM generate three answers and then you have a panel review and select which one the best answer is and down as you're going down the pipeline you're making sure that everything is consistent at each step because that's really the challenge is you want to make sure those outputs are consistently good or consistently. Not even just good but as it goes down the chain. It's like a game of telephone. If you have something that goes wrong at the top you're gonna end up with something really weird at the end.
+
+Jason Schrader: Cool, and then some quick updates running LLMs, we've talked about this before we were using text gen web UI for a while, but there's been some issues with it. So I've been looking at other options and if you like to run local models, this part is definitely for you. So there's been three new things that I just wanted to share quickly here. One is the main program for running models called Llama CPP is actually really easy to install now, you can install it through Brew which means everybody with a Mac. That's all you have to do is Brew install and then you're able to run it against any local GG you have file. That's another one is AutoAWQ. I'm sorry. I haven't played with this one as much but now I'm kind of interested again because they've started using what they call flash attention too.
+
+Jason Schrader: I'm not as familiar with what that means. But what I'm noticing from this post is they're saying they can run a pretty large model with just one 24 gig GPU. So that's pretty impressive in itself. And I just want to see what those capabilities are and kind of share that back. And one more is a Jan AI. We've talked about this program before it's a lot like text gen web UI was like it gives you a chat interface with your local models. You can also host up the API just like you can with llama and hook it up to Crews and everything else and…
+
+Jason Schrader: Actually out here in SF right now,…
+
+Jason Schrader: It's getting really popular.
+
+Jason Schrader: But they designed a chip that outperforms GPUs.
+
+Jason Schrader: So this is one that I think I would try this next…
+
+Jason Schrader: So, one of the things we saw early on is we're definitely going to see more and…
+
+Jason Schrader: If I had to choose one and they focus on everything being local and…
+
+Jason Schrader: More hardware developed specifically for working with LLMs and…
+
+Jason Schrader: Offline or possible.
+
+Jason Schrader: We saw that with rock with AQ. They are super fast impressive output and this is similar. So you've got the same kind of idea where these chips have been designed in ways to reduce. What would be the traditional bottlenecks. Cool. Next Step, Samba, Nova. And it's a whole new class of hardware that I think will continue to see new innovations in.
+
+Jason Schrader:
+
+Jason Schrader: All right next up. ChatGPT had the system prompts leaked. So you can get those off GitHub. We'll have a link over to it, but it's interesting to see their strategy for prompting their own system. And there's a ton of prompting resources out there as well. But that one I just thought was a quick grab easy thing to share back with the group. And of course all the links and notes will be back in the meeting notes that are posted after the meeting. Almost done.
+
+Jason Schrader: So this new paper dropped I thought it was an interesting concept. How do we detect text generated from an AI and they came up with an interesting idea. They used the fact that humans prefer AI-generated text to create a reward model and they continually fine-tune the reward model to increase the predictions. So basically elements are trained for human preferences. So there was this way they could turn around and use that along with some human input to start to be able to detect come from GPT-4. Did this come from Claude or this or similar? I think a lot of this is still really early but it kind of answers that question of…
+
+Jason Schrader: Not quite provenance, but we've always asked how do I know where this came from? How do I know it came from a person? How do I know it came from an AI? How do I know which AI it came from? I think these will be interesting things to kind of watch and see if there's an application for what our group is doing as well.
+
+Jason Schrader: All right, and then the last big one, of course, there's a ton of new models. I get released all the time. And the next ones I wanted to share first off was Mr. Release the code stroll 22b. So this one is supposed to be really really good at coding but one of the sad things about it is they've actually changed the licensing around it. So I'm not sure what happened there, but it's got a restrictive license that doesn't allow I think it's commercial use but the links and everything are there on their hugging phase you can see it on the blog for what they've changed and it does perform really well, so it's still really cool to see as an option and there might still be room to use it.
+
+Jason Schrader: Another release that came up. I hadn't heard of this one but LLM 360 and just released a pretty big model 65b and it's one of those projects that is fully transparent. So to-end. You can see all the information. It's another fully open. LLM. I'm wondering if we covered one of theirs before because we talked about one of the first fully I think it was snowflake though. So hopefully we see this pattern continue so there's always something new to try out that makes it fun. And a few others, we talked about models getting very specific, a while back and we're starting to see that come to life as well. So you have this open drive lab released Vista, which is a 2.5 B model that's trained literally on driving video data sets. So that could be really interesting with what that leads to and then you have Cartesia released Sonic which is a generative voice model same for two noise. They released chat TTS.
+
+Jason Schrader: And the voice stuff is really interesting to me. We've talked about that before. I think there's a lot you can do with it. But those were three kind of different examples that I thought were interesting and then finally Quinn, they shared some download stats seems like most people run the 7D out of all the options actually pull that up a little bit bigger. So you can see 7B is really popular. That's what you can target and run on most laptops. So that makes sense. People want to tinker with it the smaller one their little 0.5 a half a Billy. Is pretty popular as well and then you get to the 72b which is more your power users and people wanting to run it. So I thought that was interesting. But the reason I shared this is I did see a little note here Quinn 2 is coming soon. So this has been another strong family of models. So it'll be really interesting to see what they kind of release next.
+
+Jason Schrader: All right, last one. We're not going to watch the video, but I wanted to share this just because it was have a fascinating topic here. It's a reverse Turing test. So if you haven't seen it yet. It's basically. Four different LLMs. Put together each one is assigned a character and then the human has the individual character as well and they're trying to figure out who the human is in the room. So definitely worth watching and I think to me this tells me two things like one video games will never be the same this is really cool just to see this is a possibility and…
+
+Luigi Ottoboni: Even Jason I forgot to mention this…
+
+Jason Schrader: Two it was a little eerie, it's like it shows that …
+
+Luigi Ottoboni: But it is a news that is interesting Microsoft presented last week…
+
+Jason Schrader: We're gonna have new interactions new ways to kind of look at the world as we're figuring out better ways to implement this type of technology.
+
+Luigi Ottoboni: Where the NNN that I didn't know about that and it is about of executing the inverse clients either so in the browser,…
+
+Jason Schrader: All right, that's the news.
+
+Jason Schrader: Go ahead Louis.
+
+Luigi Ottoboni: So there is a web GPU where you can access to the GPU webinaries to access today the was there co-process so for the AI they Egg they come forward. I don't remember the name, but it is interesting because practically you can execute client side and also for our staff could be interesting if there is a lack of trust in some operation that you can execute client aside. So in this video there is also the demo where the guy is executing a chapter with the of the network connection offer and you can see everything is executing locally.
+
+Luigi Ottoboni: And it is an open standard. So It is implemented on the browser, but you have to download the delete is there it is browser, obviously the primary and they can a reaction of the browser, but maybe it is interesting for the future.
+
+Luigi Ottoboni: Yeah, this would be so remember the name it is the access to the MPU. Not the GPU. So with with the web GPU you can access to the GPU. But with this API you can access to the NPU in the latest the CPU.
+
+Jason Schrader: I think so. I've seen some other posts and ideas around running smaller models in the browser…
+
+Luigi Ottoboni: Are it very CPU bringing to the customer there is the Qualcomm one that has a strong and…
+
+Jason Schrader: Because you have the web GPU expend extension that's used for a few things and you're able to access, enough compute to be able to do small stuff and…
+
+Luigi Ottoboni: View the end the Apple silicon and…
+
+Jason Schrader: The same with devices, you…
+
+Luigi Ottoboni: Paul since that very powerful NPU and…
+
+Jason Schrader: I don't know how long it'll be you can currently run models on Android. I think you can on iPhone as well. So pretty soon.
+
+Luigi Ottoboni: Also the greatest thing there in the Intel Ultra as I mean and…
+
+Jason Schrader: I think that's the area that I'm really interested in getting optimized…
+
+Luigi Ottoboni: You installed in commanded.
+
+Jason Schrader: Because that's the daily use. I mean, we're all on our phones all the time. So you can catch that. I hadn't heard of an NPU yet. So I gotta do a little research myself on that but awesome.
+
+Jason Schrader: Was that neural processing unit probably? Yeah.
+
+Luigi Ottoboni: Yeah, yeah. Yes. The most powerful I think that is the one implemented in the elite Qualcomm elite CPU that it has been presented officially at least one week ago with Microsoft Surface, but obviously it will be using all the Windows laptop. And it has a very strong and.
+
+Jason Schrader: Very cool. And yeah, what I've been doing too is at the end of the meeting I'll grab any links from the chat as well. So those will be included in the summary. So we'll have access to everything we talked about there. Go ahead and close out all these lovely news updates real quick.
+
+Jason Schrader: I should have just done close all of this one. There we go.
+
+Luigi Ottoboni: From this money.
+
+Jason Schrader: Very cool. I feel like there's so many things going on.
+
+Luigi Ottoboni: I was catching up.
+
+Jason Schrader: It's like,…
+
+Luigi Ottoboni: I was told they build the news of one last week.
+
+Jason Schrader: How do we keep up with it? All right.
+
+Luigi Ottoboni: There is also a very interesting video from the microbes of CTO about the Azure architecture to ask that judge BTC.
+
+Jason Schrader: Yeah, and I think the goal in the long run here too is to get agents that help us with this research so we can even distill more of it.
+
+Luigi Ottoboni: If you're interested it is very nice to understand this key there that is behind the tragic BTC and…
+
+Jason Schrader: That's definitely what I'm working on at this point Louis.
+
+Luigi Ottoboni: They are sure there are very interesting stuff.
+
+Jason Schrader: See your hand up. I'm actually gonna jump to I see a question in the chat real quick and then I lost it, of course. So there's a question here about one of the critical boundaries at the Stacks Foundation.
+
+Luigi Ottoboni: If you anyway sales report this link and…
+
+Jason Schrader: And Ali did you want to share your questions?
+
+Luigi Ottoboni: It will post it in the chart.
+
+Ali Raza: Yeah, let's meet you all. So basically my question was regarding the AI to Clarity guide I submitted some of the Clarity formator and other stuffs but this one really increased me what to write here is the foundation looking for some ChatGPT AI creating guide or some which is strain on Clarity smart contacts and all the data and then we have to train that and then deploy the LLM model on some server and with some Louis and then presentation and on and submit the Bounty that way I asked will on email but he was saying I should ask this question from you guys. So here I am today. I didn't know about this group before so it's nice to see the progress and meet you all so if
+
+Ali Raza: Would guide me.
+
+Ali Raza: What should I care? Because to be honest. I don't have the processing power or you are right right now not even the hardware to do, the Train the data for AI specific tasks like I was going to…
+
+Jason Schrader: It's half. So it isn't our Bounty necessarily…
+
+Ali Raza: But I have my day job isn't called funding so we are short ones right…
+
+Jason Schrader: But I'd love to cover how it relates to the group and kind of some thinking on it. So as far as filling out the application that part is a little more just under taking…
+
+Ali Raza: What's the best option here? Do I just the AI creating guide on GPT or…
+
+Jason Schrader: What makes sense and going into it. But what I see here is an AI driven tool to assist users and…
+
+Ali Raza: How should I like structure my application here.
+
+Jason Schrader: Understanding and developing Clarity smart contracts.
+
+Ali Raza: If you could.
+
+Jason Schrader: This is something that I think would be pretty cool as an agent resource. So you could imagine that you input a smart contract and you get back some information about it. Let's say a mermaid JS diagram of the flows or what are the specific things that happen? What specific questions can we ask to get a report about a contract? That was one that I kind of had? I don't know if I've outlined it in an issue yet, but I thought was a pretty cool idea.
+
+Jason Schrader: And when it comes to developing Clarity smart contracts, one of the tools that I would love to integrate in our stack is the ability to use clarinet because it gives you a lot of information if the contract code is valid you can also run tests if tests exist or create them. Thank you Luigi. So, with that in mind it kind of depends on. What you want to create I mean something as simple there is a Stacks GPT already. So I feel like just creating another option like that isn't really that powerful but there's definitely some ways we could fit this into the agent structure that we're talking about. So, I think the best thing we can do is maybe start collaborating just on an issue in our AI agent crew Repository.
+
+Jason Schrader: And think through what that structure would look like and then in building it, you mentioned not having the local compute power. That's not necessary. One of the cool things about Crew AI is you can use GPT-4 you can use Claude you can use any open AI compatible API out there and there's a ton of options some more economical than others some that focus on certain models over others. So there's an easy way. that's how we're playing with things right now, but we always want to keep that option open to run those local models because as we get to situations where data needs to be more private that's going to be the direction that people go as well. So we kind of have both those options built into how we're using Crew AI.
+
+Jason Schrader: And I think for if I were tackling this bounty right now, that would be my goal is What does it mean to understand a Clarity smart contract? What does it mean to me to develop a Clarity smart contract? What does that cycle look like. What's the simplest form then? How do we add on to it?
+
+Jason Schrader: No problem. I'll actually drop a link here. Let's say.
+
+Jason Schrader: So this would be we covered in the meeting notes, but here's a link to create a new issue. So if you want to kind of stub that out with some of the thoughts and then we can jam on it together. Thanks more.
+
+Jason Schrader: All right, I know you had your hand up. Did you have something you wanted to say before we jump into the next segment?
+
+Louis-Philippe Bellier: But yeah, let me try to remember. yeah, the sorry has on display with the car and the AI. Can you send me that link? Really curious because I have a startup that does that. The one there whether anti-Turing LLM models and in the train car, I wanted to make a joke about until we train AI on to this research and this massive news in the AI and blockchain world. I posted in the chat. It's not so much news, but it's more official as we go but fetch some of guys is switching to their super intelligence merger, they call it.
+
+Louis-Philippe Bellier: So fat feat AGIX and Ocean are all merging. Their AI tokens, they're all merging into this new thing called as AI. So I'm A OG of all of these specialty fat fetch. But yeah, you might want to check that out.
+
+Jason Schrader: That's interesting, triggers and memory for me. I feel like a token merger like this has happened once already.
+
+Louis-Philippe Bellier: Yes, but not all AI tokens and not for what they're trying to do. And I think it's gonna be special again. I'm not here to shill anything. I'm just sharing AI news. Yeah.
+
+Jason Schrader: From the technological perspective them merging these tokens together to create a single one. What does that enable? What's the quick win there?
+
+Louis-Philippe Bellier: In terms of talking mergers who cares,…
+
+Jason Schrader: Not with the mergers…
+
+Louis-Philippe Bellier: Right? Yeah.
+
+Jason Schrader: But more like the technology like what are they doing with this new token?
+
+Louis-Philippe Bellier: So that's not the new token, but I know what each of these projects are doing and especially Fetch and I think they're all working in different things and knowing that now they could be leveraging their own technologies together. That is really the mind bogging part for me and I wanted to share with you guys. But I think it would be interesting that at least maybe we run a GPT to say. Hey, can you read their lights paper or white paper? Do them for the three do it for ASI and give us an idea of the rundown of what their team has been proposing under the technical roadmap? To see what could be done in the future, but I think it's big.
+
+Jason Schrader: Yeah, that's the list to take a look at and yeah, I'm interested I kind of shy away from The other blockchain based projects unless there's a technological breakthrough that I'm really a fan of and I'm always looking for something is there something we can't do in Clarity or what are the possibilities so that would be really cool to take a look at?
+
+Louis-Philippe Bellier: Cool.
+
+Jason Schrader: All right, so we got about 15 minutes left last little stuff that I wanted to get into were the development updates. So we've got a project board that we've talked about before but it wasn't updated. So we're starting to actually use that now and I think that's going to be helpful with tracking all these issues across all the different repositories and what we're working on as a group. So right now I've started moving some things around, I captured Mike had some issues running an agent. So we've blocked. These are kind of the things in progress. We've got the crew to handle meeting tasks smart contract analysis and fuzzing. Nikos was leading that crew and then this idea for a company generator. And also standardizing some of the information like deciding what this is going to look like as an MVP of a protocol.
+
+Jason Schrader: Cool and.
+
+Jason Schrader: I'm sorry just responded to chat.
+
+Jason Schrader: Link request. So with the project board this will be the main place that we can kind of talk about what's going on with the development. We'll hit this every week. it's a way to kind of just show what's in progress what the status updates are and everything else. So to start with that I'll cover some of the meeting notes here. So this crew that I'm creating.
+
+Jason Schrader: I wanted to be able to replace all of my actions that go around these meetings, So I know I create a bank template. I fill in each of the sections, when it's done all these certain actions happen. Let's automate that let's make life simple, So I've been working on it. There were some updates here on it being able to go out and just scrape links and get information and so far that is working. Okay, but it's definitely been a little bit of a challenge it doesn't get to the same result of the information. I really feel like with these Crews prompting and order of operations is essential. So just to share where my brain's at what my process looks like. I'm going to scope down what I'm asking it to research to be just the posts on X because nine times out of 10, that's where I'm getting my feed of information.
+
+Jason Schrader: And I'm going to use the crew AI custom GPT to give it example of the raw data that I dump over the week an example of the finished news agenda items and an example of the code and start iterating and seeing how can I make this better? How do I break it into smaller steps? Basically, I'm going to continue working side by side with this set of agents until they're ready to take over the task on their own.
+
+Jason Schrader: Cool.
+
+Jason Schrader: And then one more piece. I wanted to expand on this concept of a Crews as companies. The more we've been talking about this there's such a strong equation of thinking of an agent as an Agents belong to a Crews to the Crew can be a company or a department inside of a company.
+
+Jason Schrader: And if we're looking at that and wanting to deploy a token contract that's going to cover the company and we're wanting to have these other elements that are all related. But in basically a set of smart contracts that represent a template, it's probably useful to start looking at it as more of a DAO type structure and specifically the executor DAO is one that's been around for a long time on Stacks. It's used with a lot of different projects very very simple structure. You have a core that can execute proposals and then you have extensions that are long living operations and you have the proposals or one-off changes so very very simple framework.
+
+Jason Schrader: I think this would be a good fit for what we're doing. So to kind of think through what that would look like is within a company. You would have each Crew representing a department. And that department would be responsible for handling certain types of tasks.
+
+Jason Schrader: So, if we look at it that way you could have individual contracts that represent each department, or you could just have the company as a general level at the top. And one of the questions that came up when we were looking at this and it's all kind of documented in this issue too. If we go back here. We were talking to Dan over at Boom Wallet, if we had three different companies deployed resource contracts, what's the easiest way to display those in a Marketplace or pull that data together and one of the ideas we were throwing around it's like we can use a Clarity trait. We can search back by Clarity trait, but why not take that a step further and we've looked at this structure a little bit and I think there's room to create sort of a company registry. So if you're looking at the company as individual units and you've got three four or five companies.
+
+Jason Schrader: What if they could register their DAO with a top-level contract? It's not required, but it's possible. It gives an element of human review Community review essentially all of us could be people that can look at it and give it a stamp if we think it looks good and then you'd have a central place for UIs and other interfaces to not only get the information about where the contracts are but also to get some more information about the company. So, if we think of this the LLC was a huge breakthrough in being able to spin up start companies have a structure. How can we take the basic elements of that and create something similar in a smart contract? So that's where this registry comes in you could imagine somebody submitting their company like hey, I've had a Crews set it up which would be ideal. My company is set up. I want to register with your directory.
+
+Jason Schrader: It's a simple vote type mechanism or really anything can be put in but you could imagine just a vote among the members that say yay or nay. And then once it's added you get additional information company name makes sense company address which in this case would be an unchain address. Roles are what their ownership percentages who's the organizer who formed it? What block was this company accepted into the registry. There's some interesting metadata that can be collected at that level. So I think that's something pretty cool we can look into and I know Mike we jammed a little bit on this. Did you have anything you want to add with that?
+
+Jason Schrader: Yeah, so just to give everybody kind of a bigger picture here is we looked at a few of the different DAO structures that have been created on Stacks. We've both Mike and I have worked extensively with the executor DAO structure and a few different capacities and we're getting this idea of how to connect the DAOs together. And tying certain pieces of information certain bits. We can update certain operations to help each sort of operate as independent pieces, but they have functionality between the different pieces. And in what we're selling here and kind of this idea was okay, if we want to have something that would be like a company registry.
+
+Jason Schrader: There's really three concepts that need to exist the main one and the only one that needs to exist is the company DAO because that would be the main thing. That's where you get your token. So you can do your revenue sharing that's where you can do your basic template if you wanted to have different rules in your company, let's say I have one department that I want to give them a budget and they can spend it. However, you'd have the ability to create a sub DAO that is accessible by the top-level company but managed by a separate group or department. And the third piece was the higher level registry DAO that sits on top. So that doesn't have to exist but it gives you a nice collection of information and kind of a community approval flow to know these are the contracts that we have on our list. You're not just shotgun searching finding the latest thing that's on the chain.
+
+Jason Schrader: So with those three pieces, you have the high-level registrar you have the main company and then the company has the option to add the sub company or sub-DAO and that could trail down as far as it needs to those three elements are pretty interesting because they're very basic they can be very simple but it gives us a way to deploy the structure that we want and it allows for upgrades because one of the things that I fear is like we set up this contained system. We deploy it and something happens like somebody needs to change something or they got to move to a new version what happens to their token what happens to the contracts and payments that we're already made. How are those disabled and enabled outside of just enabling and disabling resources? So that path is a lot easier with this type of structure because you could essentially create a new extension which would be a new long-running process. You can say okay instead of revenue working this way.
+
+Jason Schrader: We want revenue sharing to work this new way. We get that approved through whatever approval method makes sense. It could multi-sig. It could be token owner vote. There's a bunch of options. But you get that approved and you can actually disable the old revenue sharing enable the new one and create sort of a seamless transition. So there's a lot of benefits to doing it this way and I think with what we want to create with Crews as companies and offering resources and everything else having this template would be interesting because we can also use Crews to create it. So I think I mentioned in the chat, but I don't know if I mentioned directly one of the first Crews I would love to set up is a Crew that would take an old domain name. I think we've all got at least one that's sitting around. And optionally some company info if you had an idea for what you wanted to do with it. You could share a little bit of prompting but not required. Taking that old domain name.
+
+Jason Schrader: Creating a company based on the fields and information that we're thinking about creating all the related contracts based on the template that we're talking about. So even though we're going to deploy eight nine contracts. It's really just one template one action. And then all you're requiring from the user is for them to if they make that payment to us as our first resource. Then we fully set up deploy and give them access to their new company and we can do that based on the address. They made the payment from and we can confirm the info with them beforehand, but I think this could be an interesting loop because then you've got people that are able to sign up for and use the service.
+
+Jason Schrader: Just by describing what they want possibly in a prompt, maybe the domain name thing that parts kind of fluid at this point. But yeah, I think we can take this idea. We can make a set of contracts that all work together and then we can provide a really easy way to put them out there because if you were doing this a step-by-step walkthrough, if I went to a website and I'm going to deploy all these contracts. Each one is going to be an individual transaction. So you're gonna have pop up all the way throughout the whole process. If we allow our agents with wallets to handle it, all you need is a payment that would cover your expense for all the transactions. And then you're simply making that payment on chain to submit all the transactions and monitoring make sure they get through so a lot of parts, but I think we've developed a lot of this tooling already and this would be sort of the high level of where we can take this next to create something that's really easy and reusable.
+
+Jason Schrader: Awesome. Yeah, that was the main thing that I wanted to share and I see Louis you shared back some other ideas here. So we got some other chains and other flows that we can check out some specific DAO makers for UX. I love that. I think that's definitely something we should look into.
+
+Patrick Stanley: I'm good,…
+
+Jason Schrader: Go ahead Patrick.
+
+Patrick Stanley: What if we integrated a flow into Wyoming DAO Law setup I think the Wyoming allows for you to set up a DAO.
+
+Patrick Stanley: What if that was extreme with this process? It's kind of potentially interesting. It's sort of register your LLC on chain, but you can also in one click, do it with the state of Wyoming too and have it recognized legitimacy.
+
+Jason Schrader: I love it. I think that's another data point we should definitely look at it's like what's required as far as the framework and how do we make sure that our basic elements are in line with that? So you could imagine I've set up this thing. I have all the information I need to pass to Wyoming. That would be pretty cool because then we don't have to worry about actually doing that step, but we can have everything ready to go for somebody who wants to take that step.
+
+Louis-Philippe Bellier: There's also the trick of sending a letter by mail, which is federal which proofs the company as a first what was it again? Since you're using mail, which is a federal service to send your address, it kind of confirms an LLC. I don't remember exactly.
+
+Jason Schrader: There used to be a step like that. it varies from state to state because I remember something like that, but they want a physical address in some cases, but I imagine that I'd have to look into it a little more just because I'm not sure what's required in that law particular.
+
+Louis-Philippe Bellier: Okay, because there's a super cool tool I use mostly for marketing to automatically send postcards. So maybe it could be done another collect an extra clip.
+
+Jason Schrader: Love it.
+
+Louis-Philippe Bellier: And thank you for jumping.
+
+Jason Schrader: All right. So, yeah that covers everything I see. We're about a minute over so real quick. I just want to say thank you to everyone for making it out today. We covered a ton of information. I know the news section in particular was pretty long, but then also these development updates. I think we're coming across something really fun here. And I definitely encourage everyone to dump their ideas add more information jump into that GitHub and look for the issue that calls to you most and yeah, let's keep reporting our progress week by week and see what we can do next.
+
+Patrick Stanley: Thanks, Good. See you.
+
+Binaya Tripathi: Awesome. Thank you Jason,
+
+Jason Schrader: That is everybody.
+
+mijoco: Thanks, Jason. Right.
+
+BowTied Radone: Thanks,
+
+Meeting ended after 01:02:07 👋
