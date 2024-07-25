@@ -1,0 +1,116 @@
+﻿Bitcoin x AI WG (2024-07-25 09:03 GMT-7) - Transcript
+Attendees
+David's Notetaker, Fireflies.ai Notetaker Louis-P, j2 p2, Jason Schrader, Jason Schrader's Presentation, Louis-Philippe Bellier, Lucas's Notetaker, Luigi Ottoboni, Nikos Baxevanis, read.ai meeting notes
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Jason Schrader: That's very good. Welcome everybody. Thank you for coming out. Today is Thursday, July 25th. And we're at the Bitcoin and AI working group meeting to we can still shorten that named AI BTC but we'll get there one of these days. I think that the Rebrand big updates are not big updates But big thing going on today is the Bitcoin conference going on in Nashville right now. So what that happening we weren't expecting a ton of people to be here and we'll keep things kind of short, but we did still have some good updates that we wanted to share and definitely wanted to keep things moving along in the Bounty category. So shout out to everyone who's able to make it here and shout out to everyone who will be watching the recordings after the fact and also gonna double down on getting some of that stuff updated for us, too. All right. So let's jump right into it starting out. you see the main website here for the working group. We've got AI B to see that there with a redesign incoming soon and our main project which is kind of the
+Jason Schrader: Basic place where we can go through plan out and see what's going on. So biggest updates for this week is just a huge shout out to the #x team human. He has completely bouncy and moved on to actually complete the current bounties that were open. So you can see that the two open bounties we had for getting the contract source code and for adding tools that allow us to use native Stacks with the wallet agents are both complete and have been merged in so you see they're marked as Bounty complete here. And if this meeting is the perfect time just to move those on over and talk a little bit about what's happening next and before I get into the next bounties. I also want to throw a shout out to drop up for contributing his versions as well. It came in a few hours later, but they look as Definitely good contenders for it. We were just going first first and shout out to is Emmanuel and there was
+Jason Schrader: their user who expressed an interest through the comments. So we have some eyes on the bounties, which is really cool just to starting out. And yeah, let's talk about that then I think that's the big topic for this week is what's coming next and out of our list drumroll, please.
+Jason Schrader: Going to be stepping stacks. So obviously something that's very critical to the infrastructure the ability to stack stacks and earn a Bitcoin or actually a few different ways to do that. Right? So you have the ability to directly stack Stacks through a pool or stack Stacks in a liquid fashion using a protocol L a protocol stacking down. So plenty of options out there this kind of hits those different points just to add some more tooling to our tool belt that we have on the wallet side and probably following up after this I could anticipate some things happening with the Bitcoin side where we're going to look at the stats connect tooling some of the abilities that we want to be able to do with those wallets Etc. So yeah, next Bounty up that's available is the Stacks bouncing and the information is here in this issue.
+Jason Schrader: let's see. We got a comment. Is there a tax on stacking stack? So, it's funny is you'd have to consult your accountant in your jurisdiction that will not take claim to giving any advice on that. But it's pretty cool. If you check it out the thing I like about stacking in the Network versus what you see in staking in traditional networks is that you received the base asset. So in this case if you stack Stacks you can receive BTC as a result. So it's not like Stacks get more Stacks, although that is an option, but I think it's just something really powerful about the network and everything else. And yeah, I guess
+00:05:00
+Jason Schrader: I heard a little buzz, but they didn't hear any words.
+Jason Schrader: So that's our new Bounty.
+Jason Schrader: Did you have
+Jason Schrader: That's up for this week. I'm just going to share that that's out for first to submit and I did give a slight heads up here to Emmanuel who replied last week. So we'll see if something comes through but so far no submissions and no items in so say to see who wants to take this one on and of course, if you have any questions, feel free to ask them here. You can reach out to me through DM. buddy on Twitter, you'll be able to find me what buddy Dad no problem there same appear GitHub cool. So the other main thing that's in progress kind of on the development side. Perfect. I thought it said There's that awesome. if there's nothing there then the kind of biggest news this week that's been going on is some releases. It's like we got one shared here. Let's take a look at this first coming from Louis. Which that's weird. Kind of opened its own tab on me here. a minute…
+Louis-Philippe Bellier: That was regarding one of our last discussion your curse about…
+Jason Schrader: We're still working through the factory reorganized PR. It is going to be a streamlit UI that allows you to manage your agents and…
+Louis-Philippe Bellier: what I was sharing the tool that queries, llm then does SQL query.
+Jason Schrader: tasks and basically everything through AI related and…
+Louis-Philippe Bellier: to then query blockchain That app is semiotic labs and…
+Jason Schrader: we're going this route because the tooling itself is pretty straightforward. you add a tool it has a function and LOL can pick up.
+Louis-Philippe Bellier: is a drop on that the news on that article just dropped.
+Jason Schrader: That part's kind of cut and dry but we how do I add these tools to the agents? How do I configure these agents in a team which we're calling it through what kind of tasks am I assigning to these different Crews having a visual on that is very powerful and that's a big thing that we wanted to work toward and it also reorganizes and cleans up some of the Legacy code that we kind of built up over time. Love it. I know it's something that a signal 21 was really interested in when they were doing some of their earlier calls too. Is that ability to get to SQL cards, which is pretty huge and our Stacks notes natively handle those SQL queries too. So there's a lot that can be done at that level. So…
+Jason Schrader: 
+Louis-Philippe Bellier: He if you go down a little bit you'll see the kind of the graph that explains…
+Jason Schrader: So that was still in progress and that's still happening. And I'll kind of pause there and…
+Louis-Philippe Bellier: how it's a little bit more. There you go.
+Jason Schrader: just see if anybody has any comments or updates and if not, we can jump into a little bit of AI news.
+Luigi Ottoboni: It ages and…
+Luigi Ottoboni: adjust them. And just join did you talk about Lamar 3.1 and Mistral figures together the new models that have been released.
+Jason Schrader: Nope. It was my next to me and…
+Luigi Ottoboni: Okay. excuse me,…
+Jason Schrader: my news from me.
+Luigi Ottoboni: me, just
+Jason Schrader: Bring it up to no. I'm just kidding. Louis to finish up. This is super cool. So this is the semiotic I like that name. very
+Louis-Philippe Bellier: Yes assembiotic is one of the core Dev team of the graph. And yeah, they built The demo I shared one in one of the last working group sessions.
+Jason Schrader: this
+Louis-Philippe Bellier: Where you query directly llmsql to blockchain and then it gets the data out. But that is the team behind that application is semiotic Labs. Yep.
+Jason Schrader: Very cool. I think we'll definitely have to play a little bit more about how something like this can be used with stacks and get some testing in. I'm excited to see I mean, there's just so many tools and things popping up nowadays is you really got to commit time to test and play with everything. I mean, that's it either the rolling thing. Even when I was putting this together. There's a AI pair programmer that's made for the terminal and that ended up being where some of those came from so just to jump into those topics as Luigi was getting into a little bit as you got big releases that just came out in the last week here. So first was Lama 3.1 with the giant 405 million parameter version 70b 80 showing that before and five b is right on par with the best clothes models. So I mean the more we're seeing this kind of back and forth tip action between open and close Source. I think just the more powerful we can see these ideas becoming and it's like every limitation
+Jason Schrader: We have is generally based on the knowledge level of the yellow and at this point whether it be understanding or hallucinating or anything else the smarter they get the more capable they get I'm really interested to see what kind of happens next and from the early messages. I've seen around fine-tuning and playing with these particular models from groups, like dolphin and others who like the technium group that does the Hermes stuff very impressed with the eighty versions to start with. So the interesting kind of see where things go from there.
+00:10:00
+Jason Schrader: and looking at my notes here too. One of the really cool thing. They did with the Llama 3.1 release is not only doing the open free weights so that everything's available but they also released some documentation on how they do their training. So you have more information on that and they included a license that allows for fine tuning. So we're talking about open source. This is really setting the bar a lot higher for just being able to interact with and expand and build on top of these foundational models.
+Luigi Ottoboni: Yeah, I would like to add that it could be interesting for you guys that they found this app that I pasted in the chat. It is a nice app if you wanted to query multiple elements at the same time because obviously you can have an account with open AI but maybe that you don't want to pay for clothes and saying for Gemini exeteria. And It is able to combine it but also probably a query to multiple and so in this week, I spent some time doing from my normal workflow testing this up, but all so Lemma frequent one seven million on my machine and I seen that
+Luigi Ottoboni: all at the same level all my talking about it charging BT for all Gemini 1.5 and closed sonnet that 3.5. I think that all more or less at the same level and this is a very good news for llama seven video. That is A model that if you have enough around when you can run it locally just for reality mean it is not for everybody. But for a lot of computer it is feasible to run with seven billion. And I think that also a lot might be a millionaire the 3.1. It is very good as well.
+Jason Schrader: Very good. I got all the audio but something locked up on me there. So I had to jump out and jump up in sorry about that. Sounded like it was fine.
+Luigi Ottoboni: if you want to do you want me that I repeat? I don't know. what you lost.
+Jason Schrader: No, I think everything came through on the recording. I just couldn't respond or do anything so I was wait…
+Luigi Ottoboni: No, no,…
+Jason Schrader: until you
+Luigi Ottoboni: it was in short. Is that the thanks that to this up. I compare the result also with the Llama 7 billion locally on my machine and clothe the opinion Ai and Gemini and Lamas and Indian Running on my machine for my test for the query that they did at the same letter.
+Jason Schrader: are you talking about this 70D or the eighty? Okay.
+Jason Schrader: I
+00:15:00
+Luigi Ottoboni: Yeah, 770b I tested also that is very good. Also, they be but the 70b it is aligned to the best model. Yeah, that is a very good news for the 400 5 billion that it has been released the during and…
+Jason Schrader: very good yeah, that was multi-language right there, but they have some of those comparisons.
+Luigi Ottoboni: during the week.
+Jason Schrader: That's huge.
+Luigi Ottoboni: But before you open a page of Mistral you can see that Mr. Allah there are graph you can okay this probably the other one in the bottom,…
+Jason Schrader: Just like you were saying, seeing that alignment and knowing that a 70b is something that is attainable locally with enough RAM and everything else. It just goes to show that we're ahead of the curve in the sense that we're trying to think through these things are dumb brains and those brains are getting smarter.
+Luigi Ottoboni: but you can see that I don't remember…
+Jason Schrader: So I'm super happy to see that I saw somebody joking about the 405 B12 they were running it on a single 40 90 and…
+Luigi Ottoboni: which one but they read the same page llama frequent. it is a line them to me studying.
+Jason Schrader: it took about 30 minutes get one word back.
+Luigi Ottoboni: So also from this group you can see it. this one it is 3.1. Okay.
+Luigi Ottoboni: Yeah.
+Luigi Ottoboni: Yeah.
+Luigi Ottoboni: Yeah.
+Jason Schrader: That's huge and kind of leads into what I was going to talk about next to so there was this application called aider. And it's in AI pair programming tool for the terminal…
+Luigi Ottoboni: But whatever I mean obviously the query that they needed as they did for a developer.
+Jason Schrader: which pretty cool way to work with something, you're like in the file they can edit and make changes. I haven't tested it out without it was neat,…
+Luigi Ottoboni: You so question.
+Jason Schrader: but they've done their own leaderboard so you can kind of see some of the results here.
+Luigi Ottoboni: I did the question about programming and…
+Jason Schrader: That compare different coding tasks that they've evaluated versus just the standard set that you see in regular evaluations and…
+Luigi Ottoboni: the staff that matter to the developers and it was doing the same query to all the big models and…
+Jason Schrader: there's still a big fan of Claude 3.5 end of deep-seat coder…
+Luigi Ottoboni: to Ram as I mean million and they seen that there are more like the same they are answering more or…
+Jason Schrader: which I thought was interesting and then right behind that would be like llama three one and…
+Luigi Ottoboni: The same answer at the same result.
+Jason Schrader: Mr. Large without using the tool it's hard to know exactly…
+Luigi Ottoboni: So this is very good news.
+Jason Schrader: how accurate but I thought it was interesting that they're doing the leaderboard through their own software versus just saying this is the regular Benchmark that we see the more benchmarks. We have the more we're gonna learn and the less likely it is that someone's trying to gain them all as So see something new coming out. So that's a new leaderboard that we can Shared the link in the chat here.
+Jason Schrader: Thanks.
+Jason Schrader: that's nice too that they left it unlimited on the local side. So we're eight to test out quite a few different things that way as well and drop that back in.
+Luigi Ottoboni: mmm
+Jason Schrader: Very cool.
+Luigi Ottoboni: But I don't know if you got it, but I suggested to try the application that they pay saying the chart because you can compare multiple outputs and this one and the thing but it is free for you queries. You can pay for more. Yeah, so probably you can test the bigger model.
+Jason Schrader: I'll play my little Linux violin as long as I have to…
+Luigi Ottoboni: It is for Mac.
+Jason Schrader: but yeah,…
+Luigi Ottoboni: But you…
+Jason Schrader: it's still cool to see these applications coming up and…
+Luigi Ottoboni: if you want to do AI we should never make nowadays.
+Jason Schrader: typically when I see something on Mac if it's big enough, it's gonna go across platform or be available on Linux. So that one I don't know if I'll be able to run but I love the lovely idea. one of the things there was a really cool simulation. We talked about quite a few meanings meetings back and it was somebody who used the unreal game engine and it was a stock that human game Who in the room is a human and he had yourself you had Gemini Claude and you had GPT all having this debate and trying to determine but that kind of thinking using the knowledge just like we see with mixture of experts doing that across different. Llms. It becomes pretty interesting how you can get to a result and I'd love to explore that more with cruise because what we can do with a crew is you can set up each agent to use a different llm so you have
+00:20:00
+Jason Schrader: Some of this personality kind of built in to where if you had a research crew, you could literally give it to all three apis and let it run off with it and see what it comes back with but then you got to track the usage and kind of have keys and definitely a few other elements to configure but totally possible within the bounds of what we have here, too.
+Luigi Ottoboni: Yeah, another thing. I don't know if you already mentioned for give me a repeat it again, but it is very interesting. They open AI meaning the new one that has been released last week…
+Jason Schrader: Yeah, I dropped the blog post in here.
+Luigi Ottoboni: because it is very very low practically the level of the cost it is at the similar of an embedding system,…
+Jason Schrader: But that reminded me too. I saw a Twitter post for someone had the idea of we've seen gpt40 was cheaper, but it was still kind of costly to use you might try to switch between that and…
+Luigi Ottoboni: them…
+Jason Schrader: 3.5.
+Luigi Ottoboni: but embedding model is very very cheap.
+Jason Schrader: and then Claude Sonic came out and…
+Luigi Ottoboni: So the new model it is so cheap that we see a lot of Agents these on the meaning in the immunities.
+Jason Schrader: it was like, this one's a lot cheaper and you can still get a lot of things done. Then I saw somebody using clogged sonnet to teach gpt40 mini how to do something.
+Luigi Ottoboni: Very good. I see some video online that it is even better than the food the full version in some with the Southwest.
+Jason Schrader: and that's another kind of interesting angle to me is where you use these bigger-minded LMS to create the plan or to create the overall structure that these small elements can operate in I was that in zoom out kind of effects that I think is really interesting to
+Luigi Ottoboni: So it is really good. And if you think that is so cheap it could be very interesting for the agents.
+Jason Schrader: It's only gonna get better from here. that's pretty much all I had for today, beginning of the call. I was saying that most of the people I know are out in Nashville celebrating me Bitcoin conference today, so lots of fun things going on out there and I'll pause here if there's anything else anybody wants to share at the intersection or anything anybody else wants to get into happy to do so. Otherwise just happy to yield some of that time back today and we'll leave the bounties open and see who comes into the next round.
+Luigi Ottoboni: yeah, and I agree interesting days. These are interesting days.
+Jason Schrader: All thank you everybody for coming. I appreciate it. We'll see you next week. Looking forward to sharing some more updates at that time and seeing kind of what comes out of our bounties as always. Feel free to leave any comments on the GitHub follow up there with anything else, or you can reach out to me on Twitter and just excited to see what comes next. So take care everyone. Thank you.
+Nikos Baxevanis: Take care.
+Louis-Philippe Bellier: Bye. Thank you.
+Luigi Ottoboni: account
+Meeting ended after 00:23:24 👋
