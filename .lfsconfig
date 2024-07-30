@@ -1,2 +1,3 @@
 [lfs]
-	url = https://4a111a766299c6bc5c1ab8aaf5fe82b9:a955c981621ab52058eba4509c0604a4b20f1bf5590636251ad63cd8efabe99b@https://git-lfs-s3-proxy.aibtc.dev/bucket.aibtc.dev/aibtcdev-communications
+#	url = https://4a111a766299c6bc5c1ab8aaf5fe82b9:a955c981621ab52058eba4509c0604a4b20f1bf5590636251ad63cd8efabe99b@git-lfs-s3-proxy.aibtc.dev/bucket.aibtc.dev/aibtcdev-communications
+	url = https://4a111a766299c6bc5c1ab8aaf5fe82b9:a955c981621ab52058eba4509c0604a4b20f1bf5590636251ad63cd8efabe99b@feat-multipart-upload.git-lfs-s3-proxy-9c7.pages.dev/bucket.aibtc.dev/aibtcdev-communications
