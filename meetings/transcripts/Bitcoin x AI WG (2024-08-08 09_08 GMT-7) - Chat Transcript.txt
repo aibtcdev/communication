@@ -1,0 +1,69 @@
+00:04:10.533,00:04:13.533
+Rapha RSierra: Gm fellows
+
+00:04:22.735,00:04:25.735
+Patrick Stanley: gm peeimp
+
+00:09:07.030,00:09:10.030
+Rapha RSierra: nice so it catches the error
+
+00:09:41.565,00:09:44.565
+Rapha RSierra: nice
+
+00:09:53.107,00:09:56.107
+Rapha RSierra: let's go!
+
+00:18:03.845,00:18:06.845
+Rapha RSierra: Jason didn't need to specify it
+
+00:22:19.721,00:22:22.721
+Rapha RSierra: nice suggestion
+
+00:23:39.767,00:23:42.767
+Jason Schrader: https://github.com/aibtcdev/ai-agent-crew/issues/13
+
+00:24:24.009,00:24:27.009
+Binaya Tripathi: https://github.com/builders-academy/contract-analyzer/tree/ace/src
+
+00:26:55.879,00:26:58.879
+Rapha RSierra: iterating = refining
+
+00:27:19.402,00:27:22.402
+Jason Schrader: If we imagine this as a service, we see what it costs to run then charge a % on top of that, with a resource contract!
+
+00:28:24.053,00:28:27.053
+Jason Schrader: https://mermaid.live is good for previewing mermaid diagrams too!
+
+00:31:16.170,00:31:19.170
+Rapha RSierra: 100 smart contract audits by the same ai agent => break my code Agent Binaya
+
+00:32:03.116,00:32:06.116
+Binaya Tripathi: https://contract.streamlit.app/
+
+00:33:11.521,00:33:14.521
+Kyle Umstatter: Are you going to post the PR with the agents?
+
+00:34:13.706,00:34:16.706
+Rapha RSierra: analyzing my stx-btc contract rn
+
+00:34:17.386,00:34:20.386
+Rapha RSierra: wooohooo
+
+00:34:42.878,00:34:45.878
+Jason Schrader: love it!
+
+00:38:13.726,00:38:16.726
+Rapha RSierra: clean!
+
+00:38:20.672,00:38:23.672
+Patrick Stanley: sexay
+
+00:40:49.913,00:40:52.913
+Rapha RSierra: or customizing - specialized agents?
+
+00:46:27.936,00:46:30.936
+Rapha RSierra: as long as they don't sell my STX and BTC
+
+01:03:00.183,01:03:03.183
+Patrick Stanley: cya dudes
+

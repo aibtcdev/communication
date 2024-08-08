@@ -1,0 +1,360 @@
+﻿Bitcoin x AI WG (2024-08-08 09:08 GMT-7) – Transcript
+Attendees
+Binaya Tripathi, Binaya Tripathi's Presentation, Biwas bhandari, davek.teller, Jason Schrader, Jason Schrader's Presentation, Kyle Umstatter, Patrick Stanley, Rapha RSierra, Sirajuddin, Tommi A. Vuorenmaa
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Jason Schrader: All right, welcome everybody to the aib to see working group meeting. Today is Thursday, August 8th, and we're
+Jason Schrader: It's an exciting updates and demos today. I'm be really fun. So just to run through our quick intro that we normally do main resource that we have is the website that's up right here. Although I'll be showing off some new branding that's coming to the website to match all the other assets for a little bit later on. you have organization. This is where all the different repositories live. And then today we're going to be looking at both the crew and the pools repository here the typescript tools and with that we're gonna get into some demos. So, we're looking at all these different bounties that were completed so far. We're looking at the amazing tool set that our agents have we wanted to show up a little bit of what these tools do and have some of the creators kind of speak to the process and ask them some questions along the way so first up is human you have submitted so many few different bounties here. So we've got a couple done that we're completed by you have the DNS support contract source code and
+Jason Schrader: tools for the native stacks So with those three, I'll go ahead and pull up a console screen so we can start going through and just showing some of what those tools do. And then I have some questions for you too as we kind of go through it. So let me go ahead and switch what I'm sharing here.
+Kyle Umstatter: Sounds good.
+Jason Schrader: It doesn't show me that window. All right. Give me a second.
+Jason Schrader: There it is. All right, everybody see that clearly. Should we make it any bigger?
+Patrick Stanley: It's pretty good.
+Jason Schrader: We'll work with it like that. So going back through the different bounties. I just mentioned we started with DNS as being one of the first ones so that'll be the easiest one to develop first. So while I get those commands together real quick, what I would like to do is just gonna ask you a little bit about the development process. how do you feel about jumping into the repo adding the tools did you face any challenges? How did that go for you?
+Kyle Umstatter: Tires needed. no, everything was pretty straightforward. I had to learn I never use bun before. I mean I've used typescript and not but it was pretty straightforward in terms of the bun environment set up. A lot of this stuff is pretty well wrapped or Stacks JS. And so it was an easy process go to turn it into a CLI command. I think the biggest challenge I ran into and I think I talked with you about it was I prefer Flags over the positional arguments because it can get tricky with defaults or if you don't want to pass something in positional can get weird. Otherwise. Yeah. It was Way Forward, especially with the job the stacks Js. libraries
+Jason Schrader: Just to go through a few that you created. So the first one I have up here is a script that will check if the name is available. So we're going to see if we could register not a human that BTC. And in this case we get back through so the LM would then know what that step. Okay, I can register this name. And in order to do that, we're have gonna skip two ahead So two commands in order to register an address, We have the order that happens. Wrong, we send that one out. We see it's broadcast successfully we'd be able to see this in the testnet Explorer. And then following that we would run a registered transaction, which would then finalize it? I think we can do that in series here.
+Jason Schrader: But those two as you can see kind of same format you get that the transaction broadcasted you get who is from and then you get to see the txid which the TX ID is important because we can pass that to our get transaction status tools. So that gives us the ability to kind of iterate and look at what these different steps would be. you imagine what would you the pre-order then the pre-order goes through then you make sure you run register so on so forth step by step. cool rounding out the DNS tools there were two more that were added as well and it was the ability to check the address for a DNS name and check the BNS name for an address. So those two I can display here. We have this one where it's get addressed by the BNS name. So in this case if I have not a human in there, there's not going to be one. But if we look at testout VPC.
+00:05:00
+Jason Schrader: No, looks like there's not one for that. But how about even that beat system? There we go, and we can see the associated address so we know that one's been registered and this is sort of the output that the lln would receive back so they can know that something's happening if something doesn't exist and kind of make those moves on to the next step. And then we can do the opposite as well so we can actually say get BNS by address.
+Jason Schrader: And we can see that this one does not have a name associated. But if we go back to the one we have here for human. bone and boom
+Jason Schrader: Cool, then we can see it comes back with the name. So here now the LM has the ability to see if the name exists for an address and then be able to do something with it same with the other order, which is also useful if you think of transfers when we do transfers in the wallets and sometimes in web apps we have that unique ability to be able to use the BTC name in place of the address and this would kind of enable that same ability for agents. Awesome, what kind of pause there? when one of the things that was kind of thinking about is I listed a few but did you have anything that you thought of that AI agents could do using these DNS tools?
+Jason Schrader: Yeah, I agree. I think those two are definitely the main cornerstones of what we can use the system for and I identity is powerful, not having to list out a full address is very useful especially trying to remember things or even labeling things, if you use different accounts for different purposes Yeah, So we'll move on actually to get a hand up go ahead of it.
+Jason Schrader: Yeah, totally. I love it as a tool and I've been going back and forth in my head about does it need to use the tool every single time to do something like this or do we just create a class over the top of the agent definition that has its address and DNS name, but still think it's extremely useful to have and I think that giving our agents names is going to be really fun to cool just to keep it moving. We'll look at the native Stacks tooling yet next. So what this was set up for was to do a balance check to get balance information about an address and the ability to transfer Stacks to start with. So if we're looking at that one, we have the gate address balance command. So in this case, you can see this address. We've got some testnet stacks.
+Jason Schrader: And if we want a little more detail, they'll run these more information. There's actually a detailed version…
+Kyle Umstatter: No, I think it's just from the transaction idea believe.
+Jason Schrader: which will give you the whole return here including some fundable and non-fungal tokens, which I didn't catch that the first time cool and then you have transfer token which when I ran this one earlier didn't run for me, I want to try again. I think it's something with my environment though. I don't think it's anything with the code itself. Yeah, it's picking up not enough funds. So the wallet that I have Associated doesn't have any funds to send but same kind of output here that we would see from the others where you have the transaction broadcasted who is from and the TX ID human you remember off hand. Was there any other output as far as the transfer token function?
+Jason Schrader: cool And yeah, so those are the three for the native Stacks tooling and then the final one was to get Contract source code. So this one is merged in as well. And we're able to run it here. So we had fun We run it from Stacks contracts get contracts. In this case. I've got the test net version of pox4 and running that command will return the actual source code so our llm if we give it a test net address or if we give it an address and a contract name, it can go out and get the source code and be able to work with that in the next step.
+00:10:00
+Jason Schrader: One cool thing about agents too when we're looking at creating tasks for in the crew AI structure you can have tasks that depend on other tasks so that it…
+Kyle Umstatter: I mean besides the bounties I've seen so far. I think the deployment of contracts would make sense. Especially after you're getting a contractor.
+Jason Schrader: if this tasks were completed to get the contract source code you could pass that task into the next one so that it always has that result.
+Kyle Umstatter: You generated contract. What would that look like? I mean there's the ones that were submitted that I saw those make sense.
+Jason Schrader: So there's a lot of changing that we're going to get into as we start creating the agents and…
+Kyle Umstatter: Those are kind of the key ones that I've seen just to do the basics.
+Jason Schrader: as we start playing around some more of these tools,
+Kyle Umstatter: I think you'd cover most of it with that. The only other thought I had on this and…
+Jason Schrader: All right, so curious just kind of last question to wrap it up for you human.
+Kyle Umstatter: I keep walking back and forth. I don't know if there should be a standard way in…
+Jason Schrader: Were there any other tools or…
+Kyle Umstatter: which it standard out stuff comes out.
+Jason Schrader: capabilities you think AI agents need to effectively interact with stacks?
+Kyle Umstatter: Should it all be Jason or should it just be plain text like some of ours. the ones I did with the balance are in Json, but then when you do a transfer it comes out as plain text. I don't know if it matters too much to the llm. I think you'd be able to interpret it. But I don't know if that makes it more powerful if there was a standard of being Jason versus kind of being different between the two
+Jason Schrader: Yeah, I think it's a fair point. It's sort of similar to what we were talking about with flags versus positional arguments. One of the challenges with llms early on when we were doing function calling is they weren't really good at providing all the correct arguments. So the more things we were asking them to do it was getting a little tough. So one to two positional arguments was good. But a lot of that seems to be resolved with these smarter llms and more focus on function calling this coming out and then with the output it's tough. I think it partially depends on what we're asking the agents to do. But either way it's going to be able to interpret the data cleanly, I think for now we're okay, but as we're starting to develop agents, we'll start to think that What are these outputs need to make the agencies efficient as possible?
+Jason Schrader: Any other closing thoughts about completing those bounties or…
+Kyle Umstatter: cool
+Jason Schrader: working on the tools?
+Kyle Umstatter: No, it was a great challenge to get those bumped out. Very similar to the go one but getting more into the type typescript that I was. With the stacks JS just makes it a lot easier because they do make that stuff easy to interact with the stacks inner ecosystem.
+Jason Schrader: Can't be the speed of some of those go apps though, man. Love you.
+Kyle Umstatter: And the single binary this makes it so nice with the single binary.
+Jason Schrader: Yeah. Yeah, and I think there's room down the road to I'd love to see in integration of teller so that an llm can learn how to use it and use it as a tool similar to how we're using Stacks JS to the typescript stuff and I'd love to see additional things too that clarinet is another big one, we're talking about deploying contracts and if we wanted our Ln to write a contract you can imagine a flow where it's gonna write the test first if you test driven development and then make sure the test pass with clarinet check and clarinet test and then go on to deploying it that way you've got a bullet proof process from end.
+Jason Schrader: So that's what I had for your part of it. Next up. Did we have Shahid on the call by any chance?
+Jason Schrader: He submitted the stacking in a pool and liquid snapping bounties.
+Sirajuddin: Hi Jason. Yeah, I'm everyone
+Jason Schrader: Hi welcome.
+Jason Schrader: So I wanted to walk through something kind of the same way that we did here for hero.
+Sirajuddin: Yeah.
+Jason Schrader: So let me go ahead and check out the branch because They don't have that. Merge just yet and feel the stash that. And we'll check you out here. Cool.
+Jason Schrader: All right. So, yeah, let's talk a little bit about the tooling that you submitted. So here we were talking about the ability to delegate Stacks to a pox for pool as well as doing liquid stacking. So starting out same question asking earlier, can you walk us through your development process? Were there any challenges you face? How did it feel creating these tools?
+Sirajuddin: Implementing it was a straightforward because we already have the Taxi's library with most of them having dated functions, but the main part went into research. I'm pretty new to Stacks blockchain. I have recently got to know about aibtc. So I think that's a good thing like the research about liquid stacking and currently I found only stacking down having a good documentation about their addresses available. I have implemented stacking down contracts for participating in liquid stacking.
+00:15:00
+Sirajuddin: And I think we also have one other protocol which is not implemented here. So when coming to stacking in a pool, so it has a standard where by just changing the pool address. most of the contracts will have same functionality. So by changing the pool address, you can call the delegate and hello contract caller and so on but for liquid stacking I found Stacks down and another provider that I don't remember. So to have implemented it differently using their own ways. they have their own contracts with the different function names. So yeah the research with
+Jason Schrader: Yeah. Yeah, the other one being Lisa is the other big one. that's on the network right now, so just some of the tools you created here. So I have a delegate Stacks transaction. So when we're doing delegated stacking, there's two things that have to happen one you have to actually I think allow contract caller has to happen first and then you delegate the stacks the amount that you want.
+Sirajuddin: yeah, that's
+Jason Schrader: I got them backwards in my note here. So let me just fix that real quick.
+Jason Schrader: so in this case we want to run that transaction. We're going to say allow the contract caller to be the bux4 pools contract. And we can see we've got the serialized transaction hacks. We've got its broadcasted successfully where it's from nrtx ID to be able to look it So the same kind of output before looks good. I don't know if we'll need this serialized hex here, but that's a small change we can kind of look at and I wanted to see too. So when I'm doing this next step of delegating Stacks, what pool am I Choosing by default? He said that's specified in the script.
+Sirajuddin: You have to specify it as you know, you are passing the address like let me say one.
+Jason Schrader: We can take a look at this transaction to let me go ahead. And pull that up real quick.
+Sirajuddin: Yeah, let me get my laptop on.
+Jason Schrader: This was screens here. We'll take a look at the transaction.
+Jason Schrader: So we're looking at the transaction that we sent here on testnet. We have a hundred Stacks delegated to pox for pools.
+Sirajuddin: It is passed this parameter. when you call the particular function, we are color or terminal. We pass that.
+Jason Schrader: So we're passing this pox for pools.
+Sirajuddin: Yeah, it's a Contact name and address binder. So we pass that while calling the contract itself.
+Jason Schrader: And it works, but it doesn't want to allow me to see that one. So what kind of move back into?
+Sirajuddin: I think you may try to change network. I think it's in. a minute
+Jason Schrader: okay. I was looking for it. I've got testnet addresses here.
+Jason Schrader: So I'm not sure but we can play around a little with that more. Just wanted to kind of show the show the process everyone could see it we can keep it moving. and then the other tool that you made for us was the liquid stacking to come to Leave it was this one.
+Sirajuddin: Yeah.
+Jason Schrader: There we go. And for that one we should be able to make a deposit In this case. It would be with the stacking down.
+Sirajuddin: Yeah.
+00:20:00
+Jason Schrader: And it's looking for it on mainnet. So I'm on the testnet right now. So it's looking for that on mainnet. I don't know if they have one on testnet. But this is a good thing like the fact that you were able to look at these contracts find the different stacking resources as somebody who was new to stacks and Implement them is awesome. I think there's just a little things we get a tune up here, but overall everything looks great. And the fact that there isn't as much that documentation for both sacking down and Lisa are some great points that can bring back to those ecosystem partners because I think giving more people the ability to integrate we ran into this a little bit with another UI that I've worked on…
+Sirajuddin: special will look
+Jason Schrader: where we're trying to implement some stacking and this is a little tricky you have to figure out exactly how their contracts work like you describe sometimes it might be a deposit. What are you getting back? What kind of post conditions are required I think
+Sirajuddin: Part of this for her. The one thing was similar to stacking in a pool.
+Jason Schrader: Probably moving forward. It'll be safe to have a deposit for each major protocol.
+Sirajuddin: We don't have a standard in the stack blocks in it.
+Jason Schrader: So they'd be like stacking down deposit Lisa.
+Sirajuddin: For liquid stacking so it would be better.
+Jason Schrader: That might make a little more sense, but I'll get back to you in the pr on that one.
+Sirajuddin: I think if we had a standard these are the function names the deposit and…
+Jason Schrader: We'll play around a little with it and we'll get it to end up.
+Sirajuddin: we draw all direct for stacking down, but for another provider it's completely different so I might able to provide that later.
+Jason Schrader: So as you were going through this, do you think that were there anything that kind of surprised you or What was it was anything really cool that you learned along the way?
+Sirajuddin: But yeah, it's good because it also offers stagging in a way easier through, code instead of using UI compared to other blockchains. So it's a good thing.
+Sirajuddin: Yeah, I think sometimes the stacking reward rate might fluctuate. So users may choose to automate based on the reward presentation. They can automatically get out from remove them from stacking pool when reward is low and enter into stacking pool like they can automate such processes. Yeah.
+Jason Schrader: Great and then after working on this and I know you kind of knew but have you had any thoughts of any other tools or capabilities that you think AI agents with me?
+Sirajuddin: Yeah.
+Jason Schrader: Almost like stacking strategies,…
+Binaya Tripathi: yes, how the screen share real quick and then
+Jason Schrader: Yeah, I've seen a little bit of that. I think one of the protocols I want to say it was Lisa Implement stacking across a few different pools so you can have experts you can have the freezer pool.
+Binaya Tripathi: I have captured a screen record. I'll show the demo off of that.
+Jason Schrader: There's a few different options out there that are pretty popular and doing something similar sounds really cool to me. So definitely appreciate those updates and sharing everything one last little demo bit to get into so binaya you were saying you had a little bit to share. Did you want to talk about it at Eddie want to handle that?
+Jason Schrader: All right, just to get some context while we're getting the screen shared and…
+Binaya Tripathi: Thank you for that. Quick context suggestion.
+Jason Schrader: set up here. We typed out a bounty that we were going to release on the call today.
+Binaya Tripathi: So this is the issue that was created basically an agent.
+Jason Schrader: And it was picked up already by binaya here.
+Jason Schrader: So he's got some work done to Yeah,…
+Binaya Tripathi: That'll analyze more contracts set of Agents,…
+Jason Schrader: but we're going to New Direction here.
+Binaya Tripathi: right so we have
+Jason Schrader: So the goal is to start creating actual Cruise of Agents with this bounty and…
+Binaya Tripathi: Here's the Ripple share that
+Jason Schrader: I'm excited for this because it's a night shift in the way we're doing things and you can see a little more the information…
+Binaya Tripathi: here in the link for friends
+Jason Schrader: what we have up there and I linked it as well in the chat. But this is where we need to head next.
+Binaya Tripathi: It's on next up.
+Jason Schrader: I'm really excited.
+Binaya Tripathi: We built this in a strong lead. So basically this is a UI you can go on. The first task was to build a riever contract retriever, which is not yet complete but with manually copy pasted the contract from one of the explorers and then analyze it so I'm not without wasting any time. I'm going to show what it looks like? Can you see the video playing on the screen right now?
+Patrick Stanley: Yeah.
+Binaya Tripathi: So, yeah. That's the home base. Just paste the code.
+00:25:00
+Binaya Tripathi: We have in order to make the outputs as requested and then focus on some of the security aspects of the code. We've used security audit reports from company coin Fabric and the past audit reports to check for the risk factors in the code. So right now it takes quite a bit of processing before we get the output. So I'm going to skip to the part where we get the response after running this we found that it's calling at least 35 36 times to open AI API before it gets the final report.
+Jason Schrader: And just to give a little color there in my perspective making a whole ton of API calls efficiently. I mean, obviously we don't want to do any that we don't need but it's actually a superpower of being able to use these agents…
+Binaya Tripathi: So we'll be looking at different ways to optimize this after the fact…
+Jason Schrader: because if you imagine General inference and I did want to compare the output of what we get to some of the tooling that's already out there like the custom DVDs and…
+Binaya Tripathi: but I want to show.
+Jason Schrader: everything else…
+Jason Schrader: because so much more you can refine and…
+Binaya Tripathi: the output of Okay.
+Jason Schrader: ask the llm to look at versus a one shot prompt to get something done. So that's super cool already. Go ahead. I see it's a
+Binaya Tripathi: right
+Binaya Tripathi: Yep. Yep, sounds good. So we have seven specific agents. So we need at least seven of those calls. But what we noticed with the uses of crew AI is because it is three packages isn't building system. It has the internal calls that kind of does internal processing itself. So that's what was increasing the number of calls, but regardless So here's what the summary looks like at the end. So this was a contract. So we tested the Velar swap contract which is this when you swap tokens between any tokens in Velar or Alex and that's one of the contracts.
+Binaya Tripathi: the contract that was analyzed so that's
+Binaya Tripathi: You can.
+Binaya Tripathi: Yep.
+Binaya Tripathi: Yeah, this particular contract didn't have that external call. So that was part of the also third age in those functional analysis to those four different functions. and this is the control flow that will be sent to mermaid JS to actually generate a flow like this. We have already tested extremely, but it's not yet linked to The output yet.
+Binaya Tripathi: and it also Fifth Asian does updateability assessment to check whether and who can
+Jason Schrader: That's exactly…
+Binaya Tripathi: It's update the contract.
+Jason Schrader: what I imagined when I set up the Bounty so that looks super cool that you've gotten to that step already.
+Binaya Tripathi: So it identifies here. There's no Source functions and indicates contract is immutable once deployed and…
+Jason Schrader: I love the fact that you have it in Streamwood that's going to tie into some updates that we've done on the UI side for the AI agent group.
+Binaya Tripathi: so The next agent is a security analysis that checks for what kind of vulnerabilities might exist.
+Jason Schrader: I think that's exactly the kind of interaction I was looking for and…
+Binaya Tripathi: So I'm not serving 100% accuracy of any of these analysis…
+Jason Schrader: then as far as using the tooling they should be merged and…
+Binaya Tripathi: because I'm not so sure on that yet.
+Jason Schrader: in there the same tools that I just demoed from Human earlier,…
+Binaya Tripathi: That's the thing that we will optimize and…
+Jason Schrader: but we can look at…
+Binaya Tripathi: make it more accurate as we build this…
+Jason Schrader: how to make that a thing with the ages.
+00:30:00
+Binaya Tripathi: but at least we have in agent that looks at the code and…
+Jason Schrader: But yeah that's great. So, I'm curious how many reports did you generate more than one report just to see …
+Binaya Tripathi: checks for some normal errors or some of the high risk factors and…
+Jason Schrader: how much they vary?
+Binaya Tripathi: so on and the seventh agent.
+Binaya Tripathi: Compiles all of the reports from each agents and…
+Jason Schrader: next
+Binaya Tripathi: generates this ultimate report. I think that's the end of it. Yeah.
+Binaya Tripathi: For the same contract. Yeah, I at least generated two. There was not a lot of variability. But I've tried, two separate contracts So one was nft contract and this one was the swap contract since we've only been working not for a long time. We haven't had a chance to really test out various iterations or different kinds of contracts. I think one thing that would like to do is recently there was a gecko security that did some of the work with contract auditing and are some of the tests they were looking for what are they checking in the contract to see or assess the risk factors in the contract and see if we can integrate some of that in generating the report of with our tools. So next thing that we're looking forward to add to this is and now we're manually pasting contract.
+Binaya Tripathi: will make a tool that accepts the contract name and then able to retrieve that source code and then save that in the final output and…
+Jason Schrader: Yeah, I would love to review the reports.
+Binaya Tripathi: also connect mermaid.js to get the arms the workflow of the contract in the report itself.
+Jason Schrader: I'm very excited to see what it comes up with. And it's a kind of an interesting thing like how we use LMS now we're talking about workflows and like how it's changed for a lot of us.
+Binaya Tripathi: So that's…
+Jason Schrader: We kind of use them daily and…
+Binaya Tripathi: what we're adding and…
+Jason Schrader: get involved with a lot of them.
+Binaya Tripathi: then that just making sure the reports that it's interested accurate and…
+Jason Schrader: This is the same kind of thing. It's like where I'm not gonna necessarily trust the LM do a perfect analysis seeing…
+Binaya Tripathi: in line with the actual risk factors and I think for that would need more comprehensive discuss on with somebody that's more fluent in Clarity and…
+Jason Schrader: what it comes up with exploring those things and then doing my final analysis is Gonna Save Me A Time. That's right. It's kind of being useful to other people and…
+Binaya Tripathi: what kind of risk factors and…
+Jason Schrader: I really like this idea for an AI agent crew…
+Binaya Tripathi: so on and so on so that would be collaborative.
+Jason Schrader: because it's a simple bundled service, if you were to have somebody come in and do it as long as they paid for it with their agent. Then they'd be able to access it. It kind of fits into that earlier model of having the resource contract and things like that to
+Binaya Tripathi: What?
+Jason Schrader: ok.
+Jason Schrader: Yeah. Yeah, I think pretty much you nailed the tool usage to get the contract at he imagined layers like pacing in the contract code totally works and…
+Binaya Tripathi: So the demo that I showed,…
+Jason Schrader: then being able to get the contract code for provided name is kind of like the next step and…
+Binaya Tripathi: I know it was not perfect. I gonna show the live app we have I've dropped the link and…
+Jason Schrader: then the next step from there could even be from this transaction…
+Binaya Tripathi: try that it should be up and…
+Jason Schrader: because then we can get the transaction info we can…
+Binaya Tripathi: running if it's not just let us know and we'll be happy to look into…
+Jason Schrader: what contractor called just continue down that chain…
+Binaya Tripathi: why it's not working. But I am based on the Bounty that you posted and…
+Jason Schrader: but those are just extractions to The contract…
+Patrick Stanley: the string
+Jason Schrader: what you've already built. So just human as are you gonna post a VR. contract that's what we were talking about now is at the moment the way it works you have to paste the code…
+Binaya Tripathi: what you saw. Is that kind of in line with what you just expected and…
+Jason Schrader: I think it's definitely time to get code in but there is a tool available to…
+Patrick Stanley: Yeah.
+Binaya Tripathi: then kind of continue to build on top of that.
+Jason Schrader: get something in there because you guys got it all together. This looks great. where an agent should be able to just pick that up and throw it in there.
+Jason Schrader: 
+Patrick Stanley: Yeah.
+Patrick Stanley: 
+Jason Schrader: Yeah, and then coming back to some of the questions I was asking the others earlier, as you were going through the development process. Were there any challenges you face? how did it feel trying to create a crew of Agents using this framework?
+Binaya Tripathi: Okay.
+00:35:00
+Binaya Tripathi: Just immediate this next step Patrick there.
+Binaya Tripathi: awesome
+Binaya Tripathi: Do you want to speak to that I think he was dropped. So some of the challenges that we faced was I've looked more into Korea and I've had a little bit more experiences looking at the clarity smart contract and…
+Jason Schrader: Amazing. I think that's a excellent segue and…
+Binaya Tripathi: the defi activities and the nature of the work three activities and…
+Jason Schrader: into what I wanted to show a little bit too. So, let me get my screen back up here.
+Binaya Tripathi: so on and he had been working using Lang chain and…
+Jason Schrader: And I love seeing things come together. And that's what this really feels like to me…
+Binaya Tripathi: recently with Korea so we able to have lengthy discussions about…
+Jason Schrader: I got your code up here. I was looking through really like…
+Binaya Tripathi: how I was able to show him …
+Jason Schrader: how you set up the ages here in the tasks.
+Binaya Tripathi: how I swap transaction fee or…
+Jason Schrader: Everything looks really clean, to turn this into a PR would be a little bit of work against the repo…
+Binaya Tripathi: slip agent so on and so on so he was able to okay, he see me do it and…
+Jason Schrader: but seeing this is a working thing is definitely really awesome.
+Binaya Tripathi: then hear me to talk about what I was doing made a lot of sense and…
+Jason Schrader: So this was the Bounty I'll keep this in mind now.
+Binaya Tripathi: when I share with him some of the past audit reports for the smart contracts,…
+Jason Schrader: So now we know when we post bounties we've got eyes on them. I absolutely love that.
+Binaya Tripathi: so we tested Alex lab already and…
+Jason Schrader: up
+Binaya Tripathi: then just
+Binaya Tripathi: Reports and the were able to pick up on the key ideas from those reports and… Yeah.
+Jason Schrader: Yeah, definitely great to have …
+Binaya Tripathi: then prompt our agents to kind of generate similar reports along the similar Direction.
+Jason Schrader: the more Minds we can put on this the faster. We're going to make progress. So absolutely pleasure.
+Binaya Tripathi: So the challenge was to really understand the workflow and…
+Jason Schrader: Cool, so next a little bit. I wanted to get into we had an open PR for doing a streamlit type structure for agents and…
+Binaya Tripathi: the work three activities and just getting used to the idea of defy and just connecting it with the tools in AI overall.
+Jason Schrader: Crews and tasks and there's a ton of work that put into it,…
+Binaya Tripathi: It went pretty smooth…
+Jason Schrader: but it's actually merged and…
+Binaya Tripathi: since we saw the post yesterday and…
+Jason Schrader: closed. And I'm excited…
+Patrick Stanley: Yes.
+Jason Schrader: because I think it's perfectly in with…
+Binaya Tripathi: was talking about it. We were able to put it together really fast.
+Jason Schrader: what binaya was doing. So you can see a preview of it.
+Binaya Tripathi: So we're super proud to be able to show and…
+Jason Schrader: I have it running here. And we got the logo up Top This is actually picking up the agents and…
+Binaya Tripathi: in this particular call because I knew …
+Jason Schrader: the tools directly from my code.
+Binaya Tripathi: it's like weekly call and we're gonna have to call this morning.
+Jason Schrader: So there's no actual content on the website except…
+Binaya Tripathi: So why not? So that's kind of a top priority for us last couple of days.
+Jason Schrader: what comes from the code. So if we were to switch this over to the agents that are defined in binaya's work, for example, we'd see a whole different list and it would list out their tools.
+Jason Schrader: We also have from the code every single tool based on a class. So each one was kind of separated. So it wasn't a huge list that is hard to scroll through but we can see some of the tools and capabilities that we have just in the main repo and as we continue to add them we'll continue to add some categories here. It's kind of a starting point for creating agents.
+Jason Schrader: And same with tasks. So these were just some simple tasks that were left in there from the older iterations, but just wanted to know that we could pull these in from the code we could display them and we could operate with them and…
+Binaya Tripathi: Sorry to intervene that Jason,…
+Jason Schrader: then we have this execution tab, which is where the magic happens currently blink.
+Binaya Tripathi: but I have to draw but before I drop by I just wanted to thank a tommi.
+Jason Schrader: But I think a very good fit for exactly…
+Binaya Tripathi: I see tommi joined Tommy.
+Jason Schrader: what we saw in your streamlab app…
+Binaya Tripathi: I met him in Nashville,…
+Jason Schrader: where you have this is…
+Binaya Tripathi: and then he has worked for a long time in Ai and…
+Jason Schrader: where your agents tools and tasks would get their input.
+Binaya Tripathi: a high frequency trading…
+Jason Schrader: They would start their operation and…
+Binaya Tripathi: if I remember correctly. He's based out of Europe and…
+Jason Schrader: then you can see what's going on from there in the output.
+Binaya Tripathi: thank you for joining.
+Jason Schrader: So that was a really cool.
+Binaya Tripathi: at the…
+Jason Schrader: Just your demo fit in perfectly with the idea of this execution tab
+Binaya Tripathi: if you may just introduce and welcome to the group and …
+Jason Schrader: That was a big one on the development side that I wanted to share.
+Binaya Tripathi: we hope to see you in more calls that moving forward.
+Jason Schrader: And the other cool thing with this is we went ahead and…
+Binaya Tripathi: So yeah.
+Jason Schrader: hosted it on replica. So same way that you're able to just run it and host it on streamlet works here as well. And this makes it really easy to Fork it run it play with it and get involved without having to set up anything locally on your machine. So if you want to do it local you have those options you have the environment files. It's ready to go. And if you want to do it here you have this option as well and we'll just continue to keep both in sync with what happens on the game.
+Patrick Stanley: Yes, then. I know people are doing bounties for adding tools. is there going to be a process if not already for basically? updating and upgrading this package software So when people download this we'll have a bunch of tools at available for them, right?
+00:40:00
+Jason Schrader: Yeah, yeah, so currently the way that works at least in the technical sense is our tools which you can see right here on the side. This is pulled in directly from the tools So anytime that we merge in changes and we say okay, we now have liquid stacking. Them urgent those changes and…
+Patrick Stanley: Yeah.
+Jason Schrader: we just update it here and it picks it up automatically same with the UI just adding it to the code is gonna show it over here as well.
+Patrick Stanley: Okay, so you don't need to download the package?
+Jason Schrader: It just has to be within the same format, but there's plenty of examples in there.
+Jason Schrader: If you're working with it locally you generally like development process. You want to grab the latest code before you start working so there…
+Patrick Stanley: Yeah.
+Jason Schrader: but it's real simple to do. It's just a little bit command and you just make sure you got the latest.
+Patrick Stanley: Rapha has a question or customizing specialized agents. question mark
+Jason Schrader: Yeah, I think when I was looking at the UI originally I was like, okay, let's have a ad agent Tab and let's keep adding on more and more features and we decided to strip it down and start simple. So right now the UI just helps you visualize what you created and then you can watch the execution on the execution tab, but I can see a world where you make it so the UI can add agents you can edit agents you can change things and maybe that's something worth putting about sounding tour but it really depends on who's gonna be digging in and diving in if that enables more people to play. I think what we're really looking for is, what are the best combination of Agents some consistent outputs that we can try and that was the direction for having this first Bounty for actually creating agents over tools. That way we can see how well does this work? is this something that I can run just in that full circle Kyle? Let's see every hand.
+Kyle Umstatter: Is the goal to make this like a SAS?
+Jason Schrader: Sort of I mean when we were thinking about why would I create a group the two answers there are kind of similar to how we use LMS today. It's like first I'm going to do it for me. This needs to be something that I would use and I would use it all the time because that I'm replacing actions that I had to take. I'm getting my time back. but if it works really well for me I could imagine it working really well for someone else and the smart contract analysis for example, so if that were exposed as an API to where I could guide you the contract name, you're going to give me back this report after a certain amount of time. Then we could plug in the day-to-day API and the resource contract that we had so that we can verify all of our payments on chain. And now you're offering your crew as a service so crew is a service might be a better term.
+Kyle Umstatter: in terms of right now we run everything using The mnemonic key in an environment variable but I would imagine that eventually if you have it as a SAS though. Usually the typical way is the connector with the wallet, right? We're with the Through web 3
+Jason Schrader: Perfect. Later
+Kyle Umstatter: you connect your wallet. But every time you do an action it prompts you for do you want to do this which would be a problem for an AI to go about executing that with the method B pass in your mnemonic phrase and save it on the SAS per se or If This Were assassin you weren't actually running it. What would that look like?
+Jason Schrader: Yeah, I think not at all.
+Kyle Umstatter: or maybe interpreting it is the
+Jason Schrader: You know what I was looking at using replit or using cloudflare using other hosted services for putting something up like this what I liked about replicate. I have the secrets pain open here and basically whenever you Fork this it's gonna request that you enter all these things in order to be able to run it. So you do have them being stored in a secure way, but I would never give an agent a wallet that I wanted it to hold on to things. I think the easiest way to imagine is that they're gonna do operations. They're going to do things but you never keep a large balance in there. You don't keep valuable enough teens in there. this should be a wallet that's more for operations. And if you are doing something like collecting nfts, or if you do happen to get over a certain threshold on the balance, you should be liquidating those assets. Otherwise
+Kyle Umstatter: So the expectation there is that a user of this would have to run their own copy and then plug in the environment variables. It wouldn't be a used from a web.
+Jason Schrader: No, not a use from a web perspective from the West part could be for making the payment …
+00:45:00
+Kyle Umstatter: Okay.
+Jason Schrader: if I'm trying to get access to what this crew does. They're a little pop up. This is pay for this it can also be returned the error can be returned in a format to where an llm or somebody else can understand. They need to make this payment. We do have some tooling kind of built around that too. I think that's more what we're going to learn as we Go ahead.
+Kyle Umstatter: That's it. Thanks.
+Rapha RSierra: And Jason, do you see a world where way Ai and humans share may be a multisig for a special confirmation transactions.
+Jason Schrader: Sure, why not? it's just another Stacks transaction at the end of the day and the native multic format allows us to they could have input but the trouble is like you lose your autonomy, Because at that point you're going to have to go in and improve things there may be certain steps or things you want to do where that makes sense, but we didn't want to limit the system to requiring user input. So we're trying to figure out the way to run with the other direction.
+Patrick Stanley: And maybe when things Okay, I start losing you money. Then you'll build that in.
+Jason Schrader: Yeah, and maybe the ability to generate while it's soup you have your end up.
+davek.teller: Yeah, I was gonna go into the generation of wallets and consider disposable wallets where it's a one-time use for the transaction, So the wallet executes the actual item removes the funds and then the wallet never gets used again. So it becomes in my case a disposable wallet. So there's you because you can make infinite amount of wallets. So therefore it seems like a simple and costly approach.
+Jason Schrader: It's interesting. I mean At first I was thinking it would be difficult with the address changing all the time or anything else. But if you're looking at it in the lifespan of the crew running you have all these processes that happen in between each of these agents can use a different account index and then boom it's done it moves on and funds are out. Yeah, I think both sides kind of present some risks that were willing to take at these early stages like having to put these things in an environment daily variable. I would definitely recommend not using anything that you're not willing to lose just in case and then same with doing disposable wallets what happens if the funds didn't get transferred out for some reason as long as I would need a way to replay or be able to go back to access that
+davek.teller: No, no. Yeah, so that was just thinking that right depending on the transaction. It you would obviously double triple check make sure that the balance was zeroed out and then only then and when that occurred would the agent move on and say okay I'm making a new disposable wallet and then you would just discard it. Right but I was thinking more like that that transactional piece would only be relevant for five minutes or something. Right? I'm really really talking about disposable. I'm not saying anything longer than a certain duration. Maybe you could specify the amount of time you want the wallet to be used for a specific transactions or maybe you could distinguish the transactions and then once those transactions have settled you would know for a fact that it's been tripled checked and the balance has been moved out with the verification of it then and only then would you create a new disposable wallet and move forward so something like that. I'm just talking out loud.
+Jason Schrader: guys, really cool, I think it might have been you we had some generator wallet type scripts that were submitted early on and I think the different ways we can chop this up and experiment. Let's try it out because they're both kind of makes sense to me and I don't want anybody to end up in a bad spot obviously, but I do want to enable as much experimentation as possible with this.
+Jason Schrader: And one other thought I had is down the road…
+Rapha RSierra: I should.
+Jason Schrader: if we have our agents doing things if I'm kicking them off and they're using this certain wallet. Why not have that same wallet loaded in my browser? And then I'm able to see the transactions. I'm able to move funds I'm able to mess with a little so I think all of this is just going to come through experimentation Rapha. I see if you end up
+Rapha RSierra: Yeah, an idea I just had from this conversation is whenever someone has their wallet being compromised. It's such a hassle to have to move all the assets out into a new wallet. And again, it's just an idea. I'm just thinking out loud here. I'm not sure if you could. Ask an agent to do that task on your behalf. Probably not maybe.
+00:50:00
+Jason Schrader: It's interesting because it's right on the line of being something script versus like something you do with llm. But what's nice with the llm is you could pick up things that weren't already known you could have it go through the step of here's all my balances. I want all these balances to be zero when we're done one by one you go through each one. If you can't find the transfer contractor, if it's not nice at 10 compliant it can get the source code it can look at the functions. It can make sure they're safe in that case too. we had that one weird contract where it was like a fake Miami point or something and the original transfer function. That's part of the Sip would try to transfer your other assets, along with it and there was a second function that was just a legit transfer function with a different name.
+Jason Schrader: So in that case if you really wanted to move it there was a way to do it, but it wasn't part of the normal standard and I think an AI can pick up on that but there would need to be some guardrails and steps along the way and that's where the crews kind of give us that power to do multi-step work for us.
+Jason Schrader: Yeah, I would say I don't want to see any transactions in allow mode. I don't think there's a need for it and that would help mitigate that risk. We should definitely be teaching them to use postconditions. And look a little closer at that because I don't know if I've actually looked at all the tooling to make sure of that but that's a big one post conditions in the case of that malicious Miami coin contractor. I mentioned that was actually what saved everybody is if you accidentally tried to do the transfer it would fail because it's trying to transfer other assets that we're not listed so that part was really helpful. But if you run that in the loud mode you're going to get Rex so Having a focus on the post conditions is really good. it just made me think of
+Jason Schrader: Looking at the contract code and determining the necessary post conditions and how to compute them. Especially if it comes from only things in the contract. There's a lot of room that we can use agents to do the same things that we would do but we have to write down our steps. But what do you check before you send a transaction? That's where we got to teach them the same thing.
+Jason Schrader: Awesome, go ahead.
+Jason Schrader: Yeah, so when I look at that from the big picture, I think definitely yes for one there's a way to do it because it's the same way that we have to as developers right here to look at the contract and I gotta go look at what's expected to transfer then I gotta figure out how I'm gonna compute it and where it's gonna come from so we can teach it to do those same steps and in the really big picture when we're talking about having cruises resources, you have a crew that can get the smart contract code for You have a crew that could do an analysis. You have a crew that could provide you post conditions like these all become services that we get exposed as So yeah, very cool ideas all around. I'm hearing a lot of good stuff on the call today.
+Patrick Stanley: Yeah, we're cooking now.
+Jason Schrader: We're already at 10 and that time flew by absolutely quick last little bit on the development side. I am just still working on I could definitely use some help with the git lfs challenge. So here we're trying to figure out a way to store all of our videos another way might work better. This was just trying to use it's like a S3 type interface with Cloud Player super cheap for storage couldn't get it all working. So still playing with it to figure out how it works. But a place to store the videos. That's probably the only blocker that I have at this point and I'll update that on the project board. I know we did want to make some time today to talk about mission statement. I don't know how everybody feels about hanging out a little longer or I know you had some thoughts Patrick. What do you think we should do about that?
+Patrick Stanley: Yeah, I think we might as a punt on it and I came prepared with a little kind of worksheet and process but I have to go to doctor unfortunately. So I got to jump pretty soon but basically the goal I think we can maybe do this next week. But the objective is to Define our purpose why are we doing what we're doing our values and a mission for the aibc working group. And reason for doing this is it focuses us and also kind of positions our community brand what we stand for. So we're able to attract minded individuals who want to contribute to this.
+00:55:00
+Patrick Stanley: And there's true open source, true working group, this isn't the company trying to make money. This is like a working group trying to see what's possible and I think adding a little structure to Mission values and purpose. we'll go a long way because then we're able to communicate our story we're able to Market ourselves and establish, kind of just clear narrative on what we're doing. So, I don't think we have that yet. We have a nice sexy brand still in the process of being applied to the websites like that. and we have obviously some good activity here and people are building stuff. It's amazing. We'll do more bounties with we got to get to what we're doing to attract more people.
+Patrick Stanley: And curious Jason do we have and thanks for coming up the brand. Yeah. It looks nice. do we have a plan for the next Bounty now, it seems like maybe this recent one might be completed fairly soon.
+Jason Schrader: h H
+Jason Schrader: Yeah, I think we were looking at how to make the experience better, so we can get up to a whole bunch of activity and we were talking a little bit about turning the crew into an unchain resource. how do we get to that and goal of being able to charge for the smart contract report in this case? But I also think there was a lot of value ideas that came out of here…
+Patrick Stanley: 
+Jason Schrader: where we might be able to spec out one or two other Crews so that we have a few that work with a few resources to kind of start with and then I'd love to look at those next steps of …
+Patrick Stanley: that
+Jason Schrader: how do we turn that resources into something that somebody can charge for and it would wrap and put all the tools together at least for the first time?
+Patrick Stanley: Yeah, so, okay, so folks like, binaya and davek and gang I'm basically willing to put up 1,000 to $2,000 for good. bounties, so if you have ideas around here's that happen. You haven't yet created yourself as home front around your own body. If you have ideas just send them to Jason if you want to draft them up even and GitHub and they're Just send the Jason will if they're rely good. We'll put $1,000 bounty on it right away and tweet it out. We want this engine helping…
+Jason Schrader: Yeah.
+Patrick Stanley: where people are contributing to this thing. So it gets more and more potent.
+Jason Schrader: I agree. I'd love to see this energy keep going. I appreciate everybody coming out and making presentation's and demos today and talk a little more about their experience really excited to see what comes next to I think last thing Patrick for the mission statement Vision stuff. I think we can put that in the communications repo and let people kind of chew on it till the next meeting as well. So they want to add any comments thoughts or other input. Other than that, I think we're pretty good to wrap up any other final thoughts before we close out.
+Patrick Stanley: Yeah, kind of I actually want to say more thing about the bounties. we I got a good amount of money to support this I really want to get things accelerated so view these thousand dollar bounties like sticks of dynamite and…
+Jason Schrader: Yeah.
+Patrick Stanley: we're blasting our way through the mountain to pave rail or something like and the faster we do them the more the better this whole thing is gonna be so I don't want me and Jason to be the limiting function on how much gets done you guys are empowered. I'll find it. Hey davek.
+davek.teller: I think that's amazing. I was going to say I think if I could I'll share with you guys later. I got some thoughts on potentially structuring maybe more of a bounty categories or tracks where I think you have momentum and you have a number of skill sets developers that are currently participating inactive. And so I think creating maybe some sort of multi-track bounty scenario where there's a way to get active developers and…
+Patrick Stanley: mmm
+davek.teller: individuals that are interested in the project.
+01:00:00
+davek.teller: To proactively current continue to expand on their potential tracks which then creates more momentum because if you really are trying to do the run fast developed fast. I think if you create those tracks, right, I know, Rapha human has his skill set. Binaya has his and so potentially creating tracks that have bounties within them. Then there can cut some what taken I think a potential slightly ownership, but at the same time it's open as well so that they can expand upon it but I do if I can get some more thoughts that I have about how there could be a way to utilize the Manpower at the moment and expand that to get those to get a lot of things and then potentially on board a lot of ideas. I have a few I work on all I'll get those written up for you but taking those and then trying to classify those into those tracks so that you have
+davek.teller: Or consistency of ideas per track per scenario and you just keep running it up and you can obviously, approve and categorize and however you want to do it but I do Vision. I can visually see an approach that could really take shape and…
+Patrick Stanley: Yeah, if you see a really potent track…
+davek.teller: really yeah.
+Patrick Stanley: if you want to just prove it out with one track just like show that it's possible instead of setting up okay, we have tracks for you want to prove one track. You're like look how far we can go if we just lay down the rail like a hundred meters two miles down down the road like what that actually gets us. We can just start tagging it with bounties. I'm happy Philip 10,000 with a bounties on a single track. It's a really potent track. And we can get that one flushed out, so I'm down to do it that way too if there's a super pot.
+davek.teller: No, no, I think that sounds great. I think it would just be you're saying show proof of concept make sure that gets you the return that it actually expands.
+Patrick Stanley: Yeah, exactly.
+davek.teller: And if you use that as the Baseline work at all the Kinks and all the issues and then replicate that I think it could be a really potent strategy. But yeah, I'll write out all my thoughts I have and I'll send it out to you guys hopefully later by today.
+Patrick Stanley: Thanks so much.
+Jason Schrader: Yeah, definitely. Appreciate it.
+Patrick Stanley: cool So helpful. Good seeing I feel we broke through something today and people presenting their demo stuff actually talking about what they wanted as opposed to Jason just saying, hey someone completed this and yeah. Yeah, that's really good.
+Jason Schrader: Yeah, I was really excited setting up the agenda and getting ready for this as well. I think it just infuses some new energy into what we've been doing and it kind of pulls all the different pieces together. it got to a point. Whereas we have this piece. We have we have this little piece and now we're starting to see him. In it work together and build this new things so really thank you everybody for making it out. I appreciate you looking forward to seeing you next week and we'll just continue this trend and we'll also talk a little more about the mission statement vision and keep moving. Take care everybody.
+Patrick Stanley: So yeah. right
+Meeting ended after 01:03:13 👋

@@ -1,0 +1,162 @@
+00:07:09.452,00:07:12.452
+Louis-Philippe Bellier: Hi everyone, this is an automated message to let you know my Tactiq extension: https://tactiq.io/r/transcribing is transcribing this meeting for me so I can give my full attention to you.
+
+00:17:21.667,00:17:24.667
+Louis-Philippe Bellier: the post I shared last meeting about how The Graph has fully jumped into the AI bandwagon, not sure if you had time to check, but here it is again: https://x.com/PinaxNetwork/status/1818997083099087009
+
+00:17:29.259,00:17:32.259
+Louis-Philippe Bellier: through Semiotic Labs
+
+00:17:53.835,00:17:56.835
+Louis-Philippe Bellier: The AI/LLM to SQL to blockchain platform I shared a demo of.
+
+00:21:31.269,00:21:34.269
+Jason Schrader: yes! I need some time to learn more and figure out where it fits in the tooling.
+
+00:22:00.751,00:22:03.751
+Louis-Philippe Bellier: might, might not, let me know if you wanna see a demo again
+
+00:23:17.777,00:23:20.777
+Louis-Philippe Bellier: IMO: the wallet is the agent's, the agent is not yours, the swap isn't yours ultimately
+
+00:23:38.466,00:23:41.466
+Louis-Philippe Bellier: debatable I guess
+
+00:23:40.443,00:23:43.443
+Jason Schrader: if it's running with your API keys though... idk definite gray area
+
+00:24:10.520,00:24:13.520
+Louis-Philippe Bellier: until swaps aren't considered taxable events
+
+00:25:13.434,00:25:16.434
+Jason Schrader: AIBTC dev package ;)
+
+00:31:36.437,00:31:39.437
+Louis-Philippe Bellier: yes and make it (this WG) profitable before working on toher things. Lean & mean.
+
+00:32:21.286,00:32:24.286
+Louis-Philippe Bellier: true
+
+00:32:39.366,00:32:42.366
+Dan Edlebeck: would be amazing
+
+00:32:39.900,00:32:42.900
+Louis-Philippe Bellier: it is already for institutions
+
+00:32:49.113,00:32:52.113
+Dan Edlebeck: totally different fontier for our spieces
+
+00:32:56.636,00:32:59.636
+Louis-Philippe Bellier: everything running with/by algorithms
+
+00:33:15.888,00:33:18.888
+Dan Edlebeck: like g w bush and getting into painting
+
+00:33:33.553,00:33:36.553
+Louis-Philippe Bellier: dream
+
+00:33:34.535,00:33:37.535
+Dan Edlebeck: our species celebrates the arts!
+
+00:33:41.034,00:33:44.034
+Louis-Philippe Bellier: my dream
+
+00:34:11.876,00:34:14.876
+Louis-Philippe Bellier: I don,t want to do swaps, I want my AI to pick-up on all things I do at work, all notes and automtically pick-up on the insider info and make profitable trades.
+
+00:34:14.355,00:34:17.355
+Louis-Philippe Bellier: my POV
+
+00:35:05.803,00:35:08.803
+Louis-Philippe Bellier: Gov's take: AI agents getting audited by SEC
+
+00:35:06.757,00:35:09.757
+Jason Schrader: That's where I see crews being powerful, define your employees (agents), their tasks (project scope), and their operating rules (style guide, past results, etc). Run them when needed or on a schedule and review the results.
+
+00:35:18.477,00:35:21.477
+Louis-Philippe Bellier: Claude
+
+00:35:46.022,00:35:49.022
+Louis-Philippe Bellier: nice
+
+00:36:06.780,00:36:09.780
+Louis-Philippe Bellier: metaverses
+
+00:37:01.248,00:37:04.248
+Louis-Philippe Bellier: WOuld love to see this WG build the cheapest LLMs running agents that makes even the smallest swap profitable.
+
+00:37:18.327,00:37:21.327
+Louis-Philippe Bellier: this now makes it an actual product at scale.
+
+00:37:59.263,00:38:02.263
+Louis-Philippe Bellier: 0.001$ x 100M is still equals 100k
+
+00:38:17.661,00:38:20.661
+Rapha RSierra: are you talking about arbitrages Louis?
+
+00:38:36.758,00:38:39.758
+Rapha RSierra: cross chains
+
+00:39:06.163,00:39:09.163
+Louis-Philippe Bellier: arbitrage is easy, just saying this could be an alpha as it's so easy and everybody does it. What I'm saying is any swaps. 0.001$ x 100M tx still = 100k$
+
+00:39:20.416,00:39:23.416
+Rapha RSierra: gotcha
+
+00:40:23.709,00:40:26.709
+Louis-Philippe Bellier: News: Another news we're not talking about is Liquidium, wanting to run Aave-like exprience on BTC. Just secured 2.5M funding.
+
+00:40:51.445,00:40:54.445
+Louis-Philippe Bellier: Not AI, but Stacks news
+
+00:42:35.157,00:42:38.157
+Louis-Philippe Bellier: exactly
+
+00:44:54.628,00:44:57.628
+Dan Edlebeck: awesome guys - i also need to jump off. excited to continue to engage
+
+00:45:13.839,00:45:16.839
+Louis-Philippe Bellier: growth hacking
+
+00:46:16.195,00:46:19.195
+Louis-Philippe Bellier: count me in for this
+
+00:46:29.894,00:46:32.894
+Louis-Philippe Bellier: got everyting ready, whatever the ppath is
+
+00:46:57.377,00:47:00.377
+Louis-Philippe Bellier: I'll help you then
+
+00:48:27.873,00:48:30.873
+Louis-Philippe Bellier: top down!
+
+00:49:27.260,00:49:30.260
+Louis-Philippe Bellier: hand in bot
+
+00:49:40.561,00:49:43.561
+Louis-Philippe Bellier: lol
+
+00:50:39.996,00:50:42.996
+Louis-Philippe Bellier: yes audience first
+
+00:52:08.640,00:52:11.640
+Louis-Philippe Bellier: Making me a tshirt: Make agents be financially independent!
+
+00:52:18.682,00:52:21.682
+Louis-Philippe Bellier: :D
+
+00:53:13.430,00:53:16.430
+Louis-Philippe Bellier: vote?
+
+00:53:33.833,00:53:36.833
+Louis-Philippe Bellier: democracy? meritocracy?
+
+00:56:32.576,00:56:35.576
+Louis-Philippe Bellier: 3rd meeting starting, will be reading. Brain heavy. laters guys.
+
+00:59:21.697,00:59:24.697
+Louis-Philippe Bellier: sharing mine too
+
+00:59:22.911,00:59:25.911
+Louis-Philippe Bellier: laters
+

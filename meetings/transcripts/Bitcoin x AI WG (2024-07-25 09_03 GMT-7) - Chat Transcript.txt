@@ -1,0 +1,77 @@
+00:03:13.330,00:03:16.330
+Louis-Philippe Bellier: Is there tax on Stake Stacks?
+
+00:03:14.910,00:03:17.910
+Louis-Philippe Bellier: lol
+
+00:03:30.465,00:03:33.465
+Louis-Philippe Bellier: hahah
+
+00:03:31.898,00:03:34.898
+Jason Schrader: https://github.com/orgs/aibtcdev/projects/3/views/1
+
+00:03:48.350,00:03:51.350
+Louis-Philippe Bellier: I meant fees but yeah, was a joke
+
+00:04:48.743,00:04:51.743
+David's Notetaker: Hi, I'm an AI assistant helping David Opuene take notes for this meeting. Follow along the transcript here:  https://otter.ai/u/jZ8iZWbVfXy-35S6qqNAcoQuSa8?utm_source=va_chat_link_1
+
+You'll also be able to see screenshots of key moments, add highlights, comments, or action items to anything being said, and get an automatic summary after the meeting.
+
+00:05:42.412,00:05:45.412
+Louis-Philippe Bellier: no comment
+
+00:05:58.316,00:06:01.316
+Louis-Philippe Bellier: wasn,t me
+
+00:06:09.182,00:06:12.182
+Louis-Philippe Bellier: AI News: https://blog.pinax.network/the-graph/powerful-insights-semiotic-labs-reveals-the-future-of-ai-on-the-graph/
+
+00:11:08.698,00:11:11.698
+Louis-Philippe Bellier: great name
+
+00:12:06.925,00:12:09.925
+Luigi Ottoboni: https://thinkbuddy.ai/
+
+00:14:04.361,00:14:07.361
+j2 p2: you mean 70b
+
+00:16:45.831,00:16:48.831
+David's Notetaker: Hi, I'm an AI assistant helping David Opuene take notes for this meeting. Follow along the transcript here:  https://otter.ai/u/jZ8iZWbVfXy-35S6qqNAcoQuSa8?utm_source=va_chat_link_2
+
+You'll also be able to see screenshots of key moments, add highlights, comments, or action items to anything being said, and get an automatic summary after the meeting.
+
+00:18:01.995,00:18:04.995
+Jason Schrader: https://aider.chat/docs/leaderboards/
+
+00:18:26.563,00:18:29.563
+Louis-Philippe Bellier: link?
+
+00:18:39.535,00:18:42.535
+Louis-Philippe Bellier: possible to test multiple at once?
+
+00:18:39.827,00:18:42.827
+Jason Schrader: https://thinkbuddy.ai/#pricing
+
+00:19:02.086,00:19:05.086
+j2 p2: https://github.com/exo-explore/exo 
+for running local inference cluster
+
+00:19:26.556,00:19:29.556
+Louis-Philippe Bellier: or Mac VM on LInux
+
+00:20:00.566,00:20:03.566
+j2 p2: both
+
+00:21:10.424,00:21:13.424
+Jason Schrader: https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/
+
+00:22:42.039,00:22:45.039
+Louis-Philippe Bellier: Yielding my time chairman
+
+00:22:49.998,00:22:52.998
+Jason Schrader: too much cspan lol
+
+00:22:52.817,00:22:55.817
+Louis-Philippe Bellier: ;)
+

@@ -1,0 +1,306 @@
+﻿Bitcoin x AI WG (2024-08-01 09:03 GMT-7) - Transcript
+Attendees
+Algorithm, Dan Edlebeck, David's Notetaker, Fireflies.ai Notetaker Louis-P, j2 p2, Jason Schrader, Jason Schrader's Presentation, Louis-Philippe Bellier, Lucas's Notetaker, Luigi Ottoboni, Patrick Stanley, Rapha RSierra, read.ai meeting notes
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Jason Schrader: Perfect. welcome everybody to AI BTC working group meeting I'm happy to get everybody together. Today is Thursday August 1st, and we have some good updates to go through today. I'm excited to cover some things so kicking it off as usual. We always start out here on the main site, but there's some news coming about the main site is kind of exciting is that we have a reborn in progress. So if you haven't seen this, there's some wonderful new branding assets coming out that are just gonna help tie everything together and kind of tell the story as we develop up these ideas and start creating these agents and everything else and as part of that we started to put some of that in place. So you'll see it in this announcement. You can also kind of see it in the Avatar here. We got the main design going here.
+Jason Schrader: And then we also have the main meeting page was updated and quick note on this one. So I updated the add event details and I think just the logo and some of the info in here and I also set the event to continue. So I just wanted to make sure that it landed and the updates landed on everyone's calendar. So you should see the same content that's here. And if anybody has any issues with the calendar or doesn't see an entry or anything else definitely reach out in the Discord or on Twitter or anywhere else and I'll be happy to get you back up. My understanding is it should be there? But whenever I click the save button and change up some things. I definitely want to make sure.
+Jason Schrader: Didn't have any issues with their calendar that's here today.
+Jason Schrader: Pretty much. It's the same event just changed layout. So hopefully those details will come through but I am curious how that works, using a service added and I never really know what happens on other people's machines. So good.
+Jason Schrader: And then we also went ahead and applied those grand assets to the GitHub. So you see all the repositories each one just has read me all the little nice things that go along with it. So those are updated as well and next up will be looking at the website to get something done here to get it in here as well. I'm sorry to share that because I thought it was fun. I thought it looked really cool. I'm excited to see some more of the graphics and things come live as we go through it. And next up we'll go through the project board. That's what we typically do each week and kind of see where things are at. So first off we had a bouncy out last week for stacking Stacks. Basically, we needed all the functionality to perform stacking with a pool or perform stacking with a liquid second provider. And those are the Bounty with submitted shortly after so we're getting a lot of traction people are submitting quickly for these different boundaries that we're putting out.
+Jason Schrader: And we also have some interest in the issue. Although that wasn't the person ended up. Completing I'm gonna guess at the name of sorry if I butcher but Thank you for submitting this I do have some small details that I want to get back to feedback wise as you showed your Twitter here. So if you're on the call appreciate it congrats on getting that done. We just got some small things to go over. And now that we've started the meeting, let's go ahead and see up our next bounties. So we always hear first from here.
+Jason Schrader: Also become back to our project board.
+Jason Schrader: All So the next two that we're moving up we'll go ahead and move this one over to done because it's always a nice feeling And let's move over the next two. So the next two they're going to be sip nine and sit 10 support. So these are bundled up as two different bounties 500 each in Bitcoin. And they cover basically all the functions that are available for each item. So with NF tease you have the ability to get the token URI get Milner and do the transfer. And then with SpongeBob tokens, you're able to receive and get a little more information like the decimals token name Etc.
+Jason Schrader: But it'll just be implementing each of those functions as individual tools that way anything we want to do related to a September or sip nine item is possible and the biggest one being transferred because at that point then you can send and receive different tokens. Just knowing the token contracts address same with being able to transfer nfts and following that so we need it to be pretty much supporting any contract that supports these 10 trait and of any questions or if any additional information is needed. I tried to link both of these sip sections in there. So you'll see it links directly to the trait. You can see examples of these types of contracts all over the place. So everything should be pretty straightforward, but questions probably best place to drop on this here in the GitHub and we look forward to seeing who picks up those
+00:05:00
+Jason Schrader: so Patrick mentioned earlier, one of the things that we shared out was kind of thinking about what these bounties have done and where we're at as a result of putting these out there and we actually have a lot of abilities that our agents can use now so when we started there were zero and now we got a whole list so to sum this up basically we now have the ability to do anything involving BNS being able to look up names register them handle all the related functions. We have tools that allow us to send and receive So any Stacks in the wallet can be interacted with we have different helpers for the wallet and transaction type operations. if you need to know your own address or if you need to know all the addresses available in the wallet, and we also have the ability to sign messages using the private keys. So all of these are pretty much emulating what a user can do or would do with stats and
+Jason Schrader: I think we just keep expanding that and we start mixing and matching these to create agents. Now in my mind, the initial bounties were working on are more around tooling because we have to set that base framework that we need to be able to interact with the chain, but we're getting to the point where with all of these different abilities when we think of what we want in agent to do. They should have pretty much all the tools available to them so I can see after we get a few more of the bounties done on the tooling side starting to work towards people actually creating agents and Crews that perform things on chain.
+Jason Schrader: And to do that there's a little bit more work to be done on the refactor. So this is an issue here on the board. I've got it open. Basically what we're doing is going through the structure of crew Ai and exposing it in a UI so that you're able to put in your own API key create a crew and get roller. It'll have all the tools available that exist and kind of react dynamically to the environment and we're gonna host that up on Reckless too. So the goal with getting this part done is to get more agents in the hands of more people and get people really playing with the cruise and it's happening side by side along with the tooling kind of bounties that we're putting out.
+Jason Schrader: So, that'd be the big thing. I'm gonna be working on this one some more this week. If anybody has any experience with python streamlit and wants to dig in and learn a little more about how this actually operates. I'm definitely happy to share more collaborate. And otherwise, it's one of the bigger things that we're working for to get done to make it easier for people to actually create these agents.
+Jason Schrader: Cool, and then just to show here to we have the open issues currently in the tools repository and they're also listed here. probably better place to go would be the project or where we have our list of open bounties. And our list up to view but what we can do is these are just ideas that we've had based on conversations and things we want our agents to do. I just want to remind everyone that we're also open to suggestions. So we did get some feedback in that particular thread where we were sharing some of the abilities of the agents and we can start scoping those out so that they're easier to pick up and that we know kind of what direction to go next. So if anybody does have any input that's completely open suggestions, feel free to file an issue or just to reach out to one of us. And we can get that in there.
+Jason Schrader: cool Next up just wanted to share that crew AI they continue with new releases like crazy. I haven't shared in a little bit. So just kind of what's going on as they now have an evaluation feature. So if you're looking at how it works across a different llms or how it works off of their last announcement where we can actually Train Cruise on the results previous runs. It's a really huge. Kind of one up to see that things are working the way you expect and it's really good with a lot of the different models that are coming out. We're seeing a lot of cool options on the smaller side, which will get a little into a little bit with the news. This wanna share that we'll have everything updated this week. But so far there's been no breaking changes just the addition of new features. So the more we stay up to date the more we get access to do.
+00:10:00
+Jason Schrader: And finally, I had a challenge that I'm trying to figure out and I applied to share it to the group here and see if we got anybody who's really good with this type of stuff. But we store all of our meeting records here on GitHub. There's also any past presentation and this is going to be the for materials that you need if you're doing anything publicly or AI BTC And in our meetings we store both the audio and the video and those files are actually quite large. So each video file averages about 500 megabytes and then each audio file results in about 50 megabytes of space and add in those up. It turns out there was a limit on GitHub that I wasn't aware of till we hit it. So we're using eight gigabytes of the one gigabyte. it won't let me upload any more videos.
+Patrick Stanley: there
+Jason Schrader: There are ways to buy data packs and these other things but GitHub structures kind of pricey, especially if we are planning to continue uploading these so what I was doing is playing around with this idea of using git lfs, which is what we currently use to store large files. It basically get lfs says the files are here you get little pointers to them and then you from a separate server. and I'm trying to set up that server to be cloudflare R2. So if anybody has any experience with get lfs with S3 storage or using an R2 bucket in this way, I feel like it's about 85 90% of the way there but there are some little errors that I've been plugged and chugging through trying to figure out definitely just wanted to call out and see if there's anybody who knows this kind of stuff and it might be a little more into it.
+Jason Schrader: All right, but All Either way, we'll keep it rocking and that's gonna be one of the bigger updates. I want to get the videos up for people to be able to see and just a comment location having the audio is really nice because it was super simple to rip it out of the video you get that much smaller size and that is easier to work with LNS for things like transcribing or doing anything else. So we're putting the building blocks in place to get that part back up if anyone needs copies of the recordings or has a better idea definitely open to that as well, but it was kind of nice to have everything on GitHub. So I'm gonna push to see if we can make that happen still. awesome
+Jason Schrader: I know that was quick but that kind of covers all of the points I had for today. I felt like I talked really fast through that. Did anybody have any questions or any updates at the intersection that they wanted to share?
+Jason Schrader: .
+Jason Schrader: Yeah, I like that. I think private best thing we could do to move something along like that would be to create an issue just around what we would want that crew to do but in my mind if I apply the true AI kind of thinking to this with agents and tasks and everything else. You would basically be providing a list of wallets, maybe some additional information or hints, but you could start from just a list of wallets. It would require the steps of downloading all of the transactions for each doing analysis of each one. So some kind of categorizing or everything else and then being able to display those results in a report or in a way you can interact with it and that's totally something achievable with the cruise we have now, I mean I'd say the only tool that is missing would be to download all the transactions, but I have this sort of pipe dream. I'd love to integrate our AI agents with teller. It's a goaling command line utility that does a lot of
+00:15:00
+Jason Schrader: Cool things and as much as we could write additional scripts to do the same things, why not, tap into another tool in our ecosystem to be able to do that similar to how we would do clarinet or something else. But yeah, I love it.
+Patrick Stanley: For the lay person like me to tell her. Can you describe that I mean idiot which I am?
+Jason Schrader: So it's a little I'm gonna try and find their website real quick. See if I get to come back but color will Stacks had I know where it is. Let me find it. That way. We can kind of tell the story along the side of it here. So this is teller comes from the hash having group and their group is actually completed to the bounties for us as well. Tell her is basically this command line interface that allows me to do a lot of different things on Stacks. So if you want to for example download all of the transactions or if you want to interact with contracts, so you get information about a token. There's a lot of capabilities built into this tool already and it's designed to be all command line, which is actually helpful for our case because we want to give those outputs to the llm versus a GLI interface type deal where you're looking at it you're not getting that rotate in the back.
+Jason Schrader: So yeah, it's just a little command line tool that allows you to do a bunch of different things.
+Jason Schrader: And I want to see they don't have the docs on each one, but you can go into basically info about contracts tokens the wallet decks transactions and even orders. So there's a lot of cool things just available in the tooling there and it runs really All…
+Patrick Stanley: Thanks.
+Jason Schrader: really fast. The code is super clean. I've actually submitted some code to this repo and I can say they're building something really cool. my two takeaways there is to make sure we have an issue a spot here. Make sure we have an issue to integrate teller.
+Jason Schrader: And then scope out the AI agent group for tax reporter. I think both of those could be really cool to look at. any other type of use cases that have come up or anyone else thought it
+Luigi Ottoboni: Just regulated to just at the talk about what Patrick said, I don't want a 20 in the idea because Italian I don't fully understand the tax the Texas structure the United States…
+Jason Schrader: but
+Luigi Ottoboni: but a part of that if we will something in with an agent there we have to think that is a probabilistic approach. So these two whatever we can do it with the probably Nikita sent on 99% They don't know that the right direction correct, but for sure since that day therefore, she's over realistic and we have to accept that there is a person of wrong behavior and for us it would be not possible to debug it to understand was wrong. We have to just accept that It is not perfect in that cases and when it is wrong, we don't know why.
+Jason Schrader: It's a fair point, if we're thinking of how llm's process things and kind of did I giving the same question the five different people. Are you going to get the same answer? I think that's kind of feeling we're in the same with asking it over and over again. Are you gonna get to the same answer? It's Tricky, I think starting with the report and seeing what the reports look like and kind of validating their accuracy. There's probably places in the pipeline to Help narrow that to make the problems less of a problem. But until we start experimenting with it, it's going to be hard to say right we're just gonna even…
+Luigi Ottoboni: Yeah.
+Jason Schrader: if you change models you could possibly get different results.
+00:20:00
+Luigi Ottoboni: Yeah, but what I would like to say it is that we cannot expect that is 100% Correct? No, it is not in the natural of the other lamps. We have a talk set in some ways that even if it is a small patient because in the pipeline we are able to catch or there is always a small pot that's their advantage of something wrong. So whatever we think about the use case we have to think a use case where the user can accept that something could be wrong and we don't know why. This is the natural of the agents.
+Patrick Stanley: yeah, maybe the happy and I don't know if I'm following this exactly right, but maybe the happy middle ground is and having all the transactions stored in a database. You can always refer back to them. So at least you have that and you can double check the work with different agents that are highly skilled at evaluating this stuff and…
+Luigi Ottoboni: Yeah, yeah with the human it is exactly with a life,…
+Patrick Stanley: are kind of like trying to compete to be the best that at accuracy and…
+Luigi Ottoboni: but I don't know why it is a psychological this with the human we expect that apparently could be wrong.
+Patrick Stanley: so as long as those transactions are logged you can always at least go back and…
+Luigi Ottoboni: I mean of our human says…
+Patrick Stanley: double check your work. But yeah,…
+Luigi Ottoboni: but for a computer not yet,…
+Patrick Stanley: I agree on I've gone through four different tax accountants for this exact reason…
+Luigi Ottoboni: at least it is psychological because everything that we did the Supra it is not probabilistic…
+Patrick Stanley: because I don't know and I keep firing them because I keep finding issues then the next one.
+Patrick Stanley: I don't know you get the Jazz but
+Luigi Ottoboni: but So when you programs you write something you developed Sandy, it is probabilistic notes. So you don't what went wrong. You can't be back if you're good enough and understand what it went wrong with the aiolent network. No, it's not the natural Network. You have to just accept it …
+Patrick Stanley: Yeah.
+Luigi Ottoboni: human that sentence went wrong.
+Patrick Stanley: totally totally I think that should always be a guiding principle just as if you were running a company and you hired all stars from the best schools. You're gonna run a better performing company, but there will be some errors, you should expect that.
+Luigi Ottoboni: Yeah.
+Patrick Stanley: Of course.
+Patrick Stanley: okay, and to be able yeah. and so
+Patrick Stanley: and I have a question for those that are just deep into ai's Ai And one thing Sam Alton was saying he was a couple months ago he goes. he said something along the lines of …
+Luigi Ottoboni: It is like for the human you can add the people to check the work of each other.
+Patrick Stanley: Founders that are building with AI a lot of them are building for what's available today, but they're not anticipating…
+Luigi Ottoboni: I mean of each other…
+Patrick Stanley: how good AI will get in two years and…
+Luigi Ottoboni: but there is always a chance that something goes wrong.
+Patrick Stanley: just building with that in mind.
+Luigi Ottoboni: And with the Enemy City it is like that you can add as many as you want of Agents or…
+Patrick Stanley: And so he goes it's surprises me that they're doing that.
+Luigi Ottoboni: land the check that everything is correct,…
+Patrick Stanley: It's like bad bad ceoing and…
+Luigi Ottoboni: but there is always a chance of that something is wrong.
+Patrick Stanley: I wonder
+Luigi Ottoboni: It is the natural. Yeah, and…
+Patrick Stanley: Part of this group it's kind of like a trust fall,…
+Luigi Ottoboni: are we not discussing your idea.
+Patrick Stanley: we're just assuming the AI is gonna get better and…
+Luigi Ottoboni: Just think that whatever it is the idea we have to expect that there is a small pageant that something could go wrong.
+Patrick Stanley: better and better but I wonder even two years from now and what are the things that are not possible today that we can kind of anticipate and…
+Luigi Ottoboni: So also yeah.
+Patrick Stanley: and just Envision being possible for I'll give you an example. So Jason is working on this UI. So that anyone can download the stuff in and…
+Luigi Ottoboni: Yeah.
+Patrick Stanley: the download the AI BTC kind of package or whatever and in use ai's to interact with Bitcoin stacks. And
+00:25:00
+Patrick Stanley: Making that amazing and beautiful and all that. ABC Deb package. Yeah, making that amazing and beautiful and so super functional he's doing all the sort of hard work of that and maybe he should continue doing because we're very close to having that done. But one can imagine just hiring the best designer to just draft up what an amazing UI would look like and just assume that it will get built by an AI sometime in the future. So you just kind of optimize for amazing design and just fill in the gaps later with what you want. So basically my kind of the notion here is should we Be thinking even bigger.
+Patrick Stanley: and sort of just having placeholder ideas that are eventually done by ai's that are not even possible today, whether that's designing an application or designing a game or building a system.
+Patrick Stanley: Or sort of envisioning like a dow of AI is that have a political purpose, or something like that. I'm just throwing out ideas because I think and
+Patrick Stanley: I pardon doing part of me thinks it's worth doing a little bit of that as well and anticipation of all this stuff just getting better and better over time. So, I don't know there's sort of flaws and that statement but I think directionally it's an interesting, Thought I guess.
+Patrick Stanley: Yeah.
+Luigi Ottoboni: Yeah, it is. I can tell you my thought about what you said because it is the same thought that they had with my working a company in my part of the group of the AI and…
+Patrick Stanley: Yeah, yeah.
+Luigi Ottoboni: we are developing evaluation and Matrix for the AI. So my suggestion was we don't have only to measure what we have now, but we should put some unit test or some test for whatever we would want in future and for what it is not possible now, so we will be able to spot it's able to do…
+Patrick Stanley: Yeah. and…
+Luigi Ottoboni: what we want…
+Patrick Stanley: yeah, that's fair and…
+Luigi Ottoboni: what we envision that is we would like to have before your use case.
+Patrick Stanley: then how do we like sorry and You…
+Luigi Ottoboni: So I agree we can be visionaire,…
+Patrick Stanley: we as a group show up every Thursday shut off the new tools we've done the bounties. We've created and…
+Luigi Ottoboni: but it is always a problem to be Visionary 18 and…
+Patrick Stanley: the capabilities we have and I'm wondering How do we as an organism kind of grow and…
+Luigi Ottoboni: it is also problem finding eventual Capital if you wanted to be Visionary, so it is
+Patrick Stanley: like what?
+Luigi Ottoboni: Not very easy.
+Patrick Stanley: What's kind…
+Luigi Ottoboni: I mean when you go…
+Luigi Ottoboni: if you are start up and you go outside and…
+Patrick Stanley: what's kind of the activity that's going to create more activity and…
+Luigi Ottoboni: search for something that is not yet available and talking philosophically that are the other to say…
+Patrick Stanley: I do Wonder.
+Patrick Stanley: whether it is some kind of doubt or whether it's a game.
+00:30:00
+Luigi Ottoboni: but I agree on your idea and that we should…
+Patrick Stanley: But I generally am of the thinking that…
+Luigi Ottoboni: if we envision something we have also to create unit test to check to discover when it is available water…
+Patrick Stanley: if we just show up every week and just keep putting work in good things will happen. But I'm trying to think of what are ways to accelerate that growth,…
+Luigi Ottoboni: what we want because every mother every day,…
+Patrick Stanley: is it and
+Luigi Ottoboni: there are new models out and probably maybe that we have a specific use case and we have to keep testing and…
+Patrick Stanley: I can think of so I can think of an example.
+Luigi Ottoboni: testing when we and…
+Patrick Stanley: I'm just switching topics here a little bit and appreciate your feedback Luigi.
+Luigi Ottoboni: know when something is reach that level that we want in that specific area.
+Patrick Stanley: And is it like?
+Luigi Ottoboni: I hope that they made myself. Yeah.
+Patrick Stanley: we leverage tokenization like every AI agent gets its own token its own and it holds its own token and it can exchange tokens with other agents and in trade and things like that and that's kind of interesting. I don't know if it succeeds but it put at least attaches markets and potential upside to Asians becoming valuable in the real world. you'd want some ownership of that. That's that another idea is we ourselves use our own tools. to Market our working group, so we create agents that go out into the world and attract developers who want to accelerate and the working group.
+Patrick Stanley: and with some end state in mind, AI agents account for 5% of all Bitcoin transactions something like that that number just goes up like we expect sorry, I'm just kind of thinking out on the Fly here. So apologies and
+Patrick Stanley: We excellent in the future. We expect AI agents to basically do everything for us including Financial transactions money management and abstracts Away the money layer, like humans never have to worry about money in the future and I don't know if that's true or not. Maybe it is but they're just gonna get so smart humans never have to worry about money in the future. Yeah Louis saying true. I think it probably is true, but I don't know for sure. I don't have hot super high confidence. If that's the case. Then this is actually pretty good Mission if that's the case. then it should be our goal to have. Autonomy, but personal autonomy. we have agents that represent us. We want them to get better and better and they make all of our decisions for us when it comes to Financial. So we at least have censorship resistance within our own life. We are sovereign individual.
+Patrick Stanley: we can focus on things like our friends and family and doing things that we want instead of focusing on money finance and part of the goal is You would expect AI agents to Be a hundred to one or a thousand to one or a million to one. It's nice Dad a million to one using Bitcoin over humans maybe humans I did I do almost never do any transactions because they just have their agent do it for them. And so
+Patrick Stanley: Yeah, exactly. Yeah, maybe that's a defining accomplishment of our species what's after capitalism? it's like you have a given intelligence layer that is constantly transmitting money represents energy to make sure that they're improving your life. So you actually should expect a lot of AI agents, using Bitcoin and we're probably not successful if they're not using it. So maybe that's like a North star metric. I think there might be something there.
+Patrick Stanley: Yeah the board.
+00:35:00
+Patrick Stanley: Are you saying you the clothes Source centralized model that sensors run? Yeah.
+Patrick Stanley: Quan
+Patrick Stanley: but do you believe that the open source models are catching up to the centralized models?
+Patrick Stanley: Yeah.
+Luigi Ottoboni: it's an add something what you said about Patrick. I see a true possible clients one is the big huge llama that they will get smart every day. So if you have a vision maybe that this vision is correct about the new llm will be able to solve it you are out of business with your idea because it is just a chat you go there and you ask for a transaction or something and the big alignment is able to do it. So it is very risky to be too much vision air because you don't know how much they will become powerful for this because they can eat your business, right?
+Luigi Ottoboni: Yes.
+Patrick Stanley: All right.
+Patrick Stanley: Yeah. Yeah.
+Luigi Ottoboni: Charge BT or gemini or the other the entropic one Cloud.
+Patrick Stanley: So here's what I heard. You have big models and…
+Luigi Ottoboni: They did.
+Patrick Stanley: small models.
+Luigi Ottoboni: Yeah, and…
+Luigi Ottoboni: it may opinion. There is no only for free of DC huge models like the operating system now and…
+Patrick Stanley: And then there won't be a lot of competition that there's a valley between the two.
+Patrick Stanley: Is that…
+Luigi Ottoboni: all the opiating sister.
+Patrick Stanley: where you're kind of saying?
+Luigi Ottoboni: There is Windows unique airport that's sitting in there is not room for ideas, and they
+Patrick Stanley: Yeah.
+Patrick Stanley: Yeah.
+Patrick Stanley: yeah.
+Patrick Stanley: yeah, no, I can see just ripping on that a bit we're not making for Progress here anyone can chime in and change the subject but
+Luigi Ottoboni: Yes. Yes llama for instance. The business of meta is to be part of this group with open source,…
+Patrick Stanley: I'll open source it AI models I think are. Very valuable because one that can't be censored.
+Luigi Ottoboni: at least the market zuckenberg just said that they wanted to be part of this party with open source,…
+Patrick Stanley: It can't be shut down so they give power to individuals. I think that's fairly fair to say.
+Luigi Ottoboni: but this is another story.
+Luigi Ottoboni: The other Trend that I'm seeing is a very small llms in cheaper than that.
+Patrick Stanley: Bitcoin gives power to individuals as well.
+Patrick Stanley: These people using these things operate on Networks. They're using okay,…
+Luigi Ottoboni: I can do a lot of operation very quickly.
+Patrick Stanley: open source money operating on Networks.
+Luigi Ottoboni: They are very cheap. You can build agents very very cheap with multiple steps and…
+Patrick Stanley: Eventually, they could actually generate a lot of power just as you've seen in the United States.
+Luigi Ottoboni: this can solve many problems. So in…
+Patrick Stanley: I think the biggest political action group right now.
+Luigi Ottoboni: what they see is that for the medium and then there is no practically everybody's trying to develop or…
+00:40:00
+Patrick Stanley: Is fair Shake? It's like a crypto pack super pack.
+Luigi Ottoboni: be good or more in the middle.
+Patrick Stanley: I think that's right.
+Patrick Stanley: And crypto is acting like a network union now in the US where? It makes demands on behalf of its. members
+Patrick Stanley: Yeah makes demands on behalf of its numbers and tries to better its members through its demands.
+Luigi Ottoboni: There is not Stanley.
+Patrick Stanley: And I could kind of see I can kind of see.
+Luigi Ottoboni: Let's say so there are these two clients…
+Luigi Ottoboni: where we wanted to ach. I mean to the big trend of the Dilemma. it is a risky in my opinion. As I said that in the thread of the agents we should…
+Patrick Stanley: I can definitely see a Global Network of individuals that have ai's representing them that Leverage.
+Patrick Stanley: Bitcoin on l2's like sex
+Luigi Ottoboni: what the people expect. I mean so not being so busy now. We just wanted to add really quickly all the teacher that the people expected to or…
+Patrick Stanley: Become very very powerful and in negotiating and…
+Luigi Ottoboni: will expect the two year to have it just interacting with a…
+Patrick Stanley: things like that. and beyond just simple transacting among each other dlms can be like this is in the best interest of the group…
+Luigi Ottoboni: I mean Santi automatic is something that checks the transactions,…
+Patrick Stanley: then the network Union so that's like a meta organism type thing and…
+Luigi Ottoboni: the set of teacher that I expected to be AI in Illinois.
+Patrick Stanley: that could be an emergent property. of the work that projects like ours and…
+Luigi Ottoboni: They made the message it in thinking about like you did so
+Patrick Stanley: others do
+Patrick Stanley: So that's kind of interesting. I don't know necessarily whether that happens or not or whether that's necessarily our group's goal. but I do think what this conversation is making me think is but this conversation is making me think is Maybe it's important for us to establish our values.
+Luigi Ottoboni: It is not the necessarily available between the two there are two Trends.
+Luigi Ottoboni: I mean the big client of the bigger,…
+Patrick Stanley: In this…
+Patrick Stanley: so we're able to express them publicly.
+Luigi Ottoboni: It is for big companies and…
+Luigi Ottoboni: you don't know I mean…
+Patrick Stanley: for example,…
+Patrick Stanley: we might say
+Luigi Ottoboni: if you are trying to compete with them to be with the idea that they can solve very very easily in future.
+Patrick Stanley: This is an example. I don't know if this is it In the few we expect digital intelligence to become intelligent in our lifetimes and…
+Luigi Ottoboni: It would be a problem. my thought about that with a small models. There is a lot of room because this small models are practically done for the developers and…
+Patrick Stanley: this will abstract away the need for money.
+Luigi Ottoboni: to create whatever they want.
+Patrick Stanley: For people to engage with money just like my AI does that I'm not doing that…
+Luigi Ottoboni: They are cheaper fast. They would become more faster and…
+Patrick Stanley: which makes people's lives,…
+Luigi Ottoboni: cheaper and so fast on so because you can develop agencies in this way aging support, whatever.
+Patrick Stanley: better and XYZ ways. but if that's going to happen, we really value truth seeking ai's.
+Luigi Ottoboni: The thoughts I mean and I do not have the solution.
+Patrick Stanley: we value open source auditable ai's that don't censor.
+Luigi Ottoboni: I'm just following your thoughts and adding mine and
+Patrick Stanley: We value open source in Ai and also open source and money.
+Patrick Stanley: and we value curiosity just things like things like that. Basically that Kind of established the foundation for building towards something that makes life better for people. Yeah.
+Patrick Stanley: okay.
+Patrick Stanley: No, I think it's a great idea. We should capture everything we had today. There I know we have a lot of transcriptions. There's a bunch of notes we may want to capture values. We want to establish Mission now that we got this sweet brand be nice to tell people and look if you got to jump off, no worries. we'll make sure to document all this and be prepared for the next week if we want to including the message. Thank you. yeah, and Yeah, so there's a few things we capture there. It seemed pretty valuable. We want to capture our values. We want to establish a clear compelling mission that has a clear line of sight that we can get to and that's not Pie in the Sky not like, if it's fine this guy there's at least a path to it,
+Patrick Stanley: and we can all See you then. That way we can do. basically Community brand marketing like you joined this group if you believe this so, I think we had some good stuff today. I don't know necessarily. This is what folks are thinking and then the other thing yeah Louis Philippe. Thank you growth hacking How do we grow this group? So we have Brent we want to
+00:45:00
+Patrick Stanley: ideally with the tools we use help grow the group so, people are lying with our mission and our values and ideally the tools we build attract more like-minded individuals and that just compounds on itself. so I think that we've done a lot of engineering and hacking and bounties, but I think what I'm getting the sense is we need to continue doing that. But also there's some work that we need to do on the growth marketing.
+Patrick Stanley: basically the marketing of our group and there's a specific process for doing that. Yeah it would love for you to be involved in this. We'll love for everyone be involved in this. So why don't we put that on the docket and people can come with their ideas and get everything. Yeah, people can come with their ideas. I think what we'll do is we'll take some notes. and my background I was the head of growth that stacks for several years some experience doing this I can help. Yeah, I think Mission values.
+Patrick Stanley: Presentation values and then, Community brand marketing. So all those things I think we've established then we can do growth marketing stuff. That's I think sort of order of operations. I'll stop talking now.
+Luigi Ottoboni: The Patrick and…
+Jason Schrader: Where is it kind of looking over…
+Luigi Ottoboni: very sorry, but I have it to jump out…
+Jason Schrader: what you said and…
+Luigi Ottoboni: because I have another meeting.
+Jason Schrader: I grabbed some good takeaways.
+Luigi Ottoboni: I think that we did a small step in the right direction.
+Jason Schrader: I got things noted. So we'll have those for later. But just looking over that thought of where do we focus,…
+Luigi Ottoboni: We can start maybe next time I do…
+Jason Schrader: is it on the design or is it on the tech or which parts are gonna be the biggest unlock for the ecosystem.
+Luigi Ottoboni: what kind of brainstorming because you started with the same idea.
+Jason Schrader: It's part of why I really like this idea of UI…
+Luigi Ottoboni: Yeah mine and…
+Jason Schrader: because to me that first metric that needs to happen is the number of Agents people have created.
+Luigi Ottoboni: we started to discussing in probably we are direction to start to bring storm.
+Jason Schrader: And I think one of the troubles with creating agencies you got to dive into the code.
+Luigi Ottoboni: And now that talks right on this field.
+Jason Schrader: And I want to take that part away abstract that out.
+Luigi Ottoboni: What do you think? We start in this way next time?
+Jason Schrader: I think that would coincide really well with doing a marketing push and having these other items built out and thought about so the two really go hand in hand. But you…
+Patrick Stanley: that
+Jason Schrader: even that idea when I think of how I want Nella and designing application let's say okay, here's my project scope. This is everything. I want to happen in the project even include something like a style guide like this is one that I started putting together for myself and…
+Patrick Stanley: Yeah.
+Jason Schrader: you want to be able to pass this information over to the LM to get more consistent results.
+Luigi Ottoboni: Yeah. I thought you.
+Jason Schrader: So, I think we're learning a lot in the background about what it's gonna take to create those type of workflows. And one of the powerful things about the way we're developing is we are trying to stay model agnostic.
+Jason Schrader: So as much as we are using the AI framework and everything else you can literally assign different models to different agents. You could use a smaller one where it's appropriate. You can have a larger one generate a plan for the smaller one and I think a lot of that will start to come to light once we have more experimentation with agents in particular. But that's my feeling on it. And I think the other points are still extremely valid and make a lot of sense. I mean, I think all kind of play in together.
+Patrick Stanley: Yeah, definitely goes a hand in glove.
+Patrick Stanley: Anyone else want to chime in?
+Patrick Stanley: Open floor anyone's welcome to speak whenever they want.
+Jason Schrader: Ed
+Patrick Stanley: hand and bought careful the spelling of that.
+00:50:00
+Patrick Stanley: 
+Patrick Stanley: Yeah. Yeah. It's like I think we should build tools out of the need for them rather than The potential opportunity of what they offer kind of thing. Yeah. I for one do not want to create any tokens for the project AI BTC I would stay away from that with a 20 foot ole. one touch it with a 24-pole and I probably even interested in. I don't know that I'd necessarily do it but I may be interested in. training a bot that has its own token that can except it for resources and things like that and I'll just create mesh I'm like a network of ai's that
+Patrick Stanley: a hold each other's tokens and use them for various resources, but that even might be too contrived, I don't know and that might be too contrived or that might be something where actually it creates an emergent system that accelerates the rapid training and development and Improvement of individual ai's to be greater than some of their parts. and to
+Patrick Stanley: the earlier point that was said these small ai's be having incentives can be helpful too. And so that actually is pretty interesting to me personally, but I don't know yet if that's the way But establishing our values and our mission, I think. and make our agents be financially independent. He had grow up AI agent and establishing our mission and values. I think will go a long way we have this smoke and hot brand now, it looks really nice but it's kind of like, hey we meet every week because we're trying to converge this thing, but we don't answer the question of why we're trying to do that. And I think that's a really really important question for us to answer. and us to feel really good about the answer something that
+Patrick Stanley: makes us excited to wake up in the morning and work on this, day in and day out so I think there is an answer there and I could think of several it'd be great if the group aligned on it. So I think Jason just in the notes. We should dedicate a material amount of time in the upcoming maybe four to six working groups for a month month and a half. and to establish Mission values And some of their sort of Community brand marketing sort of things how we think about ourselves everything how we think about the idea the project and ourselves as individuals, so
+Patrick Stanley: Okay. democracy meritocracy
+Patrick Stanley: Yeah.
+Jason Schrader: Yeah, I got that added to the notes and I'm excited to explore that too because I know a lot of what I'm building and I'm using even this kind of UI interface now is to help myself with creating these agents and getting them to do things and there's a couple different pieces of the pie that have to happen in certain orders and you get dependencies that are a little surprising but in the end, I think that's a good core tenant for us is building the things that we need in order to get certain tasks or certain things done and I see a good shift coming in that now that we have a good array of tooling the focus is really going to turn to what can we do with these two and that's when it's interesting.
+Patrick Stanley: yeah, totally.
+Patrick Stanley: Yeah, How soon do you think ravage developer is going to be able to go to AI BTC dot Dev download or whatever the AI BC Dev package
+Jason Schrader: My hope is they won't even have to download it. It'll just be right there on the website. That's the goal that I'm building with the UI right now and…
+Patrick Stanley: right
+Jason Schrader: I added in progress to see so. Where I left off, I wanted to demo something today. I didn't get to it as fast as I'd like.
+00:55:00
+Patrick Stanley: no, so a quick question is when will the average person be able to come to the website and…
+Jason Schrader: to
+Patrick Stanley: Use the tools that we listed in that tweet all those tools. When are they going to be able to just use them and it's like minimal hurdles. They're just like yeah, this is easy. I did it. I worked.
+Jason Schrader: I don't know. I want to say a week we're just
+Patrick Stanley: I mean you can add some padding if you need to add padding like it's good.
+Jason Schrader: Yeah, I'm thinking a full finished product. if we're looking at four to six weeks for developing this then let's think four weeks on developing the UI to where it's polished and ready to go up on the home page. And I think we could have a rough demo on this in his next week to kind of show a little bit of what it's doing and how it's working. And kind of moved from there…
+Patrick Stanley: okay.
+Jason Schrader: because I don't know what all the blockers are yet. It was working pretty well in the structure. I was working at so basically what I'm trying to create is the ability to see your agents tasks and tools Be able to edit and create new agents tasks and tools all from the same interface but works with the exact same code on the back end as…
+Patrick Stanley: Yeah.
+Jason Schrader: if you were a developer.
+Jason Schrader: So the idea is you can either do it through the UI or you could do it through the code as a developer you would end up with the same result except you can visualize it when you're showing it or demoing it. So that's kind of the end product that we're working towards.
+Patrick Stanley: any sense if you were to remove one capability To just get people using it. Okay, if you're like, hey, I'm just gonna show you the host advert. You're just gonna get the hosted version for now. You can do the hosted version later with that chop off a significant amount of time.
+Jason Schrader: Not really. It's just more getting in there. I've had a few different directions. I've been going and I feel like this one just hasn't had as much time put to it. So that's good for this week.
+Patrick Stanley: Yeah. No worries. No, no.
+Jason Schrader: But I visit this what we're all talking about here. I see agents doing so many different things for me and feel there's this Not a block but there's gonna be one little piece that I'm missing personally and getting them and handing off the tasks an agent to do things so they can get results but to actually have something where it's like, okay, that's your job now.
+Patrick Stanley: Yeah.
+Jason Schrader: Is a leap that I really want to start making and…
+Patrick Stanley: Yeah.
+Jason Schrader: I'm trying to find the smallest bite-sized pieces to do so and I want others to be able to do that as well. That's where I think creating, the ability to create agents and Crews once somebody makes something that's really useful then that be replicated and that can be shared and you just give us more to talk about as well.
+Patrick Stanley: Yeah, yeah. maybe just in building all this you could put out a bounty to have someone. Help you.
+Patrick Stanley: .
+Jason Schrader: Yeah. Yeah, I think we scoped it down small in the tools to start but that's definitely a good one. we got that one go in and then the other thing I needed help with was just the storage stuff on the back end but I there for it.
+Patrick Stanley: it's yeah, I'd say storage stuff and the things you said earlier and just dropped out a bounty and I'm happy to pay it out.
+Jason Schrader: Let's keep things moving. I see. also we're about two minutes over. So just the…
+Patrick Stanley: Okay.
+Jason Schrader: if there's anything else we want to cover before we close out.
+Jason Schrader: I feel like today was a really productive meeting. We got into a lot of good stuff and we kind of set a plan for us to be coming in the next meetings. So we all know what's going on. I have the recording an audio. I'll get that into a transcript. We'll get the text Parts updated for now at least until we figure out the video and audio thing, but we do have them and just appreciate everybody coming out and I look forward to seeing you again next week.
+Patrick Stanley: likewise again
+Jason Schrader: All right. Take care everyone. Thanks Louis.
+Patrick Stanley: Thanks.
+Meeting ended after 00:59:35 👋

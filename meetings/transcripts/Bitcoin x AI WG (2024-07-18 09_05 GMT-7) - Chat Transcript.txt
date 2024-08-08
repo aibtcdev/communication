@@ -1,0 +1,75 @@
+00:05:20.911,00:05:23.911
+Nikos Baxevanis: Interesting, on getting the source code.
+
+00:09:37.822,00:09:40.822
+NoCode Clarity: Time is money vs Time on money
+
+00:10:31.589,00:10:34.589
+Anjali's Notetaker: Hi, I'm an AI assistant helping Anjali George take notes for this meeting. Follow along the transcript here:  https://otter.ai/u/sNTH7Jh6KXizUFoMNuk5zBWeZc4?utm_source=va_chat_link_2
+
+You'll also be able to see screenshots of key moments, add highlights, comments, or action items to anything being said, and get an automatic summary after the meeting.
+
+00:14:16.781,00:14:19.781
+Nikos Baxevanis: Yes, clarigen would make things a lot easier in that context/scenario.
+
+00:14:49.939,00:14:52.939
+Jason Schrader: We want to get the CI to auto-generate the types and publish them to NPM, so we can download in another repo (and other developers could too!)
+
+00:21:39.886,00:21:42.886
+Louis-Philippe Bellier: moirée
+
+00:23:14.349,00:23:17.349
+Louis-Philippe Bellier: CSS3 animated
+
+00:23:44.584,00:23:47.584
+Louis-Philippe Bellier: orange and blue is the most tricky gradient to do, ever.
+
+00:24:05.663,00:24:08.663
+Louis-Philippe Bellier: but you made it
+
+00:26:00.501,00:26:03.501
+Louis-Philippe Bellier: show 1st type again plz?
+
+00:26:13.418,00:26:16.418
+Louis-Philippe Bellier: kk
+
+00:26:15.774,00:26:18.774
+Louis-Philippe Bellier: thx
+
+00:26:40.655,00:26:43.655
+Nikos Baxevanis: Have to jump out. Very nice stuff, thanks all! See you next week.
+
+00:27:38.437,00:27:41.437
+NoCode Clarity: Dope
+
+00:27:52.474,00:27:55.474
+NoCode Clarity: Great site graphic
+
+00:31:00.543,00:31:03.543
+Luigi Ottoboni: I prefer the direction #2
+
+00:31:24.804,00:31:27.804
+Louis-Philippe Bellier: agency name?
+
+00:31:37.881,00:31:40.881
+Louis-Philippe Bellier: boo
+
+00:35:40.820,00:35:43.820
+Jason Schrader: https://x.com/rohanpaul_ai/status/1812295914566176866
+
+00:35:59.806,00:36:02.806
+Louis-Philippe Bellier: almost as powerful as 4o, wouldn't you say?
+
+00:36:21.855,00:36:24.855
+Louis-Philippe Bellier: I concur
+
+00:36:43.995,00:36:46.995
+Louis-Philippe Bellier: hallu
+
+00:37:32.473,00:37:35.473
+Jason Schrader: https://x.com/dani_avila7/status/1813234404518425051?t=vI_EWqV0Pt3P2My1pSRcXg&s=09
+
+00:40:03.601,00:40:06.601
+Jason Schrader: https://brave.com/blog/bitcoin-wallet/
+https://brave.com/blog/byom-nightly/
+

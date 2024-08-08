@@ -1,0 +1,89 @@
+00:00:29.285,00:00:32.285
+Luigi Ottoboni: AI News: 
+https://the-decoder.com/deepseek-coder-v2-open-source-model-beats-gpt-4-and-claude-opus/
+
+https://situational-awareness.ai/
+
+00:01:31.490,00:01:34.490
+Patrick Stanley: AIBTC Prop. Agenda
+
+$2k BTC BNSx <> AI bounty: status?
+
+Demos?
+
+Discussion: Demo App on aibtc.dev site? Personal AI 
+- Single player app that can turn into a multiplayer app
+- requires cryptography, runs locally
+- Register BNS ID, Avatar, open STX wallet
+- Next would be where it stores data
+- Apps: Build websites, reply to email, trade crypto, deploy tokens, work with other Personal AIs as a part of a crew, earn crypto, pay for services to complete tasks.
+
+Rebrand & SF Conference Update
+
+
+News:
+
+00:05:31.439,00:05:34.439
+Patrick Stanley: https://github.com/aibtcdev/agent-tools-ts/issues/4
+
+00:07:18.182,00:07:21.182
+Patrick Stanley: take my money Rapha!
+
+00:07:28.042,00:07:31.042
+Louis-Philippe Bellier: take the monnnney
+
+00:15:54.690,00:15:57.690
+Luigi Ottoboni: excuse me, I have to jump in an another meeting
+
+00:23:24.978,00:23:27.978
+j2 p2: does ".agent" bns namespace makes sense for ai agents
+
+00:23:32.165,00:23:35.165
+Patrick Stanley: think so
+
+00:24:17.064,00:24:20.064
+Patrick Stanley: brb in two min
+
+00:27:00.825,00:27:03.825
+Louis-Philippe Bellier: My AI already does that
+
+00:28:02.724,00:28:05.724
+Patrick Stanley: I need to pacify baby ugh sry
+
+00:28:06.703,00:28:09.703
+Louis-Philippe Bellier: I want my agent to do stuff for me on games, learn2earn platforms and metaverses which have incentives.
+
+00:32:44.638,00:32:47.638
+Patrick Stanley: ^good use case
+
+00:35:27.543,00:35:30.543
+Louis-Philippe Bellier: 1. basic arbitrage bot to fund the WG and the main dev(s)
+2. re-split rest of budget in WG pot and WG attendees to kickstart attendance
+3. fork bot to cross chain AMM. 
+4. Rerun 1 to 3.
+4.
+
+00:37:38.678,00:37:41.678
+Louis-Philippe Bellier: already have 2 but why not a 3rd one
+
+00:37:56.478,00:37:59.478
+Rapha RSierra: which one you have Louis?
+
+00:38:03.528,00:38:06.528
+Rapha RSierra: mail
+
+00:38:09.863,00:38:12.863
+Louis-Philippe Bellier: it's Antelope, 2nd is EVM so might not be able to do that
+
+00:38:17.316,00:38:20.316
+Louis-Philippe Bellier: go go
+
+00:38:30.033,00:38:33.033
+Louis-Philippe Bellier: babies first
+
+00:38:53.518,00:38:56.518
+Louis-Philippe Bellier: on another meeting, I can listen in and type, sorry
+
+00:41:00.899,00:41:03.899
+Louis-Philippe Bellier: Will jump out! Alone with notetaker AI lol, feeling lonely. Short one today. Good meet-up Patrick, laters!
+
