@@ -1,4 +1,6 @@
-> **This repository has been archived.** This project is no longer maintained.\n\n<img src="https://aibtc.dev/logos/aibtcdev-primary-logo-black-wide-1000px.png" alt="AIBTC Working Group Logo" style="width: 100%; max-width: 1000px; display: block; margin: 1rem auto;" />
+> **This repository has been archived.** This project is no longer maintained.
+
+<img src="https://aibtc.dev/logos/aibtcdev-primary-logo-black-wide-1000px.png" alt="AIBTC Working Group Logo" style="width: 100%; max-width: 1000px; display: block; margin: 1rem auto;" />
 
 # AIBTC Communication
 
